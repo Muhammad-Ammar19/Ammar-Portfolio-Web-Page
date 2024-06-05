@@ -65,7 +65,35 @@ class IntroContainer extends StatelessWidget {
                   fontSize: 17,
                 )),
             SizedBox(height: Get.height * 0.01),
-          
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    SimpleIcons.facebook,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    SimpleIcons.instagram,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    SimpleIcons.linkedin,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    SimpleIcons.github,
+                  ),
+                ),
+              ],
+            ),
             SizedBox(height: Get.height * 0.018),
             Center(
               child: Container(
