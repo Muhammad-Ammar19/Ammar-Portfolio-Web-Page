@@ -13,7 +13,7 @@ class ThirdContainer extends StatelessWidget {
             onPressed: () {},
             label: const Text(
               "Portfolio",
-              style: TextStyle(fontFamily: 'Syne'),
+              style: TextStyle(fontWeight: FontWeight.bold),
             )),
         SizedBox(height: Get.height * 0.01),
         ShaderMask(
@@ -28,14 +28,16 @@ class ThirdContainer extends StatelessWidget {
           child: const Text(
             "Checkout My Featured Projects.",
             style: TextStyle(
-              fontFamily: 'Syne',
-              fontSize: 30,
+              fontSize: 32,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),
         ),
         SizedBox(height: Get.height * 0.01),
+
+
+
       ],
     );
   }

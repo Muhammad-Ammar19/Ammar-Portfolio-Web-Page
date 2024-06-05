@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:simple_icons/simple_icons.dart';
 
@@ -26,8 +27,8 @@ class IntroContainer extends StatelessWidget {
             const Text(
               'Muhammad\nAmmar',
               style: TextStyle(
-                  fontFamily: 'Syne',
-                  fontWeight: FontWeight.bold,
+                 
+                  fontWeight: FontWeight.w700,
                   fontSize: 30),
             ),
             Center(
@@ -40,28 +41,28 @@ class IntroContainer extends StatelessWidget {
             const Text(
               'Specialization:',
               style: TextStyle(
-                  fontFamily: 'Syne',
-                  fontSize: 21,
-                  fontWeight: FontWeight.bold),
+                  color: Color.fromARGB(255, 78, 76, 76),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700),
             ),
             const Text(
-              'Full Stack Web and App Developer',
+              'Full Stack Web \nand App Developer',
               style: TextStyle(
-                fontFamily: 'Syne',
+                fontWeight: FontWeight.w700,
                 fontSize: 17,
               ),
             ),
-            SizedBox(height: Get.height * 0.01),
+            SizedBox(height: Get.height * 0.015),
             const Text(
               'Based in:',
-              style: TextStyle(
-                  fontFamily: 'Syne',
-                  fontSize: 21,
-                  fontWeight: FontWeight.bold),
+              style: TextStyle(color: Color.fromARGB(255, 78, 76, 76),
+                  fontWeight:FontWeight.w700,
+                  fontSize: 16,
+                 ),
             ),
-            const Text('Quetta,Pakistan',
+            const Text('Quetta, Pakistan',
                 style: TextStyle(
-                  fontFamily: 'Syne',
+                 fontWeight: FontWeight.w700,
                   fontSize: 17,
                 )),
             SizedBox(height: Get.height * 0.01),
@@ -96,8 +97,8 @@ class IntroContainer extends StatelessWidget {
             ),
             SizedBox(height: Get.height * 0.018),
             Center(
-              child: Container(
-                height: Get.height * 0.039,
+              child: Container(width: double.infinity,
+                height: Get.height * 0.055,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     colors: [
@@ -107,7 +108,7 @@ class IntroContainer extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
-                  borderRadius: BorderRadius.circular(15.0),
+                  borderRadius: BorderRadius.circular(25.0),
                 ),
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
@@ -119,9 +120,9 @@ class IntroContainer extends StatelessWidget {
                   ),
                   onPressed: () {},
                   child: const Text(
-                    "Let's Work Together",
+                    "Let's Work Together!",
                     style: TextStyle(
-                      fontFamily: 'Syne',
+                      fontWeight: FontWeight.w700,
                       fontSize: 18,
                       color: Colors.white,
                     ),

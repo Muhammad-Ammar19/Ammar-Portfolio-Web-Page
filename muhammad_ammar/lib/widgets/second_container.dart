@@ -16,7 +16,7 @@ class SecondContainer extends StatelessWidget {
             onPressed: () {},
             label: const Text(
               "Let's Meet!",
-              style: TextStyle(fontFamily: 'Syne'),
+              style: TextStyle(fontWeight: FontWeight.bold),
             )),
         SizedBox(height: Get.height * 0.01),
         ShaderMask(
@@ -32,7 +32,7 @@ class SecondContainer extends StatelessWidget {
             "I'm Muhammad Ammar \nFull Stack Web and App Developer.",
             style: TextStyle(
               fontFamily: 'Syne',
-              fontSize: 32, fontWeight: FontWeight.w700,
+              fontSize: 35, fontWeight: FontWeight.w700,
               color: Colors.white, // This color is overridden by the ShaderMask
             ),
           ),
@@ -40,7 +40,7 @@ class SecondContainer extends StatelessWidget {
         SizedBox(height: Get.height * 0.02),
        Center(
   child: SizedBox(
-    height: 50, // Match the height of the OutlinedButton
+    height: Get.height *0.055, 
     child: Container(
       decoration: BoxDecoration(
         gradient: const LinearGradient(
@@ -51,7 +51,7 @@ class SecondContainer extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(25.0),
       ),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
@@ -75,7 +75,7 @@ class SecondContainer extends StatelessWidget {
             Text(
               "My Works",
               style: TextStyle(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w700,
                 fontSize: 18,
                 color: Colors.white,
               ),
@@ -90,7 +90,7 @@ class SecondContainer extends StatelessWidget {
         SizedBox(height: Get.height * 0.02),
 Center(
   child: SizedBox(
-    height: 50, // Adjust the height as needed
+    height: Get.height *0.055, // Adjust the height as needed
     width: double.infinity, // Makes the button wide
     child: OutlinedButton.icon(
       onPressed: () {},
@@ -99,7 +99,7 @@ Center(
       ),
       label: const Text(
         "Download CV",
-        style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),
       ),
     ),
   ),
