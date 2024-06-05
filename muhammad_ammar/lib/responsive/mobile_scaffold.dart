@@ -4,8 +4,6 @@ import 'package:muhammad_ammar/widgets/intro_container.dart';
 import 'package:muhammad_ammar/widgets/second_container.dart';
 import 'package:muhammad_ammar/widgets/third_container.dart';
 
-
-
 class MobileScaffold extends StatelessWidget {
   const MobileScaffold({super.key});
 
@@ -19,20 +17,19 @@ class MobileScaffold extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-               const IntroContainer(),                                   //  Intro container 
-             
-             
-             
-              SizedBox(height: Get.height *0.06,),
-              
-              
-              
-              const SecondContainer(),
-      
-            SizedBox(height: Get.height *0.06,),
+              const IntroContainer(), //  Intro container
 
-     const ThirdContainer(),
-             
+              SizedBox(
+                height: Get.height * 0.06,
+              ),
+
+              const SecondContainer(), // Second Container
+
+              SizedBox(
+                height: Get.height * 0.06,
+              ),
+
+              const ThirdContainer(), // Third Container
             ],
           ),
         ),
@@ -40,5 +37,3 @@ class MobileScaffold extends StatelessWidget {
     );
   }
 }
-
-

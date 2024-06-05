@@ -12,13 +12,13 @@ class IntroContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(35),
+        borderRadius: BorderRadius.circular(38),
         border: Border.all(color: const Color.fromARGB(87, 158, 158, 158)),
       ),
       width: double.infinity,
      
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -65,35 +65,7 @@ class IntroContainer extends StatelessWidget {
                   fontSize: 17,
                 )),
             SizedBox(height: Get.height * 0.01),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    SimpleIcons.facebook,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    SimpleIcons.instagram,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    SimpleIcons.linkedin,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    SimpleIcons.github,
-                  ),
-                ),
-              ],
-            ),
+          
             SizedBox(height: Get.height * 0.018),
             Center(
               child: Container(
