@@ -71,7 +71,7 @@ class SecondContainer extends StatelessWidget {
               color: Colors.white,
               size: 18,
             ),
-            SizedBox(width: 5), // Adjust spacing between icon and text
+            SizedBox(width: 5),
             Text(
               "My Works",
               style: TextStyle(
