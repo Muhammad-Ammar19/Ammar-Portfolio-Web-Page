@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         
       ),
-      home: const ResponsiveLayout(
-        mobileScaffold: MobileScaffold(),
-        tabletScaffold: TabletScaffold(),
+      home:  ResponsiveLayout(
+        mobileScaffold: const MobileScaffold(),
+        tabletScaffold: const TabletScaffold(),
         desktopScaffold: DesktopScaffold(),
       ),
       debugShowCheckedModeBanner: false,

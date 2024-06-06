@@ -3,7 +3,17 @@ import 'package:get/get.dart';
 import 'package:simple_icons/simple_icons.dart';
 
 class DesktopScaffold extends StatelessWidget {
-  const DesktopScaffold({super.key});
+  DesktopScaffold({super.key});
+
+  final homesectionkey = GlobalKey();
+  final projectssectionkey = GlobalKey();
+  final servicessectionkey = GlobalKey();
+  final aboutsectionkey = GlobalKey();
+  final resumesectionkey = GlobalKey();
+
+  void scrollToSection(GlobalKey key) {
+    Scrollable.ensureVisible(key.currentContext!,duration: const Duration(seconds: 1),curve: Curves.easeInOut);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +41,9 @@ class DesktopScaffold extends StatelessWidget {
                     runSpacing: 30.0,
                     children: [
                       TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            scrollToSection(homesectionkey);
+                          },
                           child: const Text(
                             'Home',
                             style: TextStyle(
@@ -45,7 +57,9 @@ class DesktopScaffold extends StatelessWidget {
                                 fontWeight: FontWeight.w700, fontSize: 18),
                           )),
                       TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            scrollToSection(projectssectionkey);
+                          },
                           child: const Text(
                             'Projects',
                             style: TextStyle(
@@ -65,9 +79,14 @@ class DesktopScaffold extends StatelessWidget {
                             style: TextStyle(
                                 fontWeight: FontWeight.w700, fontSize: 18),
                           )),
+                      IconButton.filledTonal(
+                        onPressed: () {},
+                        icon: const Icon(Icons.dark_mode_outlined),
+                      ),
                     ],
                   ),
                   Container(
+                    key: homesectionkey,
                     width: double.infinity,
                     height: Get.height * 0.90,
                     color: Colors.blue[100],
@@ -146,9 +165,10 @@ class DesktopScaffold extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 50),
                     child: Container(
+                      key: projectssectionkey,
                       color: const Color.fromARGB(62, 33, 149, 243),
                       width: double.infinity,
-                      height: Get.height * 0.9,
+                      //     height: Get.height * 0.9,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -177,7 +197,6 @@ class DesktopScaffold extends StatelessWidget {
                               child: Text(
                                 "Checkout My Featured Projects",
                                 style: TextStyle(
-                                 
                                   fontSize: 52, fontWeight: FontWeight.w700,
                                   color: Colors
                                       .white, // This color is overridden by the ShaderMask
@@ -185,11 +204,49 @@ class DesktopScaffold extends StatelessWidget {
                               ),
                             ),
                           ),
-                    
-                        
-                    
-                    
-                    
+                          Padding(
+                            padding: const EdgeInsets.all(25.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Expanded(
+                                  child: Card(
+                                    elevation: 4,
+                                    child: ClipRRect(
+                                      borderRadius: const BorderRadius.only(
+                                          topLeft: Radius.circular(20),
+                                          bottomLeft: Radius.circular(20)),
+                                      child: Image.asset(
+                                        "assets/images/5s,7,8Preview1.png",
+                                        width: double.infinity,
+                                        height: Get.height * 0.76,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: Get.width * 0.002,
+                                ),
+                                Expanded(
+                                  child: Card(
+                                    elevation: 4,
+                                    child: ClipRRect(
+                                      borderRadius: const BorderRadius.only(
+                                          topRight: Radius.circular(20),
+                                          bottomRight: Radius.circular(20)),
+                                      child: Image.asset(
+                                        "assets/images/5s,7,8Preview2.png",
+                                        width: double.infinity,
+                                        height: Get.height * 0.76,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
