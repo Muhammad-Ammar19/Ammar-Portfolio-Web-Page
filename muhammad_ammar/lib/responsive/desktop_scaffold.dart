@@ -15,7 +15,8 @@ class DesktopScaffold extends StatelessWidget {
   final resumesectionkey = GlobalKey();
 
   void scrollToSection(GlobalKey key) {
-    Scrollable.ensureVisible(key.currentContext!,duration: const Duration(seconds: 1),curve: Curves.easeInOut);
+    Scrollable.ensureVisible(key.currentContext!,
+        duration: const Duration(seconds: 1), curve: Curves.easeInOut);
   }
 
   @override
@@ -76,7 +77,9 @@ class DesktopScaffold extends StatelessWidget {
                                 fontWeight: FontWeight.w700, fontSize: 18),
                           )),
                       TextButton(
-                          onPressed: () {scrollToSection(aboutsectionkey);},
+                          onPressed: () {
+                            scrollToSection(aboutsectionkey);
+                          },
                           child: const Text(
                             'About',
                             style: TextStyle(
@@ -88,21 +91,16 @@ class DesktopScaffold extends StatelessWidget {
                       ),
                     ],
                   ),
-                  HomeContainer(homesectionkey: homesectionkey),                                           //Home Container
-                 
-                 
-                 
-                  ProjectsContainer(projectssectionkey: projectssectionkey),                              //Projects Container
-            
-                
-                
-                
-                 AboutContainer(aboutsectionkey:aboutsectionkey) ,                             // About Container
-            
-            
-            
-            
-            
+
+                  HomeContainer(
+                      homesectionkey: homesectionkey), //Home Container
+
+                  ProjectsContainer(
+                      projectssectionkey:
+                          projectssectionkey), //Projects Container
+
+                  AboutContainer(
+                      aboutsectionkey: aboutsectionkey), // About Container
                 ],
               ),
             ),
@@ -113,17 +111,15 @@ class DesktopScaffold extends StatelessWidget {
   }
 }
 
-
-
-
-
 class IntroContainerDesktop extends StatelessWidget {
   const IntroContainerDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(height: Get.height *0.9,width: double.infinity,
+      child: Container(
+        height: Get.height * 0.9,
+        width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(38),
           border: Border.all(color: const Color.fromARGB(87, 158, 158, 158)),
@@ -143,11 +139,11 @@ class IntroContainerDesktop extends StatelessWidget {
               ),
               Center(
                 child: Image.asset(
-                  "assets/images/muhammad-ammar.png",height:400,
+                  "assets/images/muhammad-ammar.png",
+                  height: 400,
                   fit: BoxFit.cover,
                 ),
               ),
-          
               const Text(
                 'Specialization:',
                 style: TextStyle(
@@ -163,7 +159,6 @@ class IntroContainerDesktop extends StatelessWidget {
                   fontSize: 17,
                 ),
               ),
-             
               const Text(
                 'Based in:',
                 style: TextStyle(
@@ -179,7 +174,6 @@ class IntroContainerDesktop extends StatelessWidget {
                   fontSize: 17,
                 ),
               ),
-            
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -201,7 +195,6 @@ class IntroContainerDesktop extends StatelessWidget {
                   ),
                 ],
               ),
-            
               Center(
                 child: Container(
                   width: double.infinity,
