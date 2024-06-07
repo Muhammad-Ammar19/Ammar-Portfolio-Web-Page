@@ -49,14 +49,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
-  entry:
-    dependency: "direct main"
-    description:
-      name: entry
-      sha256: e3250f8ca233cee315576fd1026de4698f140f4abd5ae21aab7e3ab1630a3770
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   fake_async:
     dependency: transitive
     description:
@@ -83,11 +75,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   get:
     dependency: "direct main"
     description:
@@ -96,14 +83,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.6.6"
-  getwidget:
-    dependency: "direct main"
-    description:
-      name: getwidget
-      sha256: "91df14a8d80e21f3ec02759295b90cc8badb8a872b90d34ad4aeb4085d833b5c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.0.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -160,14 +139,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.12.0"
-  nested:
-    dependency: transitive
-    description:
-      name: nested
-      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -176,30 +147,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
-  provider:
-    dependency: transitive
-    description:
-      name: provider
-      sha256: c8a055ee5ce3fd98d6fc872478b03823ffdb448699c6ebdbbc71d59b596fd48c
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.1.2"
-  responsive_builder:
-    dependency: "direct main"
-    description:
-      name: responsive_builder
-      sha256: a38ba9ba86c9daf08904674553034b651377b1d685d10ee450d8350ae51f76ec
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.7.0"
-  simple_animations:
-    dependency: transitive
-    description:
-      name: simple_animations
-      sha256: "1ea7b93fb98e2a611b6865d632de55607b766328d14700143353129ee0559d3a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.0.2"
   simple_icons:
     dependency: "direct main"
     description:
@@ -277,6 +224,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "14.2.1"
+  widget_and_text_animator:
+    dependency: "direct main"
+    description:
+      name: widget_and_text_animator
+      sha256: dafad1df89f3038643f80853e0eb3a7ffc8a0e2abd9b189bff462d9d76d41bca
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.5"
 sdks:
   dart: ">=3.4.0 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"

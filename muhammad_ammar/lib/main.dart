@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:muhammad_ammar/responsive/desktop_scaffold.dart';
+import 'package:muhammad_ammar/responsive/desktop_scaffold2.dart';
 import 'package:muhammad_ammar/responsive/mobile_scaffold.dart';
 import 'package:muhammad_ammar/responsive/responsive_layout.dart';
 import 'package:muhammad_ammar/responsive/tablet_scaffold.dart';
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-     // darkTheme: ThemeData.dark(),
+    darkTheme: ThemeData.dark(),
       title: 'Muhammad-Ammar',
       theme: ThemeData(
         fontFamily: 'Syne',
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       home:  ResponsiveLayout(
         mobileScaffold: const MobileScaffold(),
         tabletScaffold: const TabletScaffold(),
-        desktopScaffold: DesktopScaffold(),
+        desktopScaffold: DesktopScaffold2(),
       ),
       debugShowCheckedModeBanner: false,
     );
