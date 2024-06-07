@@ -22,7 +22,7 @@ class DesktopScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF1FAFF), // Cloud Wisp color
+       backgroundColor: const Color(0xFFF0F8FF), // Alice Blue color
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
