@@ -303,7 +303,7 @@ class AboutContainer extends StatelessWidget {
           
           Row(
             children: [
-              Container(decoration: const BoxDecoration(color: Colors.blue),
+              Container(decoration: const BoxDecoration(color: Color.fromARGB(120, 33, 149, 243)),
                 
                 
                 child:  Column(crossAxisAlignment: CrossAxisAlignment.start,
