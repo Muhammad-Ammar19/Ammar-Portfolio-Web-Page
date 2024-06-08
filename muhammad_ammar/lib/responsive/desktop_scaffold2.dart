@@ -53,56 +53,71 @@ class DesktopScaffold2 extends StatelessWidget {
                     fontFamily: 'Syne'),
               ),
               SizedBox(
-                //   color: Colors.blue,
+            
 
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    TextButton(
-                        onPressed: () {  scrollToSection(homesectionkey);},
-                        child: const Text(
-                          "Home",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              fontFamily: 'Syne'),
-                        )),
-                    TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Services",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              fontFamily: 'Syne'),
-                        )),
-                    TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Projects",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              fontFamily: 'Syne'),
-                        )),
-                    TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Resume",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              fontFamily: 'Syne'),
-                        )),
-                    TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "About Me",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              fontFamily: 'Syne'),
-                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20),
+                      child: TextButton(
+                          onPressed: () {  scrollToSection(homesectionkey);},
+                          child: const Text(
+                            "Home",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20),
+                      child: TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "Services",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "Projects",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "Resume",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "About Me",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -124,7 +139,7 @@ class DesktopScaffold2 extends StatelessWidget {
                 Container(
                     key: homesectionkey,                                                   // Home Section
                   
-                    color: const Color.fromARGB(132, 33, 149, 243),
+                 //   color: const Color.fromARGB(132, 33, 149, 243),
                     child: WidgetAnimator(incomingEffect:WidgetTransitionEffects.incomingSlideInFromLeft(duration: const Duration(seconds: 2)),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
