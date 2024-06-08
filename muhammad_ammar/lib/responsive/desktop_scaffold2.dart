@@ -461,13 +461,15 @@ class DesktopScaffold2 extends StatelessWidget {
                     ),
                   ),
                 ),
+         
+         
                 WidgetAnimator(
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-                        color: Colors.red, height: Get.height * 0.07)),
+               color: Colors.red, height: Get.height * 0.07)),
                 Container(
-                  width: double.infinity, // About Section
+                  width: double.infinity,                                                                                  // About Section
                   key: aboutsectionkey,
 
                   color: const Color.fromARGB(122, 121, 85, 72),
@@ -511,172 +513,266 @@ class DesktopScaffold2 extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 25),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          child: Column(
                             children: [
-                              Column(
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  const Text(
-                                    '40+',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: 'Syne',
-                                        fontSize: 48),
-                                  ),
-                                  ShaderMask(
-                                    shaderCallback: (bounds) =>
-                                        const LinearGradient(
-                                      colors: [
-                                        Color.fromARGB(255, 241, 154, 202),
-                                        Color.fromARGB(255, 151, 111, 231)
-                                      ], //
-                                      begin: Alignment.centerLeft,
-                                      end: Alignment.centerRight,
-                                    ).createShader(bounds),
-                                    child: const Text(
-                                      "Happy Clients",
-                                      style: TextStyle(
-                                        fontFamily: 'Syne',
-                                        fontSize: 35,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.white,
+                                  Column(
+                                    children: [
+                                      const Text(
+                                        '40+',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontFamily: 'Syne',
+                                            fontSize: 48),
                                       ),
-                                    ),
+                                      ShaderMask(
+                                        shaderCallback: (bounds) =>
+                                            const LinearGradient(
+                                          colors: [
+                                            Color.fromARGB(255, 241, 154, 202),
+                                            Color.fromARGB(255, 151, 111, 231)
+                                          ], //
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ).createShader(bounds),
+                                        child: const Text(
+                                          "Happy Clients",
+                                          style: TextStyle(
+                                            fontFamily: 'Syne',
+                                            fontSize: 35,
+                                            fontWeight: FontWeight.w700,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      const Text(
+                                        '2+',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontFamily: 'Syne',
+                                            fontSize: 48),
+                                      ),
+                                      ShaderMask(
+                                        shaderCallback: (bounds) =>
+                                            const LinearGradient(
+                                          colors: [
+                                            Color.fromARGB(255, 241, 154, 202),
+                                            Color.fromARGB(255, 151, 111, 231)
+                                          ], //
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ).createShader(bounds),
+                                        child: const Text(
+                                          "Years of Experience",
+                                          style: TextStyle(
+                                            fontFamily: 'Syne',
+                                            fontSize: 35,
+                                            fontWeight: FontWeight.w700,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      const Text(
+                                        '12+',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontFamily: 'Syne',
+                                            fontSize: 48),
+                                      ),
+                                      ShaderMask(
+                                        shaderCallback: (bounds) =>
+                                            const LinearGradient(
+                                          colors: [
+                                            Color.fromARGB(255, 241, 154, 202),
+                                            Color.fromARGB(255, 151, 111, 231)
+                                          ], //
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ).createShader(bounds),
+                                        child: const Text(
+                                          "Projects",
+                                          style: TextStyle(
+                                            fontFamily: 'Syne',
+                                            fontSize: 35,
+                                            fontWeight: FontWeight.w700,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                              Column(
+                           
+                           
+                           
+                            ],
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(top: 25),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                  child: Text(
+                                "I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? I almost think I can remember feeling a little different. But if I'm not the same, the next question is 'Who in the world am I?' Ah, that's the great puzzle!like it put more simply - never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.w700),
+                              )),
+                              Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text(
-                                    '2+',
+                                  Text(
+                                    'Name',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: 'Syne',
-                                        fontSize: 48),
+                                        fontFamily: 'Syne', fontSize: 20),
                                   ),
-                                  ShaderMask(
-                                    shaderCallback: (bounds) =>
-                                        const LinearGradient(
-                                      colors: [
-                                        Color.fromARGB(255, 241, 154, 202),
-                                        Color.fromARGB(255, 151, 111, 231)
-                                      ], //
-                                      begin: Alignment.centerLeft,
-                                      end: Alignment.centerRight,
-                                    ).createShader(bounds),
-                                    child: const Text(
-                                      "Years of Experience",
-                                      style: TextStyle(
-                                        fontFamily: 'Syne',
-                                        fontSize: 35,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  const Text(
-                                    '12+',
+                                  Text(
+                                    'Muhammad Ammar',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: 'Syne',
-                                        fontSize: 48),
+                                        fontFamily: 'Syne', fontSize: 21),
                                   ),
-                                  ShaderMask(
-                                    shaderCallback: (bounds) =>
-                                        const LinearGradient(
-                                      colors: [
-                                        Color.fromARGB(255, 241, 154, 202),
-                                        Color.fromARGB(255, 151, 111, 231)
-                                      ], //
-                                      begin: Alignment.centerLeft,
-                                      end: Alignment.centerRight,
-                                    ).createShader(bounds),
-                                    child: const Text(
-                                      "Projecs",
-                                      style: TextStyle(
-                                        fontFamily: 'Syne',
-                                        fontSize: 35,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.white,
-                                      ),
-                                    ),
+                                  Text(
+                                    'Email',
+                                    style: TextStyle(
+                                        fontFamily: 'Syne', fontSize: 20),
                                   ),
+                                  Text(
+                                    'syedammarzaki4@gmail.com',
+                                    style: TextStyle(
+                                        fontFamily: 'Syne', fontSize: 21),
+                                  ),
+                                  Text(
+                                    'Location',
+                                    style: TextStyle(
+                                        fontFamily: 'Syne', fontSize: 20),
+                                  ),
+                                  Text(
+                                    'Quetta, Pakistan',
+                                    style: TextStyle(
+                                        fontFamily: 'Syne', fontSize: 21),
+                                  )
                                 ],
                               ),
                             ],
                           ),
                         ),
-                        const Row(
-                          children: [
-                            Expanded(
-                                child: Text(
-                              "I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? I almost think I can remember feeling a little different. But if I'm not the same, the next question is 'Who in the world am I?' Ah, that's the great puzzle!like it put more simply - never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.",
-                              style: TextStyle(
-                                  fontFamily: 'Syne',
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w700),
-                            )),
-                            Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Name',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 20),
+                   Container(height: 55,
+                                      decoration: BoxDecoration(
+                                        gradient: const LinearGradient(
+                                          colors: [
+                                            Color.fromARGB(255, 241, 154, 202),
+                                            Color.fromARGB(255, 151, 111, 231)
+                                          ],
+                                          begin: Alignment.topLeft,
+                                          end: Alignment.bottomRight,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(25.0),
+                                      ),
+                                      child: OutlinedButton(
+                                        style: OutlinedButton.styleFrom(
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                          ),
+                                          side: const BorderSide(
+                                              color: Colors.transparent),
+                                        ),
+                                        onPressed: () {},
+                                        child: const Text(
+                                          "Download CV",
+                                          style: TextStyle(fontFamily: 'Syne',
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 22,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),   
+                                    
+                                    
+
+                          Row(
+                            
+                            children: [Expanded(
+                              child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),border: Border.all(color: Colors.grey)),
+                                child:  Padding(
+                                  padding: const EdgeInsets.all(25.0),
+                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text('Front End Development',style: TextStyle(fontFamily: 'Syne',fontSize: 22,fontWeight: FontWeight.w700),),
+                                     Image.network("https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"),
+                                                           
+                                                           
+                                                           
+                                    ],
+                                  ),
+                                ),),
+                            ),Expanded(
+                              child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),border: Border.all(color: Colors.grey)),
+                              
+                              child:  Padding(
+                                padding: const EdgeInsets.all(25.0),
+                                child: Column(crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  children: [
+                                    const Text('App Development ',style: TextStyle(fontFamily: 'Syne',fontSize: 22,fontWeight: FontWeight.w700),),
+                                    Image.network('https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp'),
+                                  ],
                                 ),
-                                Text(
-                                  'Muhammad Ammar',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 21),
-                                ),
-                                Text(
-                                  'Email',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 20),
-                                ),
-                                Text(
-                                  'syedammarzaki4@gmail.com',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 21),
-                                ),
-                                Text(
-                                  'Location',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 20),
-                                ),
-                                Text(
-                                  'Quetta, Pakistan',
-                                  style: TextStyle(
-                                      fontFamily: 'Syne', fontSize: 21),
-                                )
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
+                              ),),
+                            )],)
+
+                                     ],
+                 
+                         
+                 
+                 
+                 
                     ),
                   ),
                 ),
-                Container(
-                  key: servicessectionkey,
-                  height: 600,
-                  color: Colors.transparent,
-                  child: const Center(
-                      child: Text('services Section',
-                          style: TextStyle(color: Colors.white))),
-                ),
-                Container(
+              
+                WidgetAnimator(
+                    incomingEffect:
+                        WidgetTransitionEffects.incomingSlideInFromLeft(),
+                    child: Container(
+               color: Colors.red, height: Get.height * 0.07)),
+              
+                  Container(       color: const Color.fromARGB(96, 255, 82, 82),                                                                         // Resume Section 
                   key: resumesectionkey,
                   height: 600,
-                  color: Colors.transparent,
+                 
                   child: const Center(
                       child: Text('Resume Section',
                           style: TextStyle(color: Colors.white))),
                 ),
+              
+              
+                SizedBox(          width:  double.infinity,                                                                       //  Services Section
+                  key: servicessectionkey,
+                  height: 600,
+                
+                  child: const Center(
+                      child: Text('services Section',
+                          style: TextStyle(color: Colors.white))),
+                ),
+             
+             
+             
+            
               ],
             ),
           ),
