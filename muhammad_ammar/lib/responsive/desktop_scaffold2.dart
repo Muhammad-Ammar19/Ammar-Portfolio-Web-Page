@@ -47,7 +47,7 @@ class DesktopScaffold2 extends StatelessWidget {
                   ),
                   side: const BorderSide(color: Colors.transparent),
                 ),
-                onPressed: () {},
+                onPressed: () { scrollToSection(contactsectionkey);},
                 child: const Text(
                   "Let's Talk",
                   style: TextStyle(
@@ -94,7 +94,9 @@ class DesktopScaffold2 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 20),
                       child: TextButton(
-                          onPressed: () { scrollToSection(contactsectionkey);},
+                          onPressed: () {
+                            scrollToSection(contactsectionkey);
+                          },
                           child: const Text(
                             "Contact",
                             style: TextStyle(
@@ -322,7 +324,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                     ),
                                     Row(children: [
                                       IconButton(
-                                          onPressed: () {},
+                                          onPressed: () {   },
                                           icon: const Icon(SimpleIcons.github)),
                                       IconButton(
                                           onPressed: () {},
@@ -382,7 +384,7 @@ class DesktopScaffold2 extends StatelessWidget {
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-                        color: Colors.red, height: Get.height * 0.07)),
+                        color: Colors.transparent, height: Get.height * 0.07)),
                 WidgetAnimator(
                   incomingEffect:
                       WidgetTransitionEffects.outgoingSlideOutToLeft(),
@@ -390,7 +392,6 @@ class DesktopScaffold2 extends StatelessWidget {
                     width: double.infinity,
                     key: projectssectionkey, // Project Section
 
-                   
                     child: Padding(
                       padding: const EdgeInsets.only(left: 60.0, top: 80),
                       child: Column(
@@ -488,12 +489,11 @@ class DesktopScaffold2 extends StatelessWidget {
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-                        color: Colors.red, height: Get.height * 0.07)),
+                        color: Colors.transparent, height: Get.height * 0.07)),
                 SizedBox(
                   width: double.infinity, // About Section
                   key: aboutsectionkey,
 
-               
                   child: Padding(
                     padding: const EdgeInsets.only(top: 100, left: 60),
                     child: Column(
@@ -913,11 +913,10 @@ class DesktopScaffold2 extends StatelessWidget {
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-                        color: Colors.red, height: Get.height * 0.07)),
+                        color: Colors.transparent, height: Get.height * 0.07)),
                 SizedBox(
                   key: resumesectionkey,
                   width: double.infinity, // Resume Section
-                 
 
                   child: Padding(
                     padding:
@@ -950,7 +949,7 @@ class DesktopScaffold2 extends StatelessWidget {
                             end: Alignment.centerRight,
                           ).createShader(bounds),
                           child: const Text(
-                            "Education and Practical \nExperience",
+                            "Education and Practical\nExperience",
                             style: TextStyle(
                               fontFamily: 'Syne',
                               fontSize: 55,
@@ -960,7 +959,7 @@ class DesktopScaffold2 extends StatelessWidget {
                           ),
                         ),
                         const Padding(
-                          padding: EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(15.0),
                           child: Text(
                             "My Education",
                             style: TextStyle(
@@ -971,7 +970,7 @@ class DesktopScaffold2 extends StatelessWidget {
                         ),
                         const Divider(color: Colors.grey, height: 2),
                         const Padding(
-                          padding: EdgeInsets.all(20.0),
+                          padding: EdgeInsets.all(40.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -999,7 +998,7 @@ class DesktopScaffold2 extends StatelessWidget {
                         ),
                         const Divider(color: Colors.grey, height: 2),
                         const Padding(
-                          padding: EdgeInsets.all(20.0),
+                          padding: EdgeInsets.all(40.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -1025,32 +1024,202 @@ class DesktopScaffold2 extends StatelessWidget {
                             ],
                           ),
                         ),
-               
-                
-
-              
-                
+                        const Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Text(
+                            "Certifications",
+                            style: TextStyle(
+                                fontFamily: 'Syne',
+                                fontSize: 32,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2023',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Blockchain Specialization",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'University of Buffalo',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2023',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Foundations of User Experience (UX) Design",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'Coursera',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2023 - 2024',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Google IT Support Professional Certificate",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'Coursera',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2023 - 2024',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Google IT Support Professional Certificate",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'Coursera',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2024',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Introducation to MongoDB",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'MongoDB',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(40.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                ' 2024',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Advance Python Programming and Applications",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'NAVTCC',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
-            
-            
                 WidgetAnimator(
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-                        color: Colors.red, height: Get.height * 0.07)),
-            
+                        color: Colors.transparent, height: Get.height * 0.07)),
                 SizedBox(
-                  width: double.infinity,                                                        //  Contact Section
+                  width: double.infinity, //  Contact Section
                   key: contactsectionkey,
-              child:  Padding(
-                padding: const EdgeInsets.only(left: 60,top: 100),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                  
-                  children: [
-OutlinedButton.icon(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 60, top: 50),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        OutlinedButton.icon(
                           icon: const Icon(
                             Icons.star_rate_rounded,
                             size: 22,
@@ -1064,7 +1233,7 @@ OutlinedButton.icon(
                                 fontSize: 15),
                           ),
                         ),
- SizedBox(height: Get.height * 0.01),
+                        SizedBox(height: Get.height * 0.01),
                         ShaderMask(
                           shaderCallback: (bounds) => const LinearGradient(
                             colors: [
@@ -1078,52 +1247,120 @@ OutlinedButton.icon(
                             "Let's make something awesome together!",
                             style: TextStyle(
                               fontFamily: 'Syne',
-                              fontSize: 55,
+                              fontSize: 50,
                               fontWeight: FontWeight.w700,
                               color: Colors.white,
                             ),
                           ),
                         ),
-
-Container(
-              height: 35,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 241, 154, 202),
-                    Color.fromARGB(255, 151, 111, 231)
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(25.0),
-              ),
-              child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 30),
+                          child: Container(
+                            height: 35,
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [
+                                  Color.fromARGB(255, 241, 154, 202),
+                                  Color.fromARGB(255, 151, 111, 231)
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                              ),
+                              borderRadius: BorderRadius.circular(25.0),
+                            ),
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                                side:
+                                    const BorderSide(color: Colors.transparent),
+                              ),
+                              onPressed: () {},
+                              child: const Text(
+                                "Send Message",
+                                style: TextStyle(
+                                  fontFamily: 'Syne',
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: SizedBox(
+                            width: Get.width * 0.7,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Expanded(
+                                        child: TextFormField(
+                                      decoration: const InputDecoration(
+                                          border: UnderlineInputBorder(),
+                                          hintText: 'Your Name*',
+                                          hintStyle:
+                                              TextStyle(fontFamily: 'Syne')),
+                                    )),
+                                    Expanded(
+                                        child: Padding(
+                                      padding: const EdgeInsets.all(15),
+                                      child: TextFormField(
+                                        decoration: const InputDecoration(
+                                            border: UnderlineInputBorder(),
+                                            hintText: 'Your Company Name*',
+                                            hintStyle:
+                                                TextStyle(fontFamily: 'Syne')),
+                                      ),
+                                    ))
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                        child: TextFormField(
+                                      decoration: const InputDecoration(
+                                          border: UnderlineInputBorder(),
+                                          hintText: 'Email Address*',
+                                          hintStyle:
+                                              TextStyle(fontFamily: 'Syne')),
+                                    )),
+                                    Expanded(
+                                        child: Padding(
+                                      padding: const EdgeInsets.all(15),
+                                      child: TextFormField(
+                                        decoration: const InputDecoration(
+                                            border: UnderlineInputBorder(),
+                                            hintText: 'Phone Number',
+                                            hintStyle:
+                                                TextStyle(fontFamily: 'Syne')),
+                                      ),
+                                    )),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  side: const BorderSide(color: Colors.transparent),
                 ),
-                onPressed: () {},
-                child: const Text(
-                  "Send Message",
-                  style: TextStyle(
-                    fontFamily: 'Syne',
-                    fontWeight: FontWeight.w700,
-                    fontSize: 20,
-                    color: Colors.white,
+                const Padding(
+                  padding: EdgeInsets.all(25.0),
+                  child: Center(
+                    child: Text(
+                      '2024 Made by Muhammad Ammar',
+                      style: TextStyle(
+                          fontFamily: 'Syne',
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18),
+                    ),
                   ),
-                ),
-              ),
-            ),
-
-
-                ],),
-              ),
-
-                
-                ),
+                )
               ],
             ),
           ),
