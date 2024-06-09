@@ -11,7 +11,10 @@ class ThirdContainer extends StatelessWidget {
       children: [
         OutlinedButton.icon(
           onPressed: () {},
-          icon: const Icon(Icons.star_rate_rounded,size: 18,),
+          icon: const Icon(
+            Icons.star_rate_rounded,
+            size: 18,
+          ),
           label: const Text(
             "Portfolio",
             style: TextStyle(fontWeight: FontWeight.bold),
@@ -41,13 +44,17 @@ class ThirdContainer extends StatelessWidget {
           'Deeptune - Music Player',
           style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26),
         ),
-        SizedBox(height : Get.height *0.02),
+        SizedBox(height: Get.height * 0.02),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
-              child: Card(elevation: 4,
-                child: ClipRRect(borderRadius: const BorderRadius.only(topLeft:Radius.circular(20) ,bottomLeft: Radius.circular(20)),
+              child: Card(
+                elevation: 4,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      bottomLeft: Radius.circular(20)),
                   child: Image.asset(
                     "assets/images/5s,7,8Preview1.png",
                     fit: BoxFit.cover,
@@ -59,10 +66,15 @@ class ThirdContainer extends StatelessWidget {
               width: Get.width * 0.002,
             ),
             Expanded(
-              child: Card(elevation: 4,
-                child: ClipRRect(borderRadius: const BorderRadius.only(topRight:Radius.circular(20) ,bottomRight: Radius.circular(20)),
+              child: Card(
+                elevation: 4,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20)),
                   child: Image.asset(
-                    "assets/images/5s,7,8Preview2.png",width: double.infinity,
+                    "assets/images/5s,7,8Preview2.png",
+                    width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -70,13 +82,16 @@ class ThirdContainer extends StatelessWidget {
             ),
           ],
         ),
-       
-     Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
-              child: Card(elevation: 4,
-                child: ClipRRect(borderRadius: const BorderRadius.only(topLeft:Radius.circular(20) ,bottomLeft: Radius.circular(20)),
+              child: Card(
+                elevation: 4,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      bottomLeft: Radius.circular(20)),
                   child: Image.asset(
                     "assets/images/5s,7,8Preview3.png",
                     fit: BoxFit.cover,
@@ -88,10 +103,15 @@ class ThirdContainer extends StatelessWidget {
               width: Get.width * 0.002,
             ),
             Expanded(
-              child: Card(elevation: 4,
-                child: ClipRRect(borderRadius: const BorderRadius.only(topRight:Radius.circular(20) ,bottomRight: Radius.circular(20)),
+              child: Card(
+                elevation: 4,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20)),
                   child: Image.asset(
-                    "assets/images/5s,7,8Preview4.png",width: double.infinity,
+                    "assets/images/5s,7,8Preview4.png",
+                    width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -99,8 +119,6 @@ class ThirdContainer extends StatelessWidget {
             ),
           ],
         ),
-      
-    
       ],
     );
   }
