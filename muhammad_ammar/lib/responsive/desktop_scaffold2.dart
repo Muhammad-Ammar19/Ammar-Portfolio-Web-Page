@@ -8,7 +8,7 @@ class DesktopScaffold2 extends StatelessWidget {
 
   final homesectionkey = GlobalKey();
   final projectssectionkey = GlobalKey();
-  final servicessectionkey = GlobalKey();
+  final contactsectionkey = GlobalKey();
   final aboutsectionkey = GlobalKey();
   final resumesectionkey = GlobalKey();
 
@@ -27,18 +27,39 @@ class DesktopScaffold2 extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(top: 50, right: 50),
-            child: OutlinedButton.icon(
-              onPressed: () {},
-              label: const Text(
-                "Let's Talk",
-                style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 18,
-                    fontFamily: 'Syne'),
+            child: Container(
+              height: 35,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 241, 154, 202),
+                    Color.fromARGB(255, 151, 111, 231)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(25.0),
               ),
-              icon: const Icon(Icons.message_rounded),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  side: const BorderSide(color: Colors.transparent),
+                ),
+                onPressed: () {},
+                child: const Text(
+                  "Let's Talk",
+                  style: TextStyle(
+                    fontFamily: 'Syne',
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
             ),
-          )
+          ),
         ],
         title: Padding(
           padding: const EdgeInsets.only(top: 50.0, left: 50),
@@ -73,9 +94,9 @@ class DesktopScaffold2 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 20),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () { scrollToSection(contactsectionkey);},
                           child: const Text(
-                            "Services",
+                            "Contact",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
@@ -99,7 +120,9 @@ class DesktopScaffold2 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 20.0),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            scrollToSection(resumesectionkey);
+                          },
                           child: const Text(
                             "Resume",
                             style: TextStyle(
@@ -363,11 +386,11 @@ class DesktopScaffold2 extends StatelessWidget {
                 WidgetAnimator(
                   incomingEffect:
                       WidgetTransitionEffects.outgoingSlideOutToLeft(),
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     key: projectssectionkey, // Project Section
 
-                    color: const Color.fromARGB(185, 33, 149, 243),
+                   
                     child: Padding(
                       padding: const EdgeInsets.only(left: 60.0, top: 80),
                       child: Column(
@@ -461,18 +484,16 @@ class DesktopScaffold2 extends StatelessWidget {
                     ),
                   ),
                 ),
-         
-         
                 WidgetAnimator(
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-               color: Colors.red, height: Get.height * 0.07)),
-                Container(
-                  width: double.infinity,                                                                                  // About Section
+                        color: Colors.red, height: Get.height * 0.07)),
+                SizedBox(
+                  width: double.infinity, // About Section
                   key: aboutsectionkey,
 
-                  color: const Color.fromARGB(122, 121, 85, 72),
+               
                   child: Padding(
                     padding: const EdgeInsets.only(top: 100, left: 60),
                     child: Column(
@@ -516,7 +537,8 @@ class DesktopScaffold2 extends StatelessWidget {
                           child: Column(
                             children: [
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Column(
                                     children: [
@@ -613,9 +635,6 @@ class DesktopScaffold2 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                           
-                           
-                           
                             ],
                           ),
                         ),
@@ -631,148 +650,480 @@ class DesktopScaffold2 extends StatelessWidget {
                                     fontSize: 24,
                                     fontWeight: FontWeight.w700),
                               )),
-                              Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Name',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 20),
-                                  ),
-                                  Text(
-                                    'Muhammad Ammar',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 21),
-                                  ),
-                                  Text(
-                                    'Email',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 20),
-                                  ),
-                                  Text(
-                                    'syedammarzaki4@gmail.com',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 21),
-                                  ),
-                                  Text(
-                                    'Location',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 20),
-                                  ),
-                                  Text(
-                                    'Quetta, Pakistan',
-                                    style: TextStyle(
-                                        fontFamily: 'Syne', fontSize: 21),
-                                  )
-                                ],
+                              Padding(
+                                padding: EdgeInsets.all(20.0),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Name',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 20),
+                                    ),
+                                    Text(
+                                      'Muhammad Ammar',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 21),
+                                    ),
+                                    Text(
+                                      'Email',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 20),
+                                    ),
+                                    Text(
+                                      'syedammarzaki4@gmail.com',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 21),
+                                    ),
+                                    Text(
+                                      'Location',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 20),
+                                    ),
+                                    Text(
+                                      'Quetta, Pakistan',
+                                      style: TextStyle(
+                                          fontFamily: 'Syne', fontSize: 21),
+                                    )
+                                  ],
+                                ),
                               ),
                             ],
                           ),
                         ),
-                   Container(height: 55,
-                                      decoration: BoxDecoration(
-                                        gradient: const LinearGradient(
-                                          colors: [
-                                            Color.fromARGB(255, 241, 154, 202),
-                                            Color.fromARGB(255, 151, 111, 231)
-                                          ],
-                                          begin: Alignment.topLeft,
-                                          end: Alignment.bottomRight,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25.0),
-                                      ),
-                                      child: OutlinedButton(
-                                        style: OutlinedButton.styleFrom(
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                          ),
-                                          side: const BorderSide(
-                                              color: Colors.transparent),
-                                        ),
-                                        onPressed: () {},
-                                        child: const Text(
-                                          "Download CV",
-                                          style: TextStyle(fontFamily: 'Syne',
-                                            fontWeight: FontWeight.w700,
-                                            fontSize: 22,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ),
-                                    ),   
-                                    
-                                    
-
-                          Row(
-                            
-                            children: [Expanded(
-                              child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),border: Border.all(color: Colors.grey)),
-                                child:  Padding(
-                                  padding: const EdgeInsets.all(25.0),
-                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      const Text('Front End Development',style: TextStyle(fontFamily: 'Syne',fontSize: 22,fontWeight: FontWeight.w700),),
-                                     Image.network("https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"),
-                                                           
-                                                           
-                                                           
-                                    ],
-                                  ),
-                                ),),
-                            ),Expanded(
-                              child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),border: Border.all(color: Colors.grey)),
-                              
-                              child:  Padding(
-                                padding: const EdgeInsets.all(25.0),
-                                child: Column(crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    const Text('App Development ',style: TextStyle(fontFamily: 'Syne',fontSize: 22,fontWeight: FontWeight.w700),),
-                                    Image.network('https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp'),
-                                  ],
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            height: 45,
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [
+                                  Color.fromARGB(255, 241, 154, 202),
+                                  Color.fromARGB(255, 151, 111, 231)
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                              ),
+                              borderRadius: BorderRadius.circular(25.0),
+                            ),
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
-                              ),),
-                            )],)
-
-                                     ],
-                 
-                         
-                 
-                 
-                 
+                                side:
+                                    const BorderSide(color: Colors.transparent),
+                              ),
+                              onPressed: () {},
+                              child: const Text(
+                                "Download CV",
+                                style: TextStyle(
+                                  fontFamily: 'Syne',
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 22,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(25),
+                                      border: Border.all(color: Colors.grey)),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(25.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          'Front End Development',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        Row(
+                                          children: [
+                                            OutlinedButton(
+                                              onPressed: () {},
+                                              child: const Text(
+                                                'UI/UX Design',
+                                                style: TextStyle(
+                                                    fontFamily: 'Syne',
+                                                    fontSize: 12,
+                                                    fontWeight:
+                                                        FontWeight.w700),
+                                              ),
+                                            ),
+                                            OutlinedButton(
+                                                onPressed: () {},
+                                                child: const Text(
+                                                    'Design to code',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Syne',
+                                                        fontSize: 12,
+                                                        fontWeight:
+                                                            FontWeight.w700))),
+                                          ],
+                                        ),
+                                        const Text(
+                                          'I work with Flutter and Figma',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w500),
+                                        ),
+                                        Image.network(
+                                            "https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(25),
+                                      border: Border.all(color: Colors.grey)),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(25.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          'App Development ',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        Row(
+                                          children: [
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: const Icon(
+                                                  SimpleIcons.android),
+                                            ),
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: IconButton(
+                                                onPressed: () {},
+                                                icon:
+                                                    const Icon(SimpleIcons.ios),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        const Text(
+                                          'Highly Scalable and Visually appealing apps using Flutter and dart,',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w500),
+                                        ),
+                                        Image.network(
+                                            'https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp'),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(25),
+                                      border: Border.all(color: Colors.grey)),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(25.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          'Backend Development',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        Row(
+                                          children: [
+                                            OutlinedButton(
+                                              onPressed: () {},
+                                              child: const Text(
+                                                'Databases',
+                                                style: TextStyle(
+                                                    fontFamily: 'Syne',
+                                                    fontSize: 12,
+                                                    fontWeight:
+                                                        FontWeight.w700),
+                                              ),
+                                            ),
+                                            OutlinedButton(
+                                                onPressed: () {},
+                                                child: const Text('API',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Syne',
+                                                        fontSize: 12,
+                                                        fontWeight:
+                                                            FontWeight.w700))),
+                                            OutlinedButton(
+                                                onPressed: () {},
+                                                child: const Text('Servers',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Syne',
+                                                        fontSize: 12,
+                                                        fontWeight:
+                                                            FontWeight.w700)))
+                                          ],
+                                        ),
+                                        const Text(
+                                          '',
+                                          style: TextStyle(
+                                              fontFamily: 'Syne',
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w500),
+                                        ),
+                                        Image.asset(
+                                            "assets/images/backend.jpg"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),
-              
                 WidgetAnimator(
                     incomingEffect:
                         WidgetTransitionEffects.incomingSlideInFromLeft(),
                     child: Container(
-               color: Colors.red, height: Get.height * 0.07)),
-              
-                  Container(       color: const Color.fromARGB(96, 255, 82, 82),                                                                         // Resume Section 
+                        color: Colors.red, height: Get.height * 0.07)),
+                SizedBox(
                   key: resumesectionkey,
-                  height: 600,
+                  width: double.infinity, // Resume Section
                  
-                  child: const Center(
-                      child: Text('Resume Section',
-                          style: TextStyle(color: Colors.white))),
-                ),
-              
-              
-                SizedBox(          width:  double.infinity,                                                                       //  Services Section
-                  key: servicessectionkey,
-                  height: 600,
+
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.only(left: 60, top: 100, right: 60),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        OutlinedButton.icon(
+                          icon: const Icon(
+                            Icons.star_rate_rounded,
+                            size: 22,
+                          ),
+                          onPressed: () {},
+                          label: const Text(
+                            "Resume",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'Syne,',
+                                fontSize: 15),
+                          ),
+                        ),
+                        SizedBox(height: Get.height * 0.01),
+                        ShaderMask(
+                          shaderCallback: (bounds) => const LinearGradient(
+                            colors: [
+                              Color.fromARGB(255, 241, 154, 202),
+                              Color.fromARGB(255, 151, 111, 231)
+                            ], //
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ).createShader(bounds),
+                          child: const Text(
+                            "Education and Practical \nExperience",
+                            style: TextStyle(
+                              fontFamily: 'Syne',
+                              fontSize: 55,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(12.0),
+                          child: Text(
+                            "My Education",
+                            style: TextStyle(
+                                fontFamily: 'Syne',
+                                fontSize: 32,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2018 - 2020',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                'Fsc - Pre Engineering',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'Govt Boys Inter College',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Divider(color: Colors.grey, height: 2),
+                        const Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                '2020 - 2024',
+                                style:
+                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
+                              ),
+                              Text(
+                                "Bachelor's of Computer Science",
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                'Alhamd Islamic University',
+                                style: TextStyle(
+                                    fontFamily: 'Syne',
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+               
                 
-                  child: const Center(
-                      child: Text('services Section',
-                          style: TextStyle(color: Colors.white))),
+
+              
+                
+                      ],
+                    ),
+                  ),
                 ),
-             
-             
-             
             
+            
+                WidgetAnimator(
+                    incomingEffect:
+                        WidgetTransitionEffects.incomingSlideInFromLeft(),
+                    child: Container(
+                        color: Colors.red, height: Get.height * 0.07)),
+            
+                SizedBox(
+                  width: double.infinity,                                                        //  Contact Section
+                  key: contactsectionkey,
+              child:  Padding(
+                padding: const EdgeInsets.only(left: 60,top: 100),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  
+                  children: [
+OutlinedButton.icon(
+                          icon: const Icon(
+                            Icons.star_rate_rounded,
+                            size: 22,
+                          ),
+                          onPressed: () {},
+                          label: const Text(
+                            "Contact",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'Syne,',
+                                fontSize: 15),
+                          ),
+                        ),
+ SizedBox(height: Get.height * 0.01),
+                        ShaderMask(
+                          shaderCallback: (bounds) => const LinearGradient(
+                            colors: [
+                              Color.fromARGB(255, 241, 154, 202),
+                              Color.fromARGB(255, 151, 111, 231)
+                            ], //
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ).createShader(bounds),
+                          child: const Text(
+                            "Let's make something awesome together!",
+                            style: TextStyle(
+                              fontFamily: 'Syne',
+                              fontSize: 55,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+
+Container(
+              height: 35,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 241, 154, 202),
+                    Color.fromARGB(255, 151, 111, 231)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(25.0),
+              ),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  side: const BorderSide(color: Colors.transparent),
+                ),
+                onPressed: () {},
+                child: const Text(
+                  "Send Message",
+                  style: TextStyle(
+                    fontFamily: 'Syne',
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+
+
+                ],),
+              ),
+
+                
+                ),
               ],
             ),
           ),
