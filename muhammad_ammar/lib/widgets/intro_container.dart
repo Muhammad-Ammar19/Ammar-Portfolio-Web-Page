@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:simple_icons/simple_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 
@@ -71,7 +72,7 @@ class IntroContainer extends StatelessWidget {
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(
-                    SimpleIcons.facebook,
+                    SimpleIcons.twitter,
                   ),
                 ),
                 IconButton(
@@ -81,7 +82,8 @@ class IntroContainer extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {  const link = "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                                          launchUrl(Uri.parse(link),mode: LaunchMode.externalApplication);},
                   icon: const Icon(
                     SimpleIcons.linkedin,
                   ),

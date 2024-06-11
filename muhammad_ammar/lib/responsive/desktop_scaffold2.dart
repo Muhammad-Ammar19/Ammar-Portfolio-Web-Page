@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:simple_icons/simple_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:widget_and_text_animator/widget_and_text_animator.dart';
 
 class DesktopScaffold2 extends StatelessWidget {
@@ -63,96 +64,94 @@ class DesktopScaffold2 extends StatelessWidget {
         ],
         title: Padding(
           padding: const EdgeInsets.only(top: 50.0, left: 50),
-          child: Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  "ryze.",
-                  style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 30,
-                      fontFamily: 'Syne'),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "ryze.",
+                style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 30,
+                    fontFamily: 'Syne'),
+              ),
+              SizedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20),
+                      child: TextButton(
+                          onPressed: () {
+                            scrollToSection(homesectionkey);
+                          },
+                          child: const Text(
+                            "Home",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20),
+                      child: TextButton(
+                          onPressed: () {
+                            scrollToSection(contactsectionkey);
+                          },
+                          child: const Text(
+                            "Contact",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {
+                            scrollToSection(projectssectionkey);
+                          },
+                          child: const Text(
+                            "Projects",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {
+                            scrollToSection(resumesectionkey);
+                          },
+                          child: const Text(
+                            "Resume",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: TextButton(
+                          onPressed: () {
+                            scrollToSection(aboutsectionkey);
+                          },
+                          child: const Text(
+                            "About Me",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                fontFamily: 'Syne'),
+                          )),
+                    ),
+                  ],
                 ),
-                SizedBox(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20),
-                        child: TextButton(
-                            onPressed: () {
-                              scrollToSection(homesectionkey);
-                            },
-                            child: const Text(
-                              "Home",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  fontFamily: 'Syne'),
-                            )),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20),
-                        child: TextButton(
-                            onPressed: () {
-                              scrollToSection(contactsectionkey);
-                            },
-                            child: const Text(
-                              "Contact",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  fontFamily: 'Syne'),
-                            )),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                        child: TextButton(
-                            onPressed: () {
-                              scrollToSection(projectssectionkey);
-                            },
-                            child: const Text(
-                              "Projects",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  fontFamily: 'Syne'),
-                            )),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                        child: TextButton(
-                            onPressed: () {
-                              scrollToSection(resumesectionkey);
-                            },
-                            child: const Text(
-                              "Resume",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  fontFamily: 'Syne'),
-                            )),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                        child: TextButton(
-                            onPressed: () {
-                              scrollToSection(aboutsectionkey);
-                            },
-                            child: const Text(
-                              "About Me",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  fontFamily: 'Syne'),
-                            )),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
@@ -333,7 +332,12 @@ class DesktopScaffold2 extends StatelessWidget {
                                           icon:
                                               const Icon(SimpleIcons.twitter)),
                                       IconButton(
-                                          onPressed: () {},
+                                          onPressed: () {
+                                        const link = "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                                          launchUrl(Uri.parse(link),mode: LaunchMode.externalApplication);
+
+
+                                          },
                                           icon:
                                               const Icon(SimpleIcons.linkedin)),
                                       IconButton(
@@ -1356,7 +1360,7 @@ class DesktopScaffold2 extends StatelessWidget {
                   child: Center(
                     child: Text(
                       '2024 Made by Muhammad Ammar',
-                      style: TextStyle(color: Color.fromARGB(193, 158, 158, 158),
+                      style: TextStyle(
                           fontFamily: 'Syne',
                           fontWeight: FontWeight.w500,
                           fontSize: 18),
