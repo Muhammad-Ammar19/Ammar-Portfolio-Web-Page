@@ -40,7 +40,7 @@ class IntroContainer extends StatelessWidget {
             const Text(
               'Specialization:',
               style: TextStyle(
-                  color: Color.fromARGB(255, 78, 76, 76),
+                  color: Colors.grey,
                   fontSize: 16,
                   fontWeight: FontWeight.w700),
             ),
@@ -54,7 +54,7 @@ class IntroContainer extends StatelessWidget {
             SizedBox(height: Get.height * 0.015),
             const Text(
               'Based in:',
-              style: TextStyle(color: Color.fromARGB(255, 78, 76, 76),
+              style: TextStyle(    color: Colors.grey,
                   fontWeight:FontWeight.w700,
                   fontSize: 16,
                  ),
