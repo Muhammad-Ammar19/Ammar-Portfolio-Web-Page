@@ -27,7 +27,7 @@ class IntroContainer extends StatelessWidget {
             const Text(
               'Muhammad\nAmmar',
               style: TextStyle(
-                 
+                  fontFamily: 'Syne',
                   fontWeight: FontWeight.w700,
                   fontSize: 30),
             ),
@@ -40,14 +40,14 @@ class IntroContainer extends StatelessWidget {
             SizedBox(height: Get.height * 0.03),
             const Text(
               'Specialization:',
-              style: TextStyle(
+              style: TextStyle(                  fontFamily: 'Syne',
                   color: Colors.grey,
                   fontSize: 16,
                   fontWeight: FontWeight.w700),
             ),
             const Text(
               'Full Stack Web \nand App Developer',
-              style: TextStyle(
+              style: TextStyle(                  fontFamily: 'Syne',
                 fontWeight: FontWeight.w700,
                 fontSize: 17,
               ),
@@ -55,14 +55,14 @@ class IntroContainer extends StatelessWidget {
             SizedBox(height: Get.height * 0.015),
             const Text(
               'Based in:',
-              style: TextStyle(    color: Colors.grey,
+              style: TextStyle(    color: Colors.grey,                  fontFamily: 'Syne',
                   fontWeight:FontWeight.w700,
                   fontSize: 16,
                  ),
             ),
             const Text('Quetta, Pakistan',
                 style: TextStyle(
-                 fontWeight: FontWeight.w700,
+                 fontWeight: FontWeight.w700,                  fontFamily: 'Syne',
                   fontSize: 17,
                 )),
             SizedBox(height: Get.height * 0.01),
@@ -122,7 +122,7 @@ class IntroContainer extends StatelessWidget {
                   onPressed: () {},
                   child: const Text(
                     "Let's Work Together!",
-                    style: TextStyle(
+                    style: TextStyle(                  fontFamily: 'Syne',
                       fontWeight: FontWeight.w700,
                       fontSize: 18,
                       color: Colors.white,

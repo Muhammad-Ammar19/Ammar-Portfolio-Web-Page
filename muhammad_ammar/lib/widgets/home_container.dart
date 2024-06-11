@@ -65,8 +65,8 @@ class HomeContainer extends StatelessWidget {
                 ),
                 label: const Text(
                   "My Works",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(fontFamily: 'Syne',
+                      fontWeight: FontWeight.w700, fontSize: 15),
                 ),
               ),
               Padding(
@@ -79,8 +79,8 @@ class HomeContainer extends StatelessWidget {
                   ),
                   label: const Text(
                     "Download CV",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                    style: TextStyle(fontFamily: 'Syne',
+                        fontWeight: FontWeight.w700,
                         fontSize: 15),
                   ),
                 ),

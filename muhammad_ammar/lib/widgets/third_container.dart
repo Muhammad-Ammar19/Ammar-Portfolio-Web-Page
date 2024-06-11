@@ -17,7 +17,7 @@ class ThirdContainer extends StatelessWidget {
           ),
           label: const Text(
             "Portfolio",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne'),
           ),
         ),
         SizedBox(height: Get.height * 0.01),
@@ -32,7 +32,7 @@ class ThirdContainer extends StatelessWidget {
           ).createShader(bounds),
           child: const Text(
             "Checkout My Featured Projects.",
-            style: TextStyle(
+            style: TextStyle(fontFamily: 'Syne',
               fontSize: 32,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -42,7 +42,7 @@ class ThirdContainer extends StatelessWidget {
         SizedBox(height: Get.height * 0.01),
         const Text(
           'Deeptune - Music Player',
-          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26),
+          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26,fontFamily: 'Syne'),
         ),
         SizedBox(height: Get.height * 0.02),
         Row(

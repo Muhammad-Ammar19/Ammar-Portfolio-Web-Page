@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:muhammad_ammar/widgets/fourth_container.dart';
 import 'package:muhammad_ammar/widgets/intro_container.dart';
 import 'package:muhammad_ammar/widgets/second_container.dart';
 import 'package:muhammad_ammar/widgets/third_container.dart';
@@ -21,7 +22,7 @@ class MobileScaffold extends StatelessWidget {
           ),
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -39,6 +40,13 @@ class MobileScaffold extends StatelessWidget {
                   ),
 
                   const ThirdContainer(), // Third Container
+            
+               SizedBox(
+                    height: Get.height * 0.06,
+                  ),
+            
+               const FourthContainer(),
+
                 ],
               ),
             ),

@@ -16,7 +16,7 @@ class SecondContainer extends StatelessWidget {
             onPressed: () {},
             label: const Text(
               "Let's Meet!",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne'),
             )),
         SizedBox(height: Get.height * 0.01),
         ShaderMask(
