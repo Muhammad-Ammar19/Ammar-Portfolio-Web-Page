@@ -1356,7 +1356,7 @@ class DesktopScaffold2 extends StatelessWidget {
                   child: Center(
                     child: Text(
                       '2024 Made by Muhammad Ammar',
-                      style: TextStyle(
+                      style: TextStyle(color: Color.fromARGB(193, 158, 158, 158),
                           fontFamily: 'Syne',
                           fontWeight: FontWeight.w500,
                           fontSize: 18),
