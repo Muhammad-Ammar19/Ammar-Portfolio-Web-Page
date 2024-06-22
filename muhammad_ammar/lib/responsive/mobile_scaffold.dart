@@ -4,13 +4,29 @@ import 'package:muhammad_ammar/widgets/eighth_container.dart';
 import 'package:muhammad_ammar/widgets/fifth_container.dart';
 import 'package:muhammad_ammar/widgets/fourth_container.dart';
 import 'package:muhammad_ammar/widgets/intro_container.dart';
+import 'package:muhammad_ammar/widgets/nineth_container.dart';
 import 'package:muhammad_ammar/widgets/second_container.dart';
 import 'package:muhammad_ammar/widgets/seventh_container.dart';
 import 'package:muhammad_ammar/widgets/sixth_container.dart';
 import 'package:muhammad_ammar/widgets/third_container.dart';
 
+
 class MobileScaffold extends StatelessWidget {
-  const MobileScaffold({super.key});
+   MobileScaffold({super.key});
+
+ final homesectionkey = GlobalKey();
+  final projectssectionkey = GlobalKey();
+  final contactsectionkey = GlobalKey();
+  final aboutsectionkey = GlobalKey();
+  final resumesectionkey = GlobalKey();
+
+  void scrollToSection(GlobalKey key) {
+    Scrollable.ensureVisible(key.currentContext!,
+        duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+  }
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +48,7 @@ class MobileScaffold extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const IntroContainer(), //  Intro container
+                   const IntroContainer(), //  Intro container
 
                   SizedBox(
                     height: Get.height * 0.06,
@@ -63,10 +79,14 @@ class MobileScaffold extends StatelessWidget {
                     height: Get.height * 0.02,
                   ),
                   const SeventhContainer(),
-                   SizedBox(
+                  SizedBox(
                     height: Get.height * 0.06,
                   ),
-                const EighthContainer(),
+                  const EighthContainer(),
+                  SizedBox(
+                    height: Get.height * 0.06,
+                  ),
+                  const NinethContainer(),
                 ],
               ),
             ),

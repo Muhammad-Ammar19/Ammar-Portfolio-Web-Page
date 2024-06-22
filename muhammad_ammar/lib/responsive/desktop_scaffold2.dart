@@ -169,7 +169,7 @@ class DesktopScaffold2 extends StatelessWidget {
                 Container(
                     key: homesectionkey, // Home Section
 
-                    //   color: const Color.fromARGB(132, 33, 149, 243),
+                   
                     child: WidgetAnimator(
                       incomingEffect:
                           WidgetTransitionEffects.incomingSlideInFromLeft(
@@ -650,7 +650,7 @@ class DesktopScaffold2 extends StatelessWidget {
                             children: [
                               Expanded(
                                   child: Text(
-                                "I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? I almost think I can remember feeling a little different. But if I'm not the same, the next question is 'Who in the world am I?' Ah, that's the great puzzle!like it put more simply - never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.",
+                                "A passionate and dedicated full stack developer. With a strong foundation in both front-end and back-end technologies. \nI specialize in creating dynamic, user-friendly applications and websites. My expertise includes Flutter, Firebase, Hive, MYSQL  and I thrive on bringing innovative ideas to life through clean, efficient code. Whether working on a complex web application or a sleek mobile app, my goal is to deliver exceptional digital experiences that meet and exceed client expectations.",
                                 style: TextStyle(
                                     fontFamily: 'Syne',
                                     fontSize: 24,
@@ -1362,8 +1362,8 @@ class DesktopScaffold2 extends StatelessWidget {
                       '2024 Made by Muhammad Ammar',
                       style: TextStyle(
                           fontFamily: 'Syne',
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 18,color: Colors.grey),
                     ),
                   ),
                 )

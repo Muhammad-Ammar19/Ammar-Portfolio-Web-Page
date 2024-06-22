@@ -57,7 +57,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2018 - 2020',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 'Fsc - Pre Engineering',
@@ -84,7 +84,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2020 - 2024',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Bachelor's of Computer Science",
@@ -104,7 +104,7 @@ class EighthContainer extends StatelessWidget {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: EdgeInsets.only(top: 25,bottom: 10),
           child: Text(
             "Certifications",
             style: TextStyle(
@@ -119,7 +119,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2023',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Blockchain Specialization",
@@ -146,7 +146,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2023',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Foundations of User Experience (UX) Design",
@@ -173,7 +173,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2023 - 2024',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Google IT Support Professional Certificate",
@@ -200,7 +200,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2023 - 2024',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Google IT Support Professional Certificate",
@@ -227,7 +227,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 '2024',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Introducation to MongoDB",
@@ -254,7 +254,7 @@ class EighthContainer extends StatelessWidget {
             children: [
               Text(
                 ' 2024',
-                style: TextStyle(fontFamily: 'Syne', fontSize: 18),
+                style: TextStyle(fontFamily: 'Syne', fontSize: 18,color: Colors.grey),
               ),
               Text(
                 "Advance Python Programming and Applications",

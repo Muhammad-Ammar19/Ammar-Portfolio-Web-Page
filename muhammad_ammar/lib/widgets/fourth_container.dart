@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FourthContainer extends StatelessWidget {
   const FourthContainer({super.key});
@@ -15,7 +16,7 @@ class FourthContainer extends StatelessWidget {
         ),
         label: const Text(
           "About Me",
-          style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne'),
+          style: TextStyle(fontWeight: FontWeight.w700, fontFamily: 'Syne'),
         ),
       ),
       SizedBox(height: Get.height * 0.01),
@@ -130,63 +131,61 @@ class FourthContainer extends StatelessWidget {
                   ),
                 ],
               ),
-               Padding(
+              Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Column(
                   children: [
                     const Text(
                       "A passionate and dedicated full stack developer. With a strong foundation in both front-end and back-end technologies. \nI specialize in creating dynamic, user-friendly applications and websites. My expertise includes Flutter, Firebase, Hive, MYSQL  and I thrive on bringing innovative ideas to life through clean, efficient code. Whether working on a complex web application or a sleek mobile app, my goal is to deliver exceptional digital experiences that meet and exceed client expectations.",
-
-
                       style: TextStyle(
-                          fontFamily: 'Syne', fontWeight: FontWeight.w400,fontSize: 20),
+                          fontFamily: 'Syne',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20),
                     ),
-                                 
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(width: double.infinity,
-                                  height: 44,
-                                  decoration: BoxDecoration(
-                                    gradient: const LinearGradient(
-                    colors: [
-                      Color.fromARGB(255, 241, 154, 202),
-                      Color.fromARGB(255, 151, 111, 231)
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                                    ),
-                                    borderRadius: BorderRadius.circular(25.0),
-                                  ),
-                                  child: OutlinedButton(
-                                    style: OutlinedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8.0),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 44,
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [
+                              Color.fromARGB(255, 241, 154, 202),
+                              Color.fromARGB(255, 151, 111, 231)
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
+                          borderRadius: BorderRadius.circular(25.0),
+                        ),
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            side: const BorderSide(color: Colors.transparent),
+                          ),
+                          onPressed: () {
+                            const link =
+                                "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
+                          child: const Text(
+                            "Download CV",
+                            style: TextStyle(
+                              fontFamily: 'Syne',
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    side: const BorderSide(color: Colors.transparent),
-                                    ),
-                                    onPressed: () {},
-                                    child: const Text(
-                    "Download CV",
-                    style: TextStyle(
-                      fontFamily: 'Syne',
-                      fontWeight: FontWeight.w700,
-                      fontSize: 17,
-                      color: Colors.white,
-                    ),
-                                    ),
-                                  ),
-                                ),
-                  ),
-                                 
-                 
-                  
-             
                   ],
                 ),
               ),
-            
- 
-            
             ],
           ),
         ),

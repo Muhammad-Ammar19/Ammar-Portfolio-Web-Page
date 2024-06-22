@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         
       ),
       home:  ResponsiveLayout(
-        mobileScaffold: const MobileScaffold(),
+        mobileScaffold:  MobileScaffold(),
         tabletScaffold: const TabletScaffold(),
         desktopScaffold: DesktopScaffold2(),
       ),
