@@ -66,7 +66,7 @@ class HomeContainer extends StatelessWidget {
                 label: const Text(
                   "My Works",
                   style: TextStyle(fontFamily: 'Syne',
-                      fontWeight: FontWeight.w700, fontSize: 15),
+                      fontWeight: FontWeight.w700, fontSize: 18),
                 ),
               ),
               Padding(

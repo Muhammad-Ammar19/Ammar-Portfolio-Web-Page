@@ -74,7 +74,7 @@ class SecondContainer extends StatelessWidget {
             SizedBox(width: 5),
             Text(
               "My Works",
-              style: TextStyle(
+              style: TextStyle(fontFamily: 'Syne',
                 fontWeight: FontWeight.w700,
                 fontSize: 18,
                 color: Colors.white,
@@ -99,7 +99,7 @@ Center(
       ),
       label: const Text(
         "Download CV",
-        style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),
+        style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,fontFamily: 'Syne'),
       ),
     ),
   ),

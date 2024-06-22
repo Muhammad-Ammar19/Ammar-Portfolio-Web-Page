@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:muhammad_ammar/widgets/fifth_container.dart';
 import 'package:muhammad_ammar/widgets/fourth_container.dart';
 import 'package:muhammad_ammar/widgets/intro_container.dart';
 import 'package:muhammad_ammar/widgets/second_container.dart';
@@ -20,7 +21,7 @@ class MobileScaffold extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          SingleChildScrollView(
+          SingleChildScrollView(physics: const BouncingScrollPhysics(),
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -46,7 +47,11 @@ class MobileScaffold extends StatelessWidget {
                   ),
             
                const FourthContainer(),
-
+  SizedBox(
+                    height: Get.height * 0.06,
+                  ),
+             const FifthContainer()
+           
                 ],
               ),
             ),
