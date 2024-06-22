@@ -902,7 +902,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                               fontWeight: FontWeight.w500),
                                         ),
                                         Image.asset(
-                                            "assets/images/backend.jpg"),
+                                            "assets/images/backend.png"),
                                       ],
                                     ),
                                   ),

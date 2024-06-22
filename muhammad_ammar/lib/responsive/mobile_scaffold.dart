@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:muhammad_ammar/widgets/eighth_container.dart';
 import 'package:muhammad_ammar/widgets/fifth_container.dart';
 import 'package:muhammad_ammar/widgets/fourth_container.dart';
 import 'package:muhammad_ammar/widgets/intro_container.dart';
 import 'package:muhammad_ammar/widgets/second_container.dart';
+import 'package:muhammad_ammar/widgets/seventh_container.dart';
+import 'package:muhammad_ammar/widgets/sixth_container.dart';
 import 'package:muhammad_ammar/widgets/third_container.dart';
 
 class MobileScaffold extends StatelessWidget {
@@ -21,7 +24,8 @@ class MobileScaffold extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          SingleChildScrollView(physics: const BouncingScrollPhysics(),
+          SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -41,17 +45,28 @@ class MobileScaffold extends StatelessWidget {
                   ),
 
                   const ThirdContainer(), // Third Container
-            
-               SizedBox(
+
+                  SizedBox(
                     height: Get.height * 0.06,
                   ),
-            
-               const FourthContainer(),
-  SizedBox(
+
+                  const FourthContainer(),
+                  SizedBox(
                     height: Get.height * 0.06,
                   ),
-             const FifthContainer()
-           
+                  const FifthContainer(),
+                  SizedBox(
+                    height: Get.height * 0.02,
+                  ),
+                  const SixthContainer(),
+                  SizedBox(
+                    height: Get.height * 0.02,
+                  ),
+                  const SeventhContainer(),
+                   SizedBox(
+                    height: Get.height * 0.06,
+                  ),
+                const EighthContainer(),
                 ],
               ),
             ),

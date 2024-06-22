@@ -22,29 +22,35 @@ class FifthContainer extends StatelessWidget {
                                               fontSize: 22,
                                               fontWeight: FontWeight.w700),
                                         ),
-                                        Row(
-                                          children: [
-                                            OutlinedButton(
-                                              onPressed: () {},
-                                              child: const Text(
-                                                'UI/UX Design',
-                                                style: TextStyle(
-                                                    fontFamily: 'Syne',
-                                                    fontSize: 11,
-                                                    fontWeight:
-                                                        FontWeight.w700),
-                                              ),
-                                            ),
-                                            OutlinedButton(
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 10,bottom: 10),
+                                          child: Row(
+                                            children: [
+                                              OutlinedButton(
                                                 onPressed: () {},
                                                 child: const Text(
-                                                    'Design to code',
-                                                    style: TextStyle(
-                                                        fontFamily: 'Syne',
-                                                        fontSize: 11,
-                                                        fontWeight:
-                                                            FontWeight.w700))),
-                                          ],
+                                                  'UI/UX Design',
+                                                  style: TextStyle(
+                                                      fontFamily: 'Syne',
+                                                      fontSize: 11,
+                                                      fontWeight:
+                                                          FontWeight.w700),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(left: 8),
+                                                child: OutlinedButton(
+                                                    onPressed: () {},
+                                                    child: const Text(
+                                                        'Design to code',
+                                                        style: TextStyle(
+                                                            fontFamily: 'Syne',
+                                                            fontSize: 11,
+                                                            fontWeight:
+                                                                FontWeight.w700))),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         const Text(
                                           'I work with Flutter and Figma',
