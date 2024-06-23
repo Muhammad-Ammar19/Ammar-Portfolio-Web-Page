@@ -27,7 +27,7 @@ class DesktopScaffold2 extends StatelessWidget {
         elevation: 20,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(top: 50),
+            padding: const EdgeInsets.only(top: 50,right: 10),
             child: Container(
               height: 35,
               decoration: BoxDecoration(
@@ -86,7 +86,7 @@ class DesktopScaffold2 extends StatelessWidget {
                           },
                           child: const Text(
                             "Home",
-                            style: TextStyle( color: Color.fromARGB(160, 255, 255, 255),
+                            style: TextStyle( 
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
                                 fontFamily: 'Syne'),
@@ -229,7 +229,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                               Icons.grid_view_rounded,
                                               size: 25,
                                             ),
-                                            onPressed: () {},
+                                            onPressed: () {scrollToSection(projectssectionkey);},
                                             label: const Text(
                                               "My Works",
                                               style: TextStyle(
@@ -553,7 +553,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                   Column(
                                     children: [
                                       const Text(
-                                        '40+',
+                                        '10+',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w700,
                                             fontFamily: 'Syne',
@@ -584,7 +584,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                   Column(
                                     children: [
                                       const Text(
-                                        '2+',
+                                        '1.5+',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w700,
                                             fontFamily: 'Syne',
@@ -615,7 +615,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                   Column(
                                     children: [
                                       const Text(
-                                        '12+',
+                                        '8+',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w700,
                                             fontFamily: 'Syne',
@@ -674,7 +674,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                     ),
                                     Text(
                                       'Muhammad Ammar',
-                                      style: TextStyle(
+                                      style: TextStyle(fontWeight: FontWeight.w700,
                                           fontFamily: 'Syne', fontSize: 21),
                                     ),
                                     Text(
@@ -684,7 +684,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                     ),
                                     Text(
                                       'syedammarzaki4@gmail.com',
-                                      style: TextStyle(
+                                      style: TextStyle(fontWeight: FontWeight.w700,
                                           fontFamily: 'Syne', fontSize: 21),
                                     ),
                                     Text(
@@ -694,7 +694,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                     ),
                                     Text(
                                       'Quetta, Pakistan',
-                                      style: TextStyle(
+                                      style: TextStyle(fontWeight: FontWeight.w700,
                                           fontFamily: 'Syne', fontSize: 21),
                                     )
                                   ],
