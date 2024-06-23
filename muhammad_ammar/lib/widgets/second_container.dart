@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SecondContainer extends StatelessWidget {
   const SecondContainer({
@@ -93,7 +94,10 @@ Center(
     height: Get.height *0.055, // Adjust the height as needed
     width: double.infinity, // Makes the button wide
     child: OutlinedButton.icon(
-      onPressed: () {},
+      onPressed: () {   const link =
+                                "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);        },
       icon: const Icon(
         Icons.download,
       ),

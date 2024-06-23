@@ -46,7 +46,7 @@ class FourthContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               const Text(
-                '40+',
+                '10+',
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontFamily: 'Syne',
@@ -74,7 +74,7 @@ class FourthContainer extends StatelessWidget {
               Column(
                 children: [
                   const Text(
-                    '2+',
+                    '1.5+',
                     style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Syne',
@@ -104,7 +104,7 @@ class FourthContainer extends StatelessWidget {
               Column(
                 children: [
                   const Text(
-                    '12+',
+                    '8+',
                     style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Syne',
