@@ -245,9 +245,13 @@ class DesktopScaffold2 extends StatelessWidget {
                                           child: OutlinedButton.icon(
                                               icon: const Icon(
                                                 Icons.download_rounded,
-                                                size: 30,
+                                                size: 25,
                                               ),
-                                              onPressed: () {},
+                                              onPressed: () {  const link =
+                                "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
                                               label: const Text(
                                                 "Download CV",
                                                 style: TextStyle(
@@ -722,7 +726,11 @@ class DesktopScaffold2 extends StatelessWidget {
                                 side:
                                     const BorderSide(color: Colors.transparent),
                               ),
-                              onPressed: () {},
+                              onPressed: () {  const link =
+                                "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                        },
                               child: const Text(
                                 "Download CV",
                                 style: TextStyle(
