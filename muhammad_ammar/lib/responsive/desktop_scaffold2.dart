@@ -478,7 +478,7 @@ class DesktopScaffold2 extends StatelessWidget {
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(20),
                                       child: Image.asset(
-                                        'assets/images/5s,7,8Preview4.png',
+                                        'assets/images/5s,7,8Preview3.png',
                                         height: Get.height * 0.55,
                                       ))),
                               Flexible(
