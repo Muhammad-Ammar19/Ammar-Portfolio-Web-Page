@@ -42,8 +42,8 @@ class SecondContainer extends StatelessWidget {
         SizedBox(height: Get.height * 0.02),
         Center(
           child: SizedBox(
-            height: Get.height * 0.055,
-            child: Container(
+           
+            child: Container( height: Get.height * 0.055,
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   colors: [
