@@ -39,7 +39,7 @@ class MobileScaffold extends StatelessWidget {
             ),
           ),
           SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
+          
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
