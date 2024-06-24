@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SeventhContainer extends StatelessWidget {
-  const SeventhContainer({super.key});
-
+  const SeventhContainer(GlobalKey<State<StatefulWidget>> globalKey, {super.key});
+ 
   @override
   Widget build(BuildContext context) {
     return Container(

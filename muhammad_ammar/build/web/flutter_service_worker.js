@@ -19,7 +19,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "ef7cefd1134d6415ec64ad9eae67a152
 "assets/assets/images/backend.png": "4e81628587320a40dfd3a810cfdc225e",
 "assets/assets/images/muhammad-ammar.png": "4b51e288b73eb8b136b7d11508c3267c",
 "assets/FontManifest.json": "681c8ae1006d10eedf268a37cb0d0348",
-"assets/fonts/MaterialIcons-Regular.otf": "ca59bab8c724d3f3a8ddd824b5354df2",
+"assets/fonts/MaterialIcons-Regular.otf": "48fcf24a3177668bb9c1079f7ed2dd08",
 "assets/NOTICES": "e1962be75855cd38d8ccb762556a9409",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "e986ebe42ef785b27164c36a9abc7818",
 "assets/packages/simple_icons/fonts/SimpleIcons.ttf": "36006a2aee699bab11e4562e9bd81963",
@@ -42,10 +42,10 @@ const RESOURCES = {"assets/AssetManifest.bin": "ef7cefd1134d6415ec64ad9eae67a152
 "favicon_io/favicon-32x32.png": "a359635323b9e0edf5b30fb3c85c207f",
 "favicon_io/site.webmanifest": "053100cb84a50d2ae7f5492f7dd7f25e",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
-"flutter_bootstrap.js": "a8a7c3a043717e283a4d0977c7de7cf0",
+"flutter_bootstrap.js": "15dc20fdda04d532419062c9b2e84092",
 "index.html": "4c4d755a411a85f693fee330d3964049",
 "/": "4c4d755a411a85f693fee330d3964049",
-"main.dart.js": "9c500dbfd0bdb14c283f5399345d8297",
+"main.dart.js": "18445c8a86f906319d79043b45472319",
 "manifest.json": "e65ff52af0a583c4a4c6e2a5fdd5dec5",
 "version.json": "bcdcb627e618b231d9d83a2ae5b89ea2"};
 // The application shell files that are downloaded before a service worker can

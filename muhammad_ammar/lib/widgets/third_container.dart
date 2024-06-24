@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 class ThirdContainer extends StatelessWidget {
   const ThirdContainer({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -32,7 +32,7 @@ class MobileScaffold extends StatelessWidget {
     const FourthContainer(),
     const FifthContainer(),
     const SixthContainer(),
-    SeventhContainer(key: GlobalKey()),
+    SeventhContainer( GlobalKey(),),
     const EighthContainer(),
     NinethContainer(key: GlobalKey()),
   ];
