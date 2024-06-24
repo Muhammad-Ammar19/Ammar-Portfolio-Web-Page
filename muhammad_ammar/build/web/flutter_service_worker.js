@@ -42,7 +42,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "ef7cefd1134d6415ec64ad9eae67a152
 "favicon_io/favicon-32x32.png": "a359635323b9e0edf5b30fb3c85c207f",
 "favicon_io/site.webmanifest": "053100cb84a50d2ae7f5492f7dd7f25e",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
-"flutter_bootstrap.js": "4e734afeec3e55ac03bf94f6a179d463",
+"flutter_bootstrap.js": "a8a7c3a043717e283a4d0977c7de7cf0",
 "index.html": "4c4d755a411a85f693fee330d3964049",
 "/": "4c4d755a411a85f693fee330d3964049",
 "main.dart.js": "9c500dbfd0bdb14c283f5399345d8297",
