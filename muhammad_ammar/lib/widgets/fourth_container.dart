@@ -16,7 +16,7 @@ class FourthContainer extends StatelessWidget {
         ),
         label: const Text(
           "About Me",
-          style: TextStyle(fontWeight: FontWeight.w700, fontFamily: 'Syne'),
+          style: TextStyle(fontWeight: FontWeight.w700, fontFamily: 'Syne',fontSize: 10),
         ),
       ),
       SizedBox(height: Get.height * 0.01),
