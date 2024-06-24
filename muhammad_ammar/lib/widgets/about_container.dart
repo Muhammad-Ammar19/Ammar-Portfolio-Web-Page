@@ -27,7 +27,7 @@ class AboutContainer extends StatelessWidget {
               ),
               label: const Text(
                 "About Me",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne',fontSize: 10),
               ),
             ),
             ShaderMask(

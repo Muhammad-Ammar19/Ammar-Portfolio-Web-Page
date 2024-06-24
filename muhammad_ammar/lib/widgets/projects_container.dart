@@ -26,11 +26,11 @@ class ProjectsContainer extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.star_rounded,
-                  size: 22,
+                  size: 18,
                 ),
                 label: const Text(
                   "Portfolio",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ),
               ShaderMask(

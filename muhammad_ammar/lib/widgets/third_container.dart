@@ -17,10 +17,10 @@ class ThirdContainer extends StatelessWidget {
           ),
           label: const Text(
             "Portfolio",
-            style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne'),
+            style: TextStyle(fontWeight: FontWeight.w700,fontFamily: 'Syne',fontSize: 10),
           ),
         ),
-        SizedBox(height: Get.height * 0.01),
+       
         ShaderMask(
           shaderCallback: (bounds) => const LinearGradient(
             colors: [

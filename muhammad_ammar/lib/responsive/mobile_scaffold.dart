@@ -11,7 +11,6 @@ import 'package:muhammad_ammar/widgets/seventh_container.dart';
 import 'package:muhammad_ammar/widgets/sixth_container.dart';
 import 'package:muhammad_ammar/widgets/third_container.dart';
 
-
 class MobileScaffold extends StatelessWidget {
   MobileScaffold({super.key});
 
@@ -26,6 +25,18 @@ class MobileScaffold extends StatelessWidget {
         duration: const Duration(seconds: 1), curve: Curves.easeInOut);
   }
 
+  final List<Widget> sections = [
+    const IntroContainer(),
+    const SecondContainer(),
+    ThirdContainer(key: GlobalKey()),
+    const FourthContainer(),
+    const FifthContainer(),
+    const SixthContainer(),
+    SeventhContainer(key: GlobalKey()),
+    const EighthContainer(),
+    NinethContainer(key: GlobalKey()),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,67 +49,28 @@ class MobileScaffold extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          SingleChildScrollView(
-          
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  IntroContainer(key: homesectionkey), // Intro container
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  const SecondContainer(), // Second Container
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                   ThirdContainer(  key: projectssectionkey,), // Third Container
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  const FourthContainer(
-                  
-                  ),
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  const FifthContainer(),
-                  SizedBox(
-                    height: Get.height * 0.02,
-                  ),
-                 const SixthContainer(),
-                  SizedBox(
-                    height: Get.height * 0.02,
-                  ),
-                 SeventhContainer(key: resumesectionkey,),
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  const EighthContainer(),
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  NinethContainer(
-                    key: contactsectionkey,
-                  ),
-                ],
-              ),
-            ),
+          ListView.builder(
+            padding: const EdgeInsets.all(20.0),
+            itemCount: sections.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: EdgeInsets.only(bottom: Get.height * 0.06),
+                child: sections[index],
+              );
+            },
           ),
         ],
       ),
-      bottomNavigationBar: CrystalNavigationBar(splashColor: const Color.fromARGB(57, 206, 137, 247),
+      bottomNavigationBar: CrystalNavigationBar(
+        splashColor: const Color.fromARGB(57, 206, 137, 247),
         backgroundColor: Colors.transparent,
         enableFloatingNavBar: true,
         enablePaddingAnimation: true,
-   
         items: [
-          CrystalNavigationBarItem(icon: Icons.home,  selectedColor: const Color.fromARGB(213, 231, 166, 243),),
-          CrystalNavigationBarItem(icon: Icons.work_outline_rounded,  selectedColor: const Color.fromARGB(213, 231, 166, 243)),
-          CrystalNavigationBarItem(icon: Icons.email_outlined,  selectedColor: const Color.fromARGB(213, 231, 166, 243)),
-         CrystalNavigationBarItem(icon: Icons.app_registration_rounded,  selectedColor: const Color.fromARGB(213, 231, 166, 243)),
+          CrystalNavigationBarItem(icon: Icons.home, selectedColor: const Color.fromARGB(213, 231, 166, 243)),
+          CrystalNavigationBarItem(icon: Icons.work_outline_rounded, selectedColor: const Color.fromARGB(213, 231, 166, 243)),
+          CrystalNavigationBarItem(icon: Icons.email_outlined, selectedColor: const Color.fromARGB(213, 231, 166, 243)),
+          CrystalNavigationBarItem(icon: Icons.app_registration_rounded, selectedColor: const Color.fromARGB(213, 231, 166, 243)),
         ],
         onTap: (index) {
           switch (index) {

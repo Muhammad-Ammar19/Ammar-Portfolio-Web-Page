@@ -13,11 +13,11 @@ class SecondContainer extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        OutlinedButton.icon(
+        OutlinedButton.icon(icon: const Icon(Icons.star_rate_rounded,size: 18,),
             onPressed: () {},
             label: const Text(
               "Let's Meet!",
-              style: TextStyle(fontWeight: FontWeight.w700, fontFamily: 'Syne'),
+              style: TextStyle(fontWeight: FontWeight.w700, fontFamily: 'Syne',fontSize: 10),
             )),
         SizedBox(height: Get.height * 0.01),
         ShaderMask(
@@ -30,7 +30,7 @@ class SecondContainer extends StatelessWidget {
             end: Alignment.centerRight,
           ).createShader(bounds),
           child: const Text(
-            "I'm Muhammad Ammar \nFull Stack Web and App Developer.",
+            "I'm Muhammad Ammar Full Stack Web and App Developer.",
             style: TextStyle(
               fontFamily: 'Syne',
               fontSize: 35,
@@ -39,50 +39,53 @@ class SecondContainer extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: Get.height * 0.02),
-        Center(
-          child: SizedBox(
-           
-            child: Container( height: Get.height * 0.055,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 241, 154, 202),
-                    Color.fromARGB(255, 151, 111, 231)
-                  ], //
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(25.0),
-              ),
-              child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50.0),
+      
+        Padding(
+          padding: const EdgeInsets.only(top: 10.0),
+          child: Center(
+            child: SizedBox(
+              height: Get.height * 0.055,width: double.infinity,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [
+                      Color.fromARGB(255, 241, 154, 202),
+                      Color.fromARGB(255, 151, 111, 231)
+                    ], //
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
                   ),
-                  side: const BorderSide(color: Colors.transparent),
-                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  borderRadius: BorderRadius.circular(25.0),
                 ),
-                onPressed: () {},
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.work,
-                      color: Colors.white,
-                      size: 18,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50.0),
                     ),
-                    SizedBox(width: 5),
-                    Text(
-                      "My Works",
-                      style: TextStyle(
-                        fontFamily: 'Syne',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 18,
+                    side: const BorderSide(color: Colors.transparent),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  onPressed: () {},
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.work,
                         color: Colors.white,
+                        size: 18,
                       ),
-                    ),
-                  ],
+                     
+                      Text(
+                        "My Works",
+                        style: TextStyle(
+                          fontFamily: 'Syne',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

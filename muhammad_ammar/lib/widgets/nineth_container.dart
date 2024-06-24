@@ -12,13 +12,13 @@ class NinethContainer extends StatelessWidget {
         OutlinedButton.icon(
           icon: const Icon(
             Icons.star_rate_rounded,
-            size: 22,
+            size: 18,
           ),
           onPressed: () {},
           label: const Text(
             "Contact",
             style: TextStyle(
-                fontWeight: FontWeight.w700, fontFamily: 'Syne,', fontSize: 15),
+                fontWeight: FontWeight.w700, fontFamily: 'Syne,', fontSize: 10),
           ),
         ),
         SizedBox(height: Get.height * 0.01),
