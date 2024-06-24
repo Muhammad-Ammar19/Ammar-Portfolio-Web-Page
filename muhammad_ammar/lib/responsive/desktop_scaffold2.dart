@@ -796,8 +796,29 @@ class DesktopScaffold2 extends StatelessWidget {
                                               fontSize: 20,
                                               fontWeight: FontWeight.w500),
                                         ),
-                                        Image.network(
-                                            "https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"),
+                                       Image.network(
+                  'https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp',
+                  loadingBuilder: (BuildContext context, Widget child,
+                      ImageChunkEvent? loadingProgress) {
+                    if (loadingProgress == null) {
+                      return child;
+                    }
+                    return Center(
+                      child: CircularProgressIndicator(
+                        value: loadingProgress.expectedTotalBytes != null
+                            ? loadingProgress.cumulativeBytesLoaded /
+                                (loadingProgress.expectedTotalBytes ?? 1)
+                            : null,
+                      ),
+                    );
+                  },
+                  errorBuilder: (BuildContext context, Object error,
+                      StackTrace? stackTrace) {
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  },
+                ),
                                       ],
                                     ),
                                   ),
@@ -847,7 +868,25 @@ class DesktopScaffold2 extends StatelessWidget {
                                               fontWeight: FontWeight.w500),
                                         ),
                                         Image.network(
-                                            'https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp'),
+              'https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp',
+              loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent? loadingProgress) {
+                if (loadingProgress == null) {
+                  return child;
+                }
+                return Center(
+                  child: CircularProgressIndicator(
+                    value: loadingProgress.expectedTotalBytes != null
+                        ? loadingProgress.cumulativeBytesLoaded / (loadingProgress.expectedTotalBytes ?? 1)
+                        : null,
+                  ),
+                );
+              },
+              errorBuilder: (BuildContext context, Object error, StackTrace? stackTrace) {
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              },
+            ),
                                       ],
                                     ),
                                   ),
