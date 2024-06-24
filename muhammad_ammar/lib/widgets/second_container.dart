@@ -42,16 +42,15 @@ class SecondContainer extends StatelessWidget {
       
         Padding(
           padding: const EdgeInsets.only(top: 10.0),
-          child: Center(
-            child: SizedBox(
-              height: Get.height * 0.055,width: double.infinity,
-              child: Container(
+          child:     Center(
+              child: Container(width: double.infinity,
+                height: Get.height * 0.055,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     colors: [
                       Color.fromARGB(255, 241, 154, 202),
                       Color.fromARGB(255, 151, 111, 231)
-                    ], //
+                    ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
@@ -60,36 +59,23 @@ class SecondContainer extends StatelessWidget {
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
-                    side: const BorderSide(color: Colors.transparent),
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    side: const BorderSide(
+                        color: Colors.transparent),
                   ),
                   onPressed: () {},
-                  child: const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.work,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                     
-                      Text(
-                        "My Works",
-                        style: TextStyle(
-                          fontFamily: 'Syne',
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                  child: const Text(
+                    "My Works",
+                    style: TextStyle(                  fontFamily: 'Syne',
+                      fontWeight: FontWeight.w700,
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
         ),
         SizedBox(height: Get.height * 0.02),
         Center(

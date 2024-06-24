@@ -44,7 +44,7 @@ class ThirdContainer extends StatelessWidget {
           'Deeptune - Music Player',
           style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26,fontFamily: 'Syne'),
         ),
-        SizedBox(height: Get.height * 0.02),
+       
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
