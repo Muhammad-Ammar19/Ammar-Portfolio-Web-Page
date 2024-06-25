@@ -1021,61 +1021,23 @@ class DesktopScaffold2 extends StatelessWidget {
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
-                        const Divider(color: Colors.grey, height: 2),
+                      
                         const Padding(
                           padding: EdgeInsets.all(40.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Text(
-                                '2018 - 2020',
-                                style:
-                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
-                              ),
-                              Text(
-                                'Fsc - Pre Engineering',
-                                style: TextStyle(
-                                    fontFamily: 'Syne',
-                                    fontSize: 21,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              Text(
-                                'Govt Boys Inter College',
-                                style: TextStyle(
-                                    fontFamily: 'Syne',
-                                    fontSize: 21,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                            ],
-                          ),
+                      child: ListTile(leading: Text('2018 - 2020'),trailing: Text('Govt Boys Inter College',),title: Padding(
+                        padding: EdgeInsets.only(left: 600.0),
+                        child: Text('Fsc - Pre Engineering',style: TextStyle(fontFamily: 'Syne',fontWeight: FontWeight.w700,fontSize: 23),),
+                      ),dense: true,leadingAndTrailingTextStyle: TextStyle(fontFamily: 'Syne',fontWeight:FontWeight.w700,color: Colors.white),),    // child: Row(
+                        
                         ),
                         const Divider(color: Colors.grey, height: 2),
-                        const Padding(
+                             const Padding(
                           padding: EdgeInsets.all(40.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Text(
-                                '2020 - 2024',
-                                style:
-                                    TextStyle(fontFamily: 'Syne', fontSize: 20),
-                              ),
-                              Text(
-                                "Bachelor's of Computer Science",
-                                style: TextStyle(
-                                    fontFamily: 'Syne',
-                                    fontSize: 21,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              Text(
-                                'Alhamd Islamic University',
-                                style: TextStyle(
-                                    fontFamily: 'Syne',
-                                    fontSize: 21,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                            ],
-                          ),
+                      child: ListTile(leading: Text('2020 - 2024'),trailing: Text('Alhamd Islamic University',),title: Padding(
+                        padding: EdgeInsets.only(left: 600.0),
+                        child: Text("Bachelor's in Computer Science",style: TextStyle(fontFamily: 'Syne',fontWeight: FontWeight.w700,fontSize: 23),),
+                      ),dense: true,leadingAndTrailingTextStyle: TextStyle(fontFamily: 'Syne',fontWeight:FontWeight.w700,color: Colors.white),),    // child: Row(
+                        
                         ),
                         const Padding(
                           padding: EdgeInsets.all(15.0),
