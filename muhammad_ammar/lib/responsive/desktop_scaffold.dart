@@ -21,43 +21,45 @@ class DesktopScaffold extends StatelessWidget {
     return Scaffold(
       extendBody: true,
       body: SingleChildScrollView(
-        child: Column(
+        child: Column(                                                                               // Main Column
           children: [
-            Container(
-              height: MediaQuery.of(context).size.height * 1,                                                            // First Container
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                      "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-
-              child: const Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+            SizedBox(
+             
+              child: Stack(
                 children: [
-                  Stack(
+                  Image.network(
+                    "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg",
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                  
+                  ),
+                  const Column(
                     children: [Header()],
-                  )
+                  ),
                 ],
               ),
             ),
-
-            const AboutMe(),                                                                                            // About Me running
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            const AboutMe(), // About Me running
             Container(
-              height: MediaQuery.of(context).size.height * 1, // First Container
+              height: MediaQuery.of(context).size.height * 1,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://petrix-react.vercel.app/images/golden_bg.jpg"),
+                  image: NetworkImage("https://petrix-react.vercel.app/images/golden_bg.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-
             const Education(),
-
             const EducationSection(),
             const PortfolioRunning(),
             const PortfolioSection(),
