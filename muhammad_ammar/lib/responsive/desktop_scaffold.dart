@@ -13,6 +13,8 @@ import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:muhammad_ammar/widgets/services_section.dart';
 import 'package:muhammad_ammar/widgets/socials.dart';
 
+
+
 class DesktopScaffold extends StatelessWidget {
   const DesktopScaffold({super.key});
 
@@ -20,58 +22,53 @@ class DesktopScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      body: SingleChildScrollView(
-        child: Column(                                                                               // Main Column
-          children: [
-            SizedBox(
-             
-              child: Stack(
-                children: [
-                  Image.network(
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height,
+                  width: double.infinity,
+                  child: Image.network(
                     "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg",
                     fit: BoxFit.cover,
-                    width: double.infinity,
-                  
                   ),
-                  const Column(
-                    children: [Header()],
-                  ),
-                ],
-              ),
-            ),
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            const AboutMe(), // About Me running
-            Container(
-              height: MediaQuery.of(context).size.height * 1,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://petrix-react.vercel.app/images/golden_bg.jpg"),
-                  fit: BoxFit.cover,
                 ),
-              ),
+                const AboutMe(),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.8,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://petrix-react.vercel.app/images/golden_bg.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                const Education(),
+                const EducationSection(),
+                const PortfolioRunning(),
+                const PortfolioSection(),
+                const ServiceRunning(),
+                const ServicesSection(),
+                const LetsTalkRunning(),
+                const ContactForm(),
+                const Info(),
+                const Socials(),
+                const Footer(),
+              ],
             ),
-            const Education(),
-            const EducationSection(),
-            const PortfolioRunning(),
-            const PortfolioSection(),
-            const ServiceRunning(),
-            const ServicesSection(),
-            const LetsTalkRunning(),
-            const ContactForm(),
-            const Info(),
-            const Socials(),
-            const Footer(),
-          ],
-        ),
+          ),
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height * 0.06,
+              child: const Header(),
+            ),
+          ),
+        ],
       ),
     );
   }
