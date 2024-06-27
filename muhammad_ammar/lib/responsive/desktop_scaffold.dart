@@ -63,28 +63,28 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
     switch (page) {
       case 'HOME':
         _scrollController.animateTo(0,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.bounceInOut);
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeIn);
         break;
       case 'ABOUTME':
         _scrollController.animateTo(800,
             duration: const Duration(milliseconds: 300),
-            curve: Curves.bounceInOut);
+            curve: Curves.easeIn);
         break;
       case 'PORTFOLIO':
         _scrollController.animateTo(1600,
             duration: const Duration(milliseconds: 300),
-            curve: Curves.bounceInOut);
+            curve: Curves.easeIn);
         break;
       case 'SERVICES':
         _scrollController.animateTo(2400,
             duration: const Duration(milliseconds: 300),
-            curve: Curves.easeInOut);
+            curve: Curves.easeIn);
         break;
       case 'CONTACT':
         _scrollController.animateTo(3200,
             duration: const Duration(milliseconds: 300),
-            curve: Curves.easeInOut);
+            curve: Curves.easeIn);
         break;
     }
   }
@@ -114,88 +114,102 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 350, right: 350),
+                      padding: const EdgeInsets.only(left: 150, right: 150),
                       child: Container(
                           color: const Color.fromARGB(88, 33, 149, 243),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  const Text(
-                                    "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
-                                    style: TextStyle(
-                                        fontFamily: 'Sora',
-                                        color: Colors.black,
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                  Row(
-                                    children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                                color: Colors.black)),
-                                        child: const Padding(
-                                          padding: EdgeInsets.all(15.0),
-                                          child: Icon(
-                                            Icons.play_arrow_rounded,
-                                            color: Colors.black,
-                                            size: 30,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 8.0,right: 8,top: 100),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: Colors.black)),
+                                          child: const Padding(
+                                            padding: EdgeInsets.all(15.0),
+                                            child: Icon(
+                                              Icons.play_arrow_rounded,
+                                              color: Colors.black,
+                                              size: 30,
+                                            ),
                                           ),
                                         ),
+                                        const Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text(
+                                            "Work \nProcess",
+                                            style: TextStyle(
+                                                fontFamily: 'Sora',
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w700,
+                                                fontSize: 16),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                                const Text(
+                                  "I LOVE SOFTWARES",
+                                  style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 130,
+                                      color: Colors.black),
+                                ),
+                               const Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Row(
+                                      children: [Padding(
+                                        padding: EdgeInsets.all(15.0),
+                                        child: Icon(
+                                          Icons.arrow_downward_rounded,
+                                          color: Colors.black,
+                                          size: 30,
+                                        ),
                                       ),
-                                      const Padding(
-                                        padding: EdgeInsets.all(8.0),
-                                        child: Text(
-                                          "Work \nProcess",
+                                        Text(
+                                          "Scroll \nDown",
                                           style: TextStyle(
                                               fontFamily: 'Sora',
                                               color: Colors.black,
                                               fontWeight: FontWeight.w700,
                                               fontSize: 16),
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Text(
-                                "I LOVE SOFTWARES",
-                                style: TextStyle(
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 125,
-                                    color: Colors.black),
-                              ),
-                              const Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: [
-                                  Text(
-                                    "Scroll \nDown",
-                                    style: TextStyle(
-                                        fontFamily: 'Sora',
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 16),
-                                  ),
-                                  Text(
-                                    "Feel Free to send me a message \nif you want to enhance your recruitment.\nLinkedin. Twitter",
-                                    style: TextStyle(
-                                        fontFamily: 'Sora',
-                                        color: Colors.black,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
-                              ),
-                            ],
+                                      ],
+                                    ),
+                                    Text(
+                                      "Feel Free to send me a message \nif you want to enhance your recruitment.\nLinkedin. Twitter",
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           )),
                     ),
                   ]),

@@ -12,7 +12,7 @@ class PortfolioRunning extends StatelessWidget {
         child: Text(
           'PORTFOLIO',
           style: TextStyle(
-              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 40),
+              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
         ),
       ),
     );

@@ -14,7 +14,7 @@ class LetsTalkRunning extends StatelessWidget {
     child: Text(
             "LETS'S TALK",
             style: TextStyle(
-                fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 40),
+                fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
           ),
   ),
     );
