@@ -21,7 +21,7 @@ class Header extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             color: Colors.white,
           ),
-          height: MediaQuery.of(context).size.height * 0.061,
+          height: MediaQuery.of(context).size.height * 0.075,
           width: MediaQuery.of(context).size.width * 0.63,
           child: Padding(
             padding: const EdgeInsets.only(left: 5, right: 5),
@@ -73,7 +73,7 @@ class Header extends StatelessWidget {
         child: Text(
           page,
           style: TextStyle(
-            fontSize: 13,
+            fontSize: 14,
             fontFamily: 'Sora',
             fontWeight: FontWeight.w600,
             color: activePage == page ? Colors.orange : Colors.black87,

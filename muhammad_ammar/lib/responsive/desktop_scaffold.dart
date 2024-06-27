@@ -116,60 +116,82 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
                     Padding(
                       padding: const EdgeInsets.only(left: 350, right: 350),
                       child: Container(
-                         color: const Color.fromARGB(88, 33, 149, 243),
+                          color: const Color.fromARGB(88, 33, 149, 243),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 170),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    const Text(
-                                      "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
-                                      style: TextStyle(
-                                          fontFamily: 'Sora',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                    Row(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              shape: BoxShape.circle,
-                                              border: Border.all(
-                                                  color: Colors.black)),
-                                          child: const Padding(
-                                            padding: EdgeInsets.all(12.0),
-                                            child: Icon(
-                                              Icons.play_arrow_rounded,
-                                              color: Colors.black,
-                                              size: 30,
-                                            ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text(
+                                    "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
+                                    style: TextStyle(
+                                        fontFamily: 'Sora',
+                                        color: Colors.black,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                                color: Colors.black)),
+                                        child: const Padding(
+                                          padding: EdgeInsets.all(15.0),
+                                          child: Icon(
+                                            Icons.play_arrow_rounded,
+                                            color: Colors.black,
+                                            size: 30,
                                           ),
                                         ),
-                                        const Padding(
-                                          padding: EdgeInsets.all(8.0),
-                                          child: Text(
-                                            "Work \nProcess",
-                                            style: TextStyle(
-                                                fontFamily: 'Sora',
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w600,
-                                                fontSize: 13),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                                      ),
+                                      const Padding(
+                                        padding: EdgeInsets.all(8.0),
+                                        child: Text(
+                                          "Work \nProcess",
+                                          style: TextStyle(
+                                              fontFamily: 'Sora',
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: 16),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                              const Text(
+                                "I LOVE SOFTWARES",
+                                style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 125,
+                                    color: Colors.black),
+                              ),
+                              const Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Image.asset(
-                                    'assets/images/muhammad-ammar-bg-removed.png',
+                                  Text(
+                                    "Scroll \nDown",
+                                    style: TextStyle(
+                                        fontFamily: 'Sora',
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "Feel Free to send me a message \nif you want to enhance your recruitment.\nLinkedin. Twitter",
+                                    style: TextStyle(
+                                        fontFamily: 'Sora',
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ],
                               ),
