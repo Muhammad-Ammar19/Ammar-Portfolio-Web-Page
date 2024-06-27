@@ -13,8 +13,6 @@ import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:muhammad_ammar/widgets/services_section.dart';
 import 'package:muhammad_ammar/widgets/socials.dart';
 
-
-
 class DesktopScaffold extends StatelessWidget {
   const DesktopScaffold({super.key});
 
@@ -40,7 +38,8 @@ class DesktopScaffold extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.8,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage("https://petrix-react.vercel.app/images/golden_bg.jpg"),
+                      image: NetworkImage(
+                          "https://petrix-react.vercel.app/images/golden_bg.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -59,13 +58,12 @@ class DesktopScaffold extends StatelessWidget {
               ],
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 0,
             left: 0,
             right: 0,
             child: SizedBox(
-              height: MediaQuery.of(context).size.height * 0.06,
-              child: const Header(),
+              child: Header(),
             ),
           ),
         ],

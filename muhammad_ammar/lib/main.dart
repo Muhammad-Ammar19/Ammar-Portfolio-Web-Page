@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:muhammad_ammar/responsive/mobile_scaffold.dart';
 import 'package:muhammad_ammar/responsive/responsive_layout.dart';
 import 'package:muhammad_ammar/responsive/tablet_scaffold.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 import 'responsive/desktop_scaffold.dart';
 
@@ -15,16 +15,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-    darkTheme: ThemeData.dark(),
+    return const ShadApp.material(
+      
       title: 'Muhammad-Ammar',
-      theme: ThemeData(
-        fontFamily: 'Syne',
-        useMaterial3: true,
-        
-      ),
-      home:  const ResponsiveLayout(
-        mobileScaffold:  MobileScaffold(),
+     
+      home: ResponsiveLayout(
+        mobileScaffold: MobileScaffold(),
         tabletScaffold: TabletScaffold(),
         desktopScaffold: DesktopScaffold(),
       ),
