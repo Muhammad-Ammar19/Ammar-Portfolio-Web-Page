@@ -9,4 +9,15 @@ class HoverController extends GetxController {
     dy = y;
     update(); 
   }
+
+
+
+
+
+
+
+
+
+
+  
 }

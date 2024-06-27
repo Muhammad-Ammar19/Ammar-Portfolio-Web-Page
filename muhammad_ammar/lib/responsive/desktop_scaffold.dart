@@ -13,8 +13,81 @@ import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:muhammad_ammar/widgets/services_section.dart';
 import 'package:muhammad_ammar/widgets/socials.dart';
 
-class DesktopScaffold extends StatelessWidget {
+class DesktopScaffold extends StatefulWidget {
   const DesktopScaffold({super.key});
+
+  @override
+  DesktopScaffoldState createState() {
+    return DesktopScaffoldState();
+  }
+}
+
+class DesktopScaffoldState extends State<DesktopScaffold> {
+  final ScrollController _scrollController = ScrollController();
+  String _activePage = 'HOME';
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.removeListener(_onScroll);
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    double offset = _scrollController.offset;
+    setState(() {
+      if (offset >= 0 && offset < 800) {
+        _activePage = 'HOME';
+      } else if (offset >= 800 && offset < 1600) {
+        _activePage = 'ABOUTME';
+      } else if (offset >= 1600 && offset < 2400) {
+        _activePage = 'PORTFOLIO';
+      } else if (offset >= 2400 && offset < 3200) {
+        _activePage = 'SERVICES';
+      } else if (offset >= 3200) {
+        _activePage = 'CONTACT';
+      }
+    });
+  }
+
+  void _onPageSelected(String page) {
+    setState(() {
+      _activePage = page;
+    });
+    switch (page) {
+      case 'HOME':
+        _scrollController.animateTo(0,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.bounceInOut);
+        break;
+      case 'ABOUTME':
+        _scrollController.animateTo(800,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.bounceInOut);
+        break;
+      case 'PORTFOLIO':
+        _scrollController.animateTo(1600,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.bounceInOut);
+        break;
+      case 'SERVICES':
+        _scrollController.animateTo(2400,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut);
+        break;
+      case 'CONTACT':
+        _scrollController.animateTo(3200,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut);
+        break;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +96,87 @@ class DesktopScaffold extends StatelessWidget {
       body: Stack(
         children: [
           SingleChildScrollView(
+            controller: _scrollController,
             child: Column(
               children: [
                 SizedBox(
                   height: MediaQuery.of(context).size.height,
                   width: double.infinity,
-                  child: Image.network(
-                    "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg",
-                    fit: BoxFit.cover,
-                  ),
+                  child: Stack(alignment: Alignment.bottomCenter, children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Image.network(
+                            "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 350, right: 350),
+                      child: Container(
+                         color: const Color.fromARGB(88, 33, 149, 243),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 170),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: Colors.black)),
+                                          child: const Padding(
+                                            padding: EdgeInsets.all(12.0),
+                                            child: Icon(
+                                              Icons.play_arrow_rounded,
+                                              color: Colors.black,
+                                              size: 30,
+                                            ),
+                                          ),
+                                        ),
+                                        const Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text(
+                                            "Work \nProcess",
+                                            style: TextStyle(
+                                                fontFamily: 'Sora',
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w600,
+                                                fontSize: 13),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/muhammad-ammar-bg-removed.png',
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )),
+                    ),
+                  ]),
                 ),
                 const AboutMe(),
                 Container(
@@ -58,12 +203,15 @@ class DesktopScaffold extends StatelessWidget {
               ],
             ),
           ),
-          const Positioned(
+          Positioned(
             top: 0,
             left: 0,
             right: 0,
             child: SizedBox(
-              child: Header(),
+              child: Header(
+                activePage: _activePage,
+                onPageSelected: _onPageSelected,
+              ),
             ),
           ),
         ],

@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  final String activePage;
+  final Function(String) onPageSelected;
+
+  const Header({
+    super.key,
+    required this.activePage,
+    required this.onPageSelected,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,74 +28,15 @@ class Header extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  "assets/images/ryze.png",
-                  width: 120,
-                  fit: BoxFit.fill,
-                  filterQuality: FilterQuality.high,
-                ),
                 Expanded(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 18.0),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            'HOME',
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontFamily: 'Sora',
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black87),
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 18.0),
-                        child: Text(
-                          'ABOUTME',
-                          style: TextStyle(
-                              fontSize: 13,
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black87),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 18.0),
-                        child: Text(
-                          'PORTFOLIO',
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12,
-                              color: Colors.black87),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 18.0),
-                        child: Text(
-                          'SERVICES',
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12,
-                              color: Colors.black87),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 18.0),
-                        child: Text(
-                          'CONTACT',
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12,
-                              color: Colors.black87),
-                        ),
-                      ),
+                      _buildNavItem('HOME'),
+                      _buildNavItem('ABOUTME'),
+                      _buildNavItem('PORTFOLIO'),
+                      _buildNavItem('SERVICES'),
+                      _buildNavItem('CONTACT'),
                     ],
                   ),
                 ),
@@ -111,6 +59,24 @@ class Header extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNavItem(String page) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 18.0),
+      child: TextButton(
+        onPressed: () => onPageSelected(page),
+        child: Text(
+          page,
+          style: TextStyle(
+            fontSize: 13,
+            fontFamily: 'Sora',
+            fontWeight: FontWeight.w600,
+            color: activePage == page ? Colors.orange : Colors.black87,
           ),
         ),
       ),
