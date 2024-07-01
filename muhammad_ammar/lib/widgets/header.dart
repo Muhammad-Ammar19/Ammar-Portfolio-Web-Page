@@ -41,9 +41,9 @@ class Header extends StatelessWidget {
                   ),
                 ),
                 ShadButton(
-                  hoverBackgroundColor: Colors.orange,
+                  hoverBackgroundColor: const Color(0xFFEA552B),
                   cursor: SystemMouseCursors.click,
-                  pressedBackgroundColor: Colors.orange,
+                  pressedBackgroundColor:  const Color(0xFFEA552B),
                   backgroundColor: Colors.black,
                   width: 140,height: 55,
                   text: const Text(
@@ -65,21 +65,22 @@ class Header extends StatelessWidget {
     );
   }
 
-  Widget _buildNavItem(String page) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 18.0),
-      child: TextButton(
-        onPressed: () => onPageSelected(page),
-        child: Text(
-          page,
-          style: TextStyle(
-            fontSize: 14.7,
-            fontFamily: 'Sora',
-            fontWeight: FontWeight.w600,
-            color: activePage == page ? Colors.orange : Colors.black87,
-          ),
+Widget _buildNavItem(String page) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 18.0),
+    child: TextButton(
+      onPressed: () => onPageSelected(page),
+      child: Text(
+        page,
+        style: TextStyle(
+          fontSize: 14.7,
+          fontFamily: 'Sora',
+          fontWeight: FontWeight.w600,
+          color: activePage == page ? const Color(0xFFEA552B) : Colors.black87,
         ),
       ),
-    );
-  }
+    ),
+  );
+}
+
 }
