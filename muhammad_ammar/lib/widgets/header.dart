@@ -73,7 +73,7 @@ class Header extends StatelessWidget {
         child: Text(
           page,
           style: TextStyle(
-            fontSize: 14.5,
+            fontSize: 14.7,
             fontFamily: 'Sora',
             fontWeight: FontWeight.w600,
             color: activePage == page ? Colors.orange : Colors.black87,
