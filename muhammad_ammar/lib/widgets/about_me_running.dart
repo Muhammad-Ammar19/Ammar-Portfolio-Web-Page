@@ -8,7 +8,7 @@ class AboutMe extends StatelessWidget {
     return Container(
       color: const Color.fromARGB(183, 0, 0, 0),
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.12,
+      height: MediaQuery.of(context).size.height * 0.18,
       child: const Center(
         child: Text(
           "ABOUT ME",

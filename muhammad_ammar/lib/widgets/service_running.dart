@@ -8,12 +8,19 @@ class ServiceRunning extends StatelessWidget {
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.12,
-      child: const Center(
+      height: MediaQuery.of(context).size.height * 0.18,
+      child:  Center(
         child: Text(
           "SERVICES",
           style: TextStyle(
-              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w700,
+            fontSize: 85,
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = 1
+              ..color = Colors.white,
+          ),
         ),
       ),
     );
