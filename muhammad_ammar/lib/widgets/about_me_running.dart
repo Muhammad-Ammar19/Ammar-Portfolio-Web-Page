@@ -9,14 +9,13 @@ class AboutMe extends StatelessWidget {
       color: const Color.fromARGB(183, 0, 0, 0),
       width: double.infinity,
       height: MediaQuery.of(context).size.height * 0.12,
-  child: const Center(
-    child: Text(
-            "ABOUT ME",
-            style: TextStyle(
-                fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
-          ),
-  ),
-  
+      child: const Center(
+        child: Text(
+          "ABOUT ME",
+          style: TextStyle(
+              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
+        ),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
+import 'package:muhammad_ammar/widgets/about_me_section.dart';
 import 'package:muhammad_ammar/widgets/contact_form.dart';
 import 'package:muhammad_ammar/widgets/education_running.dart';
 import 'package:muhammad_ammar/widgets/education_section.dart';
@@ -64,27 +65,27 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
       case 'HOME':
         _scrollController.animateTo(0,
             duration: const Duration(milliseconds: 400),
-            curve: Curves.easeIn);
+            curve: Curves.easeInOut);
         break;
       case 'ABOUTME':
         _scrollController.animateTo(800,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn);
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeInOut);
         break;
       case 'PORTFOLIO':
         _scrollController.animateTo(1600,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn);
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeInOut);
         break;
       case 'SERVICES':
         _scrollController.animateTo(2400,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn);
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeInOut);
         break;
       case 'CONTACT':
         _scrollController.animateTo(3200,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn);
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeInOut);
         break;
     }
   }
@@ -171,7 +172,7 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
                                   style: TextStyle(
                                       fontFamily: 'Poppins',
                                       fontWeight: FontWeight.w900,
-                                      fontSize: 130,
+                                      fontSize: 140,
                                       color: Colors.black),
                                 ),
                                const Row(
@@ -215,16 +216,7 @@ class DesktopScaffoldState extends State<DesktopScaffold> {
                   ]),
                 ),
                 const AboutMe(),
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.8,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage(
-                          "https://petrix-react.vercel.app/images/golden_bg.jpg"),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
+               const AboutMeSection(),
                 const Education(),
                 const EducationSection(),
                 const PortfolioRunning(),

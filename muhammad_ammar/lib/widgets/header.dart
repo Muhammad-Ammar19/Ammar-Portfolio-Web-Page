@@ -45,7 +45,7 @@ class Header extends StatelessWidget {
                   cursor: SystemMouseCursors.click,
                   pressedBackgroundColor: Colors.orange,
                   backgroundColor: Colors.black,
-                  width: 140,height: 50,
+                  width: 140,height: 55,
                   text: const Text(
                     "Let's Talk",
                     style: TextStyle(
