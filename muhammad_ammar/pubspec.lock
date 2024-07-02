@@ -314,6 +314,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.0"
+  ticker_text:
+    dependency: "direct main"
+    description:
+      name: ticker_text
+      sha256: "084693e7ebd0940b747742962eb4e8ab31cebe02dcd2da75e3b2331d39040479"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   two_dimensional_scrollables:
     dependency: transitive
     description:

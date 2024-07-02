@@ -39,6 +39,7 @@ dependencies:
   url_launcher: ^6.3.0
   shadcn_ui: ^0.5.7
   marquee: ^2.2.3
+  ticker_text: ^2.0.0
   
  
 
