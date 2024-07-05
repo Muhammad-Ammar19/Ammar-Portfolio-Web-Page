@@ -17,7 +17,7 @@ class AboutMeSection extends StatelessWidget {
           children: [
             Column(
               children: [
-                Text('Hello! I’m David Petrix. Web designerfrom USA, California, San Francisco. I have rich experience in web site designand building, lso I am good at wordpress. I love to talk with you aboutour unique.',style: TextStyle(fontFamily: 'Sora'),),
+              
               ],
             ),
           ],
