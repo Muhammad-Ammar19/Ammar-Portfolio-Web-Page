@@ -21,7 +21,7 @@ class AboutMeSection extends StatelessWidget {
             children: [
               const Image(
                 image:
-                    AssetImage("assets/images/muhammad-ammar-bg-removed.png"),
+                    AssetImage("assets/images/ammarbg.png"),
               ),
               const SizedBox(width: 20),
               Column(
@@ -39,11 +39,11 @@ class AboutMeSection extends StatelessWidget {
                       child: const Text(
                         "Hello! I am Muhammad Ammar, Full Stack Flutter Developer from Quetta. I have extensive experience in both app and web development and specialize in creating smooth and responsive applications. I am also familiar with web technologies. I enjoy discussing and working on unique projects that bring innovative solutions to life.",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 28,
                           color: Colors.black,
                           fontFamily: 'Sora',
-                          fontWeight: FontWeight.w600,
-                          height: 1.5, 
+                          fontWeight: FontWeight.w700,
+                          height: 2.0, 
                         ),
                         textAlign: TextAlign.left,
                       ),
@@ -60,20 +60,23 @@ class AboutMeSection extends StatelessWidget {
                               Text(
                                 "12+",
                                 style: TextStyle(
-                                  fontSize: 45,
+                                  fontSize: 55,
                                   color: Colors.black,
                                   fontFamily: 'Sora',
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                            Text(
-                            "Years Of \nExperience",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.black,
-                              fontFamily: 'Sora',fontWeight: FontWeight.w700
-                            ),
-                          ),  ],
+                            Padding(
+                              padding: EdgeInsets.only(left: 8.0),
+                              child: Text(
+                              "Years Of \nExperience",
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.black,
+                                fontFamily: 'Sora',fontWeight: FontWeight.w700
+                              ),
+                                                        ),
+                            ),  ],
                           ),
                         
                         ],
@@ -86,18 +89,21 @@ class AboutMeSection extends StatelessWidget {
                               Text(
                                 "12+",
                                 style: TextStyle(
-                                  fontSize: 45,
+                                  fontSize: 55,
                                   color: Colors.black,
                                   fontFamily: 'Sora',
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                          Text(
-                            "Successful \nProjects",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.black,
-                              fontFamily: 'Sora',fontWeight: FontWeight.w700
+                          Padding(
+                            padding: EdgeInsets.only(left: 8),
+                            child: Text(
+                              "Successful \nProjects",
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.black,
+                                fontFamily: 'Sora',fontWeight: FontWeight.w700
+                              ),
                             ),
                           ),   ],
                           ),

@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 
 class Home extends StatelessWidget {
   const Home({
@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
-      child: Stack(alignment: Alignment.bottomCenter, children: [
+      child: Stack(children: [
         Row(
           children: [
             Expanded(
@@ -78,14 +78,14 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w900,
-                        fontSize: 140,
+                        fontSize: 150,
                         color: Colors.black),
                   ),
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.all(15.0),
@@ -105,13 +105,62 @@ class Home extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Text(
-                        "Feel Free to send me a message \nif you want to enhance your recruitment.\nLinkedin. Twitter",
-                        style: TextStyle(
-                            fontFamily: 'Sora',
-                            color: Colors.black,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Feel Free to send me a message \nif you want to enhance your recruitment.",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                color: Colors.black,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600),
+                          ),
+                         Row(
+  children: [
+    InkWell(
+      onTap: () {},
+      
+      child: const Text(
+        "LinkedIn.",
+        style: TextStyle(
+          fontFamily: 'Sora',
+          color: Colors.black,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+     
+      child: const Text(
+        ' Twitter.',
+        style: TextStyle(
+          fontFamily: 'Sora',
+          color: Colors.black,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      
+      child: const Text(
+        ' Github.',
+        style: TextStyle(
+          fontFamily: 'Sora',
+          color: Colors.black,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ),
+  ],
+)
+
+                        ],
                       ),
                     ],
                   ),
