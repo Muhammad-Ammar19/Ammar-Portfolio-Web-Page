@@ -6,7 +6,7 @@ class Socials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   Container(
-              height:400,
+              height:250,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
