@@ -150,7 +150,7 @@ class EducationSection extends StatelessWidget {
                               context,
                               '2023',
                               "Decentralized Applications",
-                              'UNiversity at bUffalo | Coursera',
+                              'University at buffalo | Coursera',
                             ),
                           ],
                         ),
@@ -190,8 +190,8 @@ class EducationSection extends StatelessWidget {
                         _buildEducationRow(
                           context,
                           '2023',
-                          "Another Certification",
-                          'Another Institution',
+                          "Smart Contracts",
+                          'University at Buffalo | Coursera',
                         ),
                       ],
                     ),
@@ -230,8 +230,8 @@ class EducationSection extends StatelessWidget {
                   style: const TextStyle(
                     fontFamily: 'Sora',
                     color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
                 Text(
@@ -239,8 +239,8 @@ class EducationSection extends StatelessWidget {
                   style: const TextStyle(
                     fontFamily: 'Sora',
                     color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ],

@@ -8,7 +8,7 @@ class PortfolioSection extends StatelessWidget {
     return  Container(
       color: const Color.fromARGB(183, 0, 0, 0),
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.50,
+      height: MediaQuery.of(context).size.height * 0.90,
     );
   }
 }

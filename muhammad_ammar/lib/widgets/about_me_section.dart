@@ -39,11 +39,11 @@ class AboutMeSection extends StatelessWidget {
                       child: const Text(
                         "Hello! I am Muhammad Ammar, Full Stack Flutter Developer from Quetta. I have extensive experience in both app and web development and specialize in creating smooth and responsive applications. I am also familiar with web technologies. I enjoy discussing and working on unique projects that bring innovative solutions to life.",
                         style: TextStyle(
-                          fontSize: 28,
+                          fontSize: 30,
                           color: Colors.black,
                           fontFamily: 'Sora',
-                          fontWeight: FontWeight.w700,
-                          height: 2.0, 
+                          fontWeight: FontWeight.w600,
+                          height: 1.9, 
                         ),
                         textAlign: TextAlign.left,
                       ),
@@ -71,7 +71,7 @@ class AboutMeSection extends StatelessWidget {
                               child: Text(
                               "Years Of \nExperience",
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 15,
                                 color: Colors.black,
                                 fontFamily: 'Sora',fontWeight: FontWeight.w700
                               ),
@@ -100,7 +100,7 @@ class AboutMeSection extends StatelessWidget {
                             child: Text(
                               "Successful \nProjects",
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 15,
                                 color: Colors.black,
                                 fontFamily: 'Sora',fontWeight: FontWeight.w700
                               ),
@@ -112,22 +112,23 @@ class AboutMeSection extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                      height: 15), 
-                  ShadButton(decoration: const ShadDecoration(shadows: ShadShadows.sm),
+                  
+                  ShadButton(decoration: const ShadDecoration(shadows: ShadShadows.sm,border: ShadBorder(radius: BorderRadius.all(Radius.circular(8)))),
                     hoverBackgroundColor: const Color(0xFFEA552B),
                     cursor: SystemMouseCursors.click,
                     pressedBackgroundColor: const Color(0xFFEA552B),
                     backgroundColor: Colors.black,
-                    width: 160,
-                    height: 55,
-                    text: const Text(
-                      "DOWNLOAD CV",
-                      style: TextStyle(
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white,
-                        fontSize: 14,
+                    height: 65,
+                    width: 200,
+                    text: const Center(
+                      child: Text(
+                        "DOWNLOAD CV",
+                        style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                     onPressed: () {},

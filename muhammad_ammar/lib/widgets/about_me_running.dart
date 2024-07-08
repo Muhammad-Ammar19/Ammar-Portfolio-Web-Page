@@ -6,14 +6,21 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color.fromARGB(183, 0, 0, 0),
+     color: Colors.black,
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.18,
-      child: const Center(
+      height: MediaQuery.of(context).size.height * 0.20,
+      child:  Center(
         child: Text(
-          "ABOUT ME",
+          "ABOUTME",
           style: TextStyle(
-              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w700,
+            fontSize: 90,
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = 0.8
+              ..color = Colors.white,
+          ),
         ),
       ),
     );

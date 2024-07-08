@@ -7,12 +7,20 @@ class PortfolioRunning extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xFFEA552B),
-      height: MediaQuery.of(context).size.height * 0.12,
-      child: const Center(
+      width: double.infinity,
+      height: MediaQuery.of(context).size.height * 0.15,
+      child:  Center(
         child: Text(
-          'PORTFOLIO',
+          "PORTFOLIO",
           style: TextStyle(
-              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w700,
+            fontSize: 85,
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = 1
+              ..color = Colors.white,
+          ),
         ),
       ),
     );
