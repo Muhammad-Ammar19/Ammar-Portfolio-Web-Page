@@ -6,17 +6,16 @@ class LetsTalkRunning extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     color: const Color(0xFFEA552B),
+      color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.12,
-  
-  child: const Center(
-    child: Text(
-            "LETS'S TALK",
-            style: TextStyle(
-                fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
-          ),
-  ),
+      height: 170,
+      child: const Center(
+        child: Text(
+          "LETS'S TALK",
+          style: TextStyle(
+              fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
+        ),
+      ),
     );
   }
 }
