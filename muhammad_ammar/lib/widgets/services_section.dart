@@ -14,75 +14,93 @@ class ServicesSection extends StatelessWidget {
         ),
       ),
       child: const Padding(
-        padding: EdgeInsets.only(top: 100, left:350, right: 350),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        padding: EdgeInsets.only(top: 100, left: 350, right: 350),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "I specialize in designing and developing custom web, mobile applications and desktop applications using Flutter for cross-platform compatibility. I provide robust backend solutions with easy API integration through Node.js, Python and Firebase. My services include performance optimization, security and scalability to provide you with high-quality software solutions that meet your needs.",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 35,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 33,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
             ),
             Text(
               "Front Development",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
             ),
             Text(
               "Backend Development",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
             ),
             Text(
               "Mobile Applications",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
-            ),  Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
+            ),
+            Divider(
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
             ),
             Text(
               "RESTful APIs",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
-            ),  Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
             ),
-             Text(
+            Divider(
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
+            ),
+            Text(
               "Third-Party API Integration",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
-            ),  Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
             ),
-          Text("UI/UX Design",style: TextStyle(
-                  fontFamily: 'Sora', fontSize:28, fontWeight: FontWeight.w600,color: Colors.black),),  Divider(
-              color: Color.fromARGB(132, 158, 158, 158),height: 100,
+            Divider(
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
+            ),
+            Text(
+              "UI/UX Design",
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.black),
+            ),
+            Divider(
+              color: Color.fromARGB(132, 158, 158, 158),
+              height: 100,
             ),
           ],
         ),

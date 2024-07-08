@@ -23,15 +23,15 @@ class EducationSection extends StatelessWidget {
 
         Center(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(80.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(height: MediaQuery.of(context).size.height * 0.47, 
-                      width: MediaQuery.of(context).size.width * 0.45,
+                    Container(height: 415, 
+                      width: 600,
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.white60,
@@ -88,7 +88,7 @@ class EducationSection extends StatelessWidget {
                     ),
                     const SizedBox(width: 20),
                     Container(
-                      width: MediaQuery.of(context).size.width * 0.45,
+                      width: 600,
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.white60,

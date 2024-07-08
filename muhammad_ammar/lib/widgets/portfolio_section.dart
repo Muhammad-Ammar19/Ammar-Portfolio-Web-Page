@@ -6,9 +6,9 @@ class PortfolioSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      color: const Color.fromARGB(183, 0, 0, 0),
+      color:Colors.black,
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.90,
+      height: 700,
     );
   }
 }

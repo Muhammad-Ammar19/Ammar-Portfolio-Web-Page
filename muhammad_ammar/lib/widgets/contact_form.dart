@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ContactForm extends StatelessWidget {
   const ContactForm({super.key});
 
@@ -9,13 +10,21 @@ class ContactForm extends StatelessWidget {
       width: double.infinity,
       height: 900,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
               child: Text(
-            'Do you have a question, an idea,\nor a project you need help with?\nContact us!',
+            'Do you have a question, an idea,\nor a project you need help with.',
             style: TextStyle(
                 fontFamily: 'Sora', fontSize: 53, fontWeight: FontWeight.w800),
           )),
+          Text(
+            "Contact me!",
+            style: TextStyle(
+                fontFamily: 'Sora', fontSize: 53, fontWeight: FontWeight.w800),
+          ),
+        
         ],
       ),
     );

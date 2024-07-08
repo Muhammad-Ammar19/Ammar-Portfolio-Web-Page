@@ -8,7 +8,7 @@ class PortfolioRunning extends StatelessWidget {
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.15,
+      height: 130,
       child:  Center(
         child: Text(
           "PORTFOLIO",

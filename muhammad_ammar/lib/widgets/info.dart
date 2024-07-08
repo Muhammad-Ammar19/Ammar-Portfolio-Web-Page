@@ -8,7 +8,35 @@ class Info extends StatelessWidget {
     return Container(
       color: Colors.deepOrange[500],
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.07,
+      height: 90,
+      child: const Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text(
+              "Syedammarzaki4@gmail.com",
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "/",
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "Quetta, Pakistan",
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
