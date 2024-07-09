@@ -22,7 +22,7 @@ class ServicesSection extends StatelessWidget {
               "I specialize in designing and developing custom web, mobile applications and desktop applications using Flutter for cross-platform compatibility. I provide robust backend solutions with easy API integration through Node.js, Python and Firebase. My services include performance optimization, security and scalability to provide you with high-quality software solutions that meet your needs.",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 33,
+                  fontSize: 31,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -34,7 +34,7 @@ class ServicesSection extends StatelessWidget {
               "Front Development",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -46,7 +46,7 @@ class ServicesSection extends StatelessWidget {
               "Backend Development",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -58,7 +58,7 @@ class ServicesSection extends StatelessWidget {
               "Mobile Applications",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -70,7 +70,7 @@ class ServicesSection extends StatelessWidget {
               "RESTful APIs",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -82,7 +82,7 @@ class ServicesSection extends StatelessWidget {
               "Third-Party API Integration",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
@@ -94,7 +94,7 @@ class ServicesSection extends StatelessWidget {
               "UI/UX Design",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 26,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),

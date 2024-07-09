@@ -8,18 +8,14 @@ class PortfolioRunning extends StatelessWidget {
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: 130,
-      child:  Center(
+      height: 125,
+      child: const Center(
         child: Text(
           "PORTFOLIO",
           style: TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w700,
-            fontSize: 85,
-            foreground: Paint()
-              ..style = PaintingStyle.stroke
-              ..strokeWidth = 1
-              ..color = Colors.white,
+            fontSize: 80,
           ),
         ),
       ),

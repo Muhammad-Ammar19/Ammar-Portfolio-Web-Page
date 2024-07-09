@@ -8,7 +8,7 @@ class LetsTalkRunning extends StatelessWidget {
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: 160,
+      height: 120,
       child: const Center(
         child: Text(
           "LETS'S TALK",

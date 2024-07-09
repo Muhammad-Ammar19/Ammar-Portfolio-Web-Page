@@ -8,7 +8,7 @@ class Info extends StatelessWidget {
     return Container(
       color: Colors.deepOrange[500],
       width: double.infinity,
-      height: 90,
+      height: 75,
       child: const Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -17,22 +17,22 @@ class Info extends StatelessWidget {
               "Syedammarzaki4@gmail.com",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700),
+                  fontSize: 21,
+                  fontWeight: FontWeight.w600),
             ),
             Text(
               "/",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700),
+                  fontSize: 21,
+                  fontWeight: FontWeight.w600),
             ),
             Text(
               "Quetta, Pakistan",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700),
+                  fontSize: 21,
+                  fontWeight: FontWeight.w600),
             ),
           ],
         ),
