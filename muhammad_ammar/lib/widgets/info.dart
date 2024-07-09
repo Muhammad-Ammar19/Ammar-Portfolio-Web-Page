@@ -14,25 +14,25 @@ class Info extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
-              "Syedammarzaki4@gmail.com",
+              "syedammarzaki4@gmail.com",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 21,
-                  fontWeight: FontWeight.w600),
+                  fontSize: 19,
+                  fontWeight: FontWeight.w700),
             ),
             Text(
               "/",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 21,
-                  fontWeight: FontWeight.w600),
+                  fontSize: 19,
+                  fontWeight: FontWeight.w700),
             ),
             Text(
               "Quetta, Pakistan",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 21,
-                  fontWeight: FontWeight.w600),
+                  fontSize: 19,
+                  fontWeight: FontWeight.w700),
             ),
           ],
         ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Home extends StatelessWidget {
   const Home({
     super.key,
@@ -109,57 +108,53 @@ class Home extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text(
-                            "Feel Free to send me a message \nif you want to enhance your recruitment.",
+                            "Feel Free to send me a message \nif you want to improve your porjects.",
                             style: TextStyle(
                                 fontFamily: 'Sora',
                                 color: Colors.black,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600),
                           ),
-                         Row(
-  children: [
-    InkWell(
-      onTap: () {},
-      
-      child: const Text(
-        "LinkedIn.",
-        style: TextStyle(
-          fontFamily: 'Sora',
-          color: Colors.black,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    ),
-    InkWell(
-      onTap: () {},
-     
-      child: const Text(
-        ' Twitter.',
-        style: TextStyle(
-          fontFamily: 'Sora',
-          color: Colors.black,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    ),
-    InkWell(
-      onTap: () {},
-      
-      child: const Text(
-        ' Github.',
-        style: TextStyle(
-          fontFamily: 'Sora',
-          color: Colors.black,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    ),
-  ],
-)
-
+                          Row(
+                            children: [
+                              InkWell(
+                                onTap: () {},
+                                child: const Text(
+                                  "LinkedIn.",
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {},
+                                child: const Text(
+                                  ' Twitter.',
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {},
+                                child: const Text(
+                                  ' Github.',
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ],

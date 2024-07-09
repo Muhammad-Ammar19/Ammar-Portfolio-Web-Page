@@ -15,7 +15,7 @@ class PortfolioRunning extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w700,
-            fontSize: 80,
+            fontSize: 70,
           ),
         ),
       ),

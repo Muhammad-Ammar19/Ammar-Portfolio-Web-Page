@@ -8,14 +8,14 @@ class ServiceRunning extends StatelessWidget {
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: 180,
+      height: 120,
       child: const Center(
         child: Text(
           "SERVICES",
           style: TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w700,
-            fontSize: 80,
+            fontSize: 70,
           ),
         ),
       ),

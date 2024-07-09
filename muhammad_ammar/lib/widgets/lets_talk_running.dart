@@ -11,7 +11,7 @@ class LetsTalkRunning extends StatelessWidget {
       height: 120,
       child: const Center(
         child: Text(
-          "LETS'S TALK",
+          "LET'S TALK",
           style: TextStyle(
               fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 70),
         ),

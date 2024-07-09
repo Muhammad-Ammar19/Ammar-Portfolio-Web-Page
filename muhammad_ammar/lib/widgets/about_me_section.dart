@@ -43,7 +43,7 @@ class AboutMeSection extends StatelessWidget {
                           color: Colors.black,
                           fontFamily: 'Sora',
                           fontWeight: FontWeight.w600,
-                          height: 1.9, 
+                          height: 1.8, 
                         ),
                         textAlign: TextAlign.left,
                       ),

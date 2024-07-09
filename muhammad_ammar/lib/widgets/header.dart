@@ -21,10 +21,10 @@ class Header extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             color: Colors.white,
           ),
-          height: MediaQuery.of(context).size.height * 0.080,
-          width: MediaQuery.of(context).size.width * 0.85,
+          height: 80,
+          width: 1650,
           child: Padding(
-            padding: const EdgeInsets.only(left: 5, right: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -45,7 +45,7 @@ class Header extends StatelessWidget {
                   cursor: SystemMouseCursors.click,
                   pressedBackgroundColor:  const Color(0xFFEA552B),
                   backgroundColor: Colors.black,
-                  width: 140,height: 50,
+                  width: 145,height: 55,
                   text: const Text(
                     "Let's Talk",
                     style: TextStyle(

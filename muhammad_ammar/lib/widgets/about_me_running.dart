@@ -6,17 +6,16 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     color: Colors.black,
+      color: Colors.black,
       width: double.infinity,
-      height: 200,
-      child:  const Center(
+      height: 150,
+      child: const Center(
         child: Text(
           "ABOUTME",
           style: TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w700,
-            fontSize: 85,
-            
+            fontSize: 70,
           ),
         ),
       ),
