@@ -15,14 +15,19 @@ class Footer extends StatelessWidget {
           children: [
             const Text(
               "Copyright © 2024 ammar. All rights reserved.",
-              style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600,color: Colors.grey),
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontWeight: FontWeight.w600,
+                  color: Colors.grey,
+                  fontSize: 16),
             ),
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.arrow_upward_rounded),
               hoverColor: Colors.black,
               color: const Color(0xFFEA552B),
-              tooltip: "Scroll to top",iconSize: 30,
+              tooltip: "Scroll to top",
+              iconSize: 30,
             )
           ],
         ),

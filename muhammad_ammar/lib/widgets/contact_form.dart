@@ -17,26 +17,29 @@ class ContactForm extends StatelessWidget {
               child: Text(
             'Do you have a question, an idea,\nor a project you need help with.',
             style: TextStyle(
-                fontFamily: 'Sora', fontSize: 53, fontWeight: FontWeight.w800),
+                fontFamily: 'Sora', fontSize: 64, fontWeight: FontWeight.w800),
           )),
           const Text(
             "Contact me!",
             style: TextStyle(
-                fontFamily: 'Sora', fontSize: 53, fontWeight: FontWeight.w800),
+                fontFamily: 'Sora', fontSize: 64, fontWeight: FontWeight.w800),
           ),
-          ShadButton.outline(
-            height: 80,
-            width: 600,
-            decoration: ShadDecoration(
-                border: ShadBorder(radius: BorderRadius.circular(12))),
-            text: const Text(
-              'Contact Form',
-              style: TextStyle(
-                  fontFamily: 'Sora',
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800),
+          Padding(
+            padding: const EdgeInsets.only(top:12.0),
+            child: ShadButton.outline(
+              height: 80,
+              width: 600,
+              decoration: ShadDecoration(
+                  border: ShadBorder(radius: BorderRadius.circular(12))),
+              text: const Text(
+                'Contact Form',
+                style: TextStyle(
+                    fontFamily: 'Sora',
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800),
+              ),
+              onPressed: () {},
             ),
-            onPressed: () {},
           )
         ],
       ),

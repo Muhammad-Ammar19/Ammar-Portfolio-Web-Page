@@ -39,7 +39,7 @@ class Home extends StatelessWidget {
                         style: TextStyle(
                             fontFamily: 'Sora',
                             color: Colors.black,
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.w600),
                       ),
                       Row(
@@ -65,7 +65,7 @@ class Home extends StatelessWidget {
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: 18),
                             ),
                           ),
                         ],
@@ -77,7 +77,7 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w900,
-                        fontSize: 150,
+                        fontSize: 160,
                         color: Colors.black),
                   ),
                   Row(
@@ -100,7 +100,7 @@ class Home extends StatelessWidget {
                                 fontFamily: 'Sora',
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700,
-                                fontSize: 16),
+                                fontSize: 18),
                           ),
                         ],
                       ),
@@ -108,11 +108,11 @@ class Home extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text(
-                            "Feel Free to send me a message \nif you want to improve your porjects.",
+                            "Feel Free to send me a message \nif you want to improve your projects.",
                             style: TextStyle(
                                 fontFamily: 'Sora',
                                 color: Colors.black,
-                                fontSize: 16,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w600),
                           ),
                           Row(
@@ -120,11 +120,11 @@ class Home extends StatelessWidget {
                               InkWell(
                                 onTap: () {},
                                 child: const Text(
-                                  "LinkedIn.",
+                                  "Linkedin.",
                                   style: TextStyle(
                                     fontFamily: 'Sora',
                                     color: Colors.black,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -136,7 +136,7 @@ class Home extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Sora',
                                     color: Colors.black,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -148,7 +148,7 @@ class Home extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Sora',
                                     color: Colors.black,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),

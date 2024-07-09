@@ -7,7 +7,7 @@ class AboutMeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.8,
+      height: 850,
       width: double.infinity,
       child: Stack(fit: StackFit.expand, children: [
         Image.network(
@@ -71,7 +71,7 @@ class AboutMeSection extends StatelessWidget {
                               child: Text(
                               "Years Of \nExperience",
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 16,
                                 color: Colors.black,
                                 fontFamily: 'Sora',fontWeight: FontWeight.w700
                               ),
@@ -100,7 +100,7 @@ class AboutMeSection extends StatelessWidget {
                             child: Text(
                               "Successful \nProjects",
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 16,
                                 color: Colors.black,
                                 fontFamily: 'Sora',fontWeight: FontWeight.w700
                               ),

@@ -24,7 +24,7 @@ class Header extends StatelessWidget {
           height: 80,
           width: 1650,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -40,19 +40,19 @@ class Header extends StatelessWidget {
                     ],
                   ),
                 ),
-                ShadButton(
+                ShadButton(decoration: ShadDecoration(border: ShadBorder(radius: BorderRadius.circular(9))),
                   hoverBackgroundColor: const Color(0xFFEA552B),
                   cursor: SystemMouseCursors.click,
                   pressedBackgroundColor:  const Color(0xFFEA552B),
                   backgroundColor: Colors.black,
-                  width: 145,height: 55,
+                  width: 160,height: 55,
                   text: const Text(
                     "Let's Talk",
                     style: TextStyle(
                       fontFamily: 'Sora',
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
-                      fontSize: 14,
+                      fontSize: 16,
                     ),
                   ),
                   onPressed: () {},
@@ -73,7 +73,7 @@ Widget _buildNavItem(String page) {
       child: Text(
         page,
         style: TextStyle(
-          fontSize: 14.7,
+          fontSize: 16,
           fontFamily: 'Sora',
           fontWeight: FontWeight.w600,
           color: activePage == page ? const Color(0xFFEA552B) : Colors.black87,

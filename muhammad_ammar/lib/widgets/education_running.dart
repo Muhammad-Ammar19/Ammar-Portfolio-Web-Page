@@ -8,7 +8,7 @@ class Education extends StatelessWidget {
     return Container(
       color: const Color.fromARGB(183, 0, 0, 0),
       width: double.infinity,
-      height: 220,
+      height: 250,
       child: const Center(
         child: Text(
           "I craft wonderful digital \nexperiences for brands.",

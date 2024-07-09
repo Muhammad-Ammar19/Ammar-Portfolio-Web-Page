@@ -45,7 +45,7 @@ class Socials extends StatelessWidget {
       text,
       style: const TextStyle(
         fontFamily: 'Sora',
-        fontSize: 28,
+        fontSize: 30,
         fontWeight: FontWeight.w700,
         color: Colors.black,
       ),
