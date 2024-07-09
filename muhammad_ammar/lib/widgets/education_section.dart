@@ -27,168 +27,174 @@ class EducationSection extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(height: 420, 
-                  width: 500,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.white60,
+                Flexible(flex: 1,
+                  child: Container(height: 420, 
+                    width: 500,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.white60,
+                      ),
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        TextButton.icon(
-                          onPressed: () {},
-                          label: const Text(
-                            "My Education",
-                            style: TextStyle(
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextButton.icon(
+                            onPressed: () {},
+                            label: const Text(
+                              "My Education",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: 'Sora',
+                                fontWeight: FontWeight.w600,
+                                fontSize: 25,
+                              ),
+                            ),
+                            icon: const Icon(
+                              Icons.school,
+                              size: 35,
                               color: Colors.black,
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              fontSize: 25,
                             ),
                           ),
-                          icon: const Icon(
-                            Icons.school,
-                            size: 35,
-                            color: Colors.black,
+                          const SizedBox(height: 20),
+                          _buildEducationRow(
+                            context,
+                            '2018 - 2024',
+                            "Bachelor's in Computer Science",
+                            'Alhamd Islamic University',
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        _buildEducationRow(
-                          context,
-                          '2018 - 2024',
-                          "Bachelor's in Computer Science",
-                          'Alhamd Islamic University',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2018 - 2020',
-                          "Fsc Pre - Engineering",
-                          'Govt Boys Inter College',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2006 - 2018',
-                          "Matriculation",
-                          'OPF Public School',
-                        ),
-                      ],
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2018 - 2020',
+                            "Fsc Pre - Engineering",
+                            'Govt Boys Inter College',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2006 - 2018',
+                            "Matriculation",
+                            'OPF Public School',
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 
-                Container(height: 420,
-                  width: 500,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.white60,
+                Flexible(flex: 1,
+                  child: Container(height: 420,
+                    width: 500,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.white60,
+                      ),
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        TextButton.icon(
-                          onPressed: () {},
-                          label: const Text(
-                            "Certifications",
-                            style: TextStyle(
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextButton.icon(
+                            onPressed: () {},
+                            label: const Text(
+                              "Certifications",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: 'Sora',
+                                fontWeight: FontWeight.w600,
+                                fontSize: 25,
+                              ),
+                            ),
+                            icon: const Icon(
+                              Icons.book,
+                              size: 35,
                               color: Colors.black,
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w600,
-                              fontSize: 25,
                             ),
                           ),
-                          icon: const Icon(
-                            Icons.book,
-                            size: 35,
-                            color: Colors.black,
+                          const SizedBox(height: 20),
+                          _buildEducationRow(
+                            context,
+                            '2024',
+                            "IT Support Professional Certificate",
+                            'Google',
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        _buildEducationRow(
-                          context,
-                          '2024',
-                          "IT Support Professional Certificate",
-                          'Google',
-                        ),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Crash Course on Python",
-                          'Google',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Software Engineering Essentials",
-                          'IBM',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Foundations of User Experience Design",
-                          'Google',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Decentralized Applications",
-                          'University at buffalo | Coursera',
-                        ),
-                      ],
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Crash Course on Python",
+                            'Google',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Software Engineering Essentials",
+                            'IBM',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Foundations of User Experience Design",
+                            'Google',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Decentralized Applications",
+                            'University at buffalo | Coursera',
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 
-                Container(height: 420,
-                  width: 500,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.white60,
+                Flexible(flex: 1,
+                  child: Container(height: 420,
+                    width: 500,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.white60,
+                      ),
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "AI Essentials",
-                          'Intel',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Advanced Python Programming & Applications",
-                          'NAVTTC',
-                        ),
-                        const SizedBox(height: 10),
-                        _buildEducationRow(
-                          context,
-                          '2023',
-                          "Smart Contracts",
-                          'University at Buffalo | Coursera',
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "AI Essentials",
+                            'Intel',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Advanced Python Programming & Applications",
+                            'NAVTTC',
+                          ),
+                          const SizedBox(height: 10),
+                          _buildEducationRow(
+                            context,
+                            '2023',
+                            "Smart Contracts",
+                            'University at Buffalo | Coursera',
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

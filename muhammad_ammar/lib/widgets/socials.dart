@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Socials extends StatelessWidget {
-  const Socials({super.key,});
+  const Socials({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -9,30 +12,42 @@ class Socials extends StatelessWidget {
       height: 250,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage("https://petrix-react.vercel.app/images/golden_bg.jpg"),
+          image: NetworkImage(
+              "https://petrix-react.vercel.app/images/golden_bg.jpg"),
           fit: BoxFit.cover,
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(left: 180,right:180),
+        padding: const EdgeInsets.only(left: 180, right: 180),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-              child: _buildSocialButton("My Linkedin"),
+              child: InkWell(onTap: (){ const link ="https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+launchUrl(Uri.parse(link),mode: LaunchMode.externalApplication);
+
+              },
+                  mouseCursor: SystemMouseCursors.click,
+                  child: _buildSocialButton("My Linkedin")),
             ),
             _buildDivider(),
             Expanded(
-              child: _buildSocialButton("My Twitter"),
+              child: InkWell(
+                  mouseCursor: SystemMouseCursors.click,
+                  child: _buildSocialButton("My Twitter")),
             ),
             _buildDivider(),
             Expanded(
-              child: _buildSocialButton("My Github"),
+              child: InkWell(
+                  mouseCursor: SystemMouseCursors.click,
+                  child: _buildSocialButton("My Github")),
             ),
             _buildDivider(),
             Expanded(
-              child: _buildSocialButton("My Instagram"),
+              child: InkWell(
+                  mouseCursor: SystemMouseCursors.click,
+                  child: _buildSocialButton("My Instagram")),
             ),
           ],
         ),
@@ -61,4 +76,3 @@ class Socials extends StatelessWidget {
     );
   }
 }
-

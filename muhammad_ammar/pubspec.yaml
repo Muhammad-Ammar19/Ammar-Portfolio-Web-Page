@@ -38,7 +38,7 @@ dependencies:
   get: ^4.6.6
   url_launcher: ^6.3.0
   shadcn_ui: ^0.5.7
-  text_marquee: ^0.0.2
+  visibility_detector: ^0.2.0
 
   
   

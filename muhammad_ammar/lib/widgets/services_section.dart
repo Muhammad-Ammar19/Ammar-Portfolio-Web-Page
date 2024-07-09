@@ -59,7 +59,7 @@ class ServicesSection extends StatelessWidget {
               style: TextStyle(
                   fontFamily: 'Sora',
                   fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
@@ -71,7 +71,7 @@ class ServicesSection extends StatelessWidget {
               style: TextStyle(
                   fontFamily: 'Sora',
                   fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
@@ -83,7 +83,7 @@ class ServicesSection extends StatelessWidget {
               style: TextStyle(
                   fontFamily: 'Sora',
                   fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(
@@ -95,7 +95,7 @@ class ServicesSection extends StatelessWidget {
               style: TextStyle(
                   fontFamily: 'Sora',
                   fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: Colors.black),
             ),
             Divider(

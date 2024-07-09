@@ -8,13 +8,13 @@ class Footer extends StatelessWidget {
     return Center(
       child: Container(
         color: Colors.black,
-        height: 70,
+        height: 80,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const Text(
-              "Copyright © 2024 ammar. All rights reserved.",
+              "Copyright © 2024 Ammar. All rights reserved.",
               style: TextStyle(
                   fontFamily: 'Sora',
                   fontWeight: FontWeight.w600,
