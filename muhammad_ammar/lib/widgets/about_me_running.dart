@@ -17,7 +17,7 @@ class AboutMeState extends State<AboutMe> with SingleTickerProviderStateMixin {
     _scrollController = ScrollController();
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 60),
+      duration: const Duration(seconds: 100),
     );
 
     _animationController.addListener(() {
