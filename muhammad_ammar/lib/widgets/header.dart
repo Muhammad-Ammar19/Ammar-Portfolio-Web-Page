@@ -16,7 +16,7 @@ class Header extends StatelessWidget {
     return Center(
       child: Padding(
         padding: const EdgeInsets.only(top: 18),
-        child: Card(elevation: 1,
+        child: Card(elevation: 0.5,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
