@@ -10,7 +10,7 @@ class EducationSection extends StatelessWidget {
        
         Container(
           width: double.infinity,
-          height:550,
+          height:600,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(
@@ -23,7 +23,7 @@ class EducationSection extends StatelessWidget {
 
         Center(
           child: Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: const EdgeInsets.only(top: 100.0,left: 30,right: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -87,7 +87,7 @@ class EducationSection extends StatelessWidget {
                 ),
                 
                 Flexible(flex: 1,
-                  child: Container(height: 420,
+                  child: Container(
                     width: 500,
                     decoration: BoxDecoration(
                       border: Border.all(
