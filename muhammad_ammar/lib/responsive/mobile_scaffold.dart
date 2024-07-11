@@ -14,12 +14,16 @@ class MobileScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: const IconThemeData(
+          color: Color(0xFFEA552B),
+        ),
         elevation: 4,
       ),
-      endDrawer: const Drawer(backgroundColor: Colors.white),
+      endDrawer: const Drawer(
+        backgroundColor: Colors.white,
+      ),
       body: SingleChildScrollView(
         child: Column(
-         
           children: [
             Container(
               height: 800,
@@ -125,6 +129,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 "Linkedin.",
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -137,6 +142,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -149,6 +155,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Github.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -174,7 +181,7 @@ class MobileScaffold extends StatelessWidget {
                 fit: BoxFit.cover,
               )),
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -188,7 +195,7 @@ class MobileScaffold extends StatelessWidget {
                     ),
                     Image.network(
                         "https://petrix-react.vercel.app/_next/static/media/about_shapes.df78a495.png"),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 10),
                     const Text(
                       "Hello! I am Muhammad Ammar, Full Stack Flutter Developer from Quetta. I have extensive experience in both app and web development and specialize in creating smooth and responsive applications. I am also familiar with web technologies. I enjoy discussing and working on unique projects that bring innovative solutions to life.",
                       style: TextStyle(
@@ -200,7 +207,7 @@ class MobileScaffold extends StatelessWidget {
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 15),
                     const Row(
                       children: [
                         Text(
@@ -215,7 +222,7 @@ class MobileScaffold extends StatelessWidget {
                         Text(
                           "Years Of \nExperience",
                           style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 14,
                               color: Colors.black,
                               fontFamily: 'Sora',
                               fontWeight: FontWeight.w700),
@@ -233,7 +240,7 @@ class MobileScaffold extends StatelessWidget {
                         Text(
                           "Successful \nProjects",
                           style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 14,
                               color: Colors.black,
                               fontFamily: 'Sora',
                               fontWeight: FontWeight.w700),
@@ -287,7 +294,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: 1100,
+              height: 1250,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -295,7 +302,7 @@ class MobileScaffold extends StatelessWidget {
                           "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg"),
                       fit: BoxFit.cover)),
               child: Padding(
-                padding: const EdgeInsets.all(25.0),
+                padding: const EdgeInsets.all(30.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -492,7 +499,7 @@ class MobileScaffold extends StatelessWidget {
                             'Deeptune - Music Player',
                             style: TextStyle(
                               fontFamily: 'Sora',
-                              fontSize: 26,
+                              fontSize: 23,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -650,32 +657,32 @@ class MobileScaffold extends StatelessWidget {
             const LetsTalkRunning(),
             Container(
               width: double.infinity,
-              height: 600,
+              height: 350,
               color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Text(
                       'Do you have a question, an idea, or a project you need help with.',
                       style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 34,
+                          fontSize: 22,
                           fontWeight: FontWeight.w800),
                     ),
                     const Text(
                       "Contact me!",
                       style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 34,
+                          fontSize: 22,
                           fontWeight: FontWeight.w800),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: ShadButton.outline(
-                        height: 60,
+                        height: 70,
                         width: 400,
                         decoration: ShadDecoration(
                             border:
@@ -684,7 +691,7 @@ class MobileScaffold extends StatelessWidget {
                           'Contact Form',
                           style: TextStyle(
                               fontFamily: 'Sora',
-                              fontSize: 16,
+                              fontSize: 22,
                               fontWeight: FontWeight.w800),
                         ),
                         onPressed: () {
@@ -802,8 +809,11 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
+          
+          
+          
             Container(
-              height: 400,
+              height: 250,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -815,9 +825,26 @@ class MobileScaffold extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Expanded(
-                    child: Center(
-                      child: InkWell(
+                  Row(
+                    children: [
+                      Expanded(
+                        child: InkWell(
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Github"),
+                        ),
+                      ),
+                      Expanded(
+                        child: InkWell(
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Instagram"),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: InkWell(
                           onTap: () {
                             const link =
                                 "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
@@ -825,69 +852,45 @@ class MobileScaffold extends StatelessWidget {
                                 mode: LaunchMode.externalApplication);
                           },
                           mouseCursor: SystemMouseCursors.click,
-                          child: _buildSocialButton("My Linkedin")),
-                    ),
-                  ),
-                  _buildDivider(),
-                  Expanded(
-                    child: Center(
-                      child: InkWell(
+                          child: _buildSocialButton("My Linkedin"),
+                        ),
+                      ),
+                      Expanded(
+                        child: InkWell(
                           mouseCursor: SystemMouseCursors.click,
-                          child: _buildSocialButton("My Twitter")),
-                    ),
-                  ),
-                  _buildDivider(),
-                  Expanded(
-                    child: Center(
-                      child: InkWell(
-                          mouseCursor: SystemMouseCursors.click,
-                          child: _buildSocialButton("My Github")),
-                    ),
-                  ),
-                  _buildDivider(),
-                  Expanded(
-                    child: Center(
-                      child: InkWell(
-                          mouseCursor: SystemMouseCursors.click,
-                          child: _buildSocialButton("My Instagram")),
-                    ),
-                  ),
+                          child: _buildSocialButton("My Twitter"),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
-        
-         Container(
-        color: Colors.black,
-       
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const Text(
-              "Copyright © 2024 Ammar. All rights reserved.",
-              style: TextStyle(
-                  fontFamily: 'Sora',
-                  fontWeight: FontWeight.w600,
-                  color: Colors.grey,
-                  fontSize: 12),
+            Container(
+              color: Colors.black,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const Text(
+                    "Copyright © 2024 Ammar. All rights reserved.",
+                    style: TextStyle(
+                        fontFamily: 'Sora',
+                        fontWeight: FontWeight.w600,
+                        color: Colors.grey,
+                        fontSize: 11),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.arrow_upward_rounded),
+                    hoverColor: Colors.black,
+                    color: const Color(0xFFEA552B),
+                    tooltip: "Scroll to top",
+                    iconSize: 20,
+                  )
+                ],
+              ),
             ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.arrow_upward_rounded),
-              hoverColor: Colors.black,
-              color: const Color(0xFFEA552B),
-              tooltip: "Scroll to top",
-              iconSize: 20,
-            )
-          ],
-        ),
-      ),
-        
-        
-        
-        
-        
-        
           ],
         ),
       ),
@@ -947,7 +950,7 @@ Widget _buildSocialButton(String text) {
     text,
     style: const TextStyle(
       fontFamily: 'Sora',
-      fontSize: 30,
+      fontSize: 16,
       fontWeight: FontWeight.w700,
       color: Colors.black,
     ),
@@ -957,7 +960,7 @@ Widget _buildSocialButton(String text) {
 
 Widget _buildDivider() {
   return const Divider(
-    color: Colors.grey,
+    color: Colors.black,
     thickness: 0.3,
   );
 }
