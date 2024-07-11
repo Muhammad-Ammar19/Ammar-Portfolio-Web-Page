@@ -150,15 +150,19 @@ class MobileScaffold extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            "Work \nProcess",
-                            style: TextStyle(
-                                fontFamily: 'Sora',
-                                color: Colors.black,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 18),
+                      Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(onTap: () {
+                            scrollToSection(section2Key);
+                          },
+                            child: const Text(
+                              "Work \nProcess",
+                              style: TextStyle(
+                                  fontFamily: 'Sora',
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18),
+                            ),
                           ),
                         ),
                       ],
@@ -967,7 +971,7 @@ class MobileScaffold extends StatelessWidget {
                         fontSize: 11),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {scrollToSection(section1Key);},
                     icon: const Icon(Icons.arrow_upward_rounded),
                     hoverColor: Colors.black,
                     color: const Color(0xFFEA552B),
