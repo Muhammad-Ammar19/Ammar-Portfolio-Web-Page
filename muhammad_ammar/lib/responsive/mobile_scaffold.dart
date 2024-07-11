@@ -19,7 +19,7 @@ class MobileScaffold extends StatelessWidget {
       endDrawer: const Drawer(backgroundColor: Colors.white),
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+         
           children: [
             Container(
               height: 800,
@@ -31,139 +31,136 @@ class MobileScaffold extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Flexible(
-                flex: 1,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      const Text(
-                        "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
-                        style: TextStyle(
-                          fontFamily: 'Sora',
-                          color: Colors.black,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const Text(
+                      "Hello, I’m Muhammad Ammar,\nFull Stack software developer based \nin Quetta, Pakistan.",
+                      style: TextStyle(
+                        fontFamily: 'Sora',
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
                       ),
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.black)),
-                            child: const Padding(
-                              padding: EdgeInsets.all(15.0),
-                              child: Icon(
-                                Icons.play_arrow_rounded,
-                                color: Colors.black,
-                                size: 30,
-                              ),
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Text(
-                              "Work \nProcess",
-                              style: TextStyle(
-                                  fontFamily: 'Sora',
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 18),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const Text(
-                        "I LOVE SOFTWARES",
-                        style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w900,
-                            fontSize: 56,
-                            color: Colors.black),
-                      ),
-                      const Row(
-                        children: [
-                          Padding(
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.black)),
+                          child: const Padding(
                             padding: EdgeInsets.all(15.0),
                             child: Icon(
-                              Icons.arrow_downward_rounded,
+                              Icons.play_arrow_rounded,
                               color: Colors.black,
-                              size: 20,
+                              size: 30,
                             ),
                           ),
-                          Text(
-                            "Scroll \nDown",
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            "Work \nProcess",
                             style: TextStyle(
                                 fontFamily: 'Sora',
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700,
-                                fontSize: 16),
+                                fontSize: 18),
                           ),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            "Feel Free to send me a message \nif you want to improve your projects.",
-                            style: TextStyle(
-                                fontFamily: 'Sora',
-                                color: Colors.black,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    const Text(
+                      "I LOVE SOFTWARES",
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w900,
+                          fontSize: 56,
+                          color: Colors.black),
+                    ),
+                    const Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Icon(
+                            Icons.arrow_downward_rounded,
+                            color: Colors.black,
+                            size: 20,
                           ),
-                          Row(
-                            children: [
-                              InkWell(
-                                onTap: () {
-                                  const link =
-                                      "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
-                                  launchUrl(Uri.parse(link),
-                                      mode: LaunchMode.externalApplication);
-                                },
-                                child: const Text(
-                                  "Linkedin.",
-                                  style: TextStyle(
-                                    fontFamily: 'Sora',
-                                    color: Colors.black,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                        ),
+                        Text(
+                          "Scroll \nDown",
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Feel Free to send me a message \nif you want to improve your projects.",
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600),
+                        ),
+                        Row(
+                          children: [
+                            InkWell(
+                              onTap: () {
+                                const link =
+                                    "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                              },
+                              child: const Text(
+                                "Linkedin.",
+                                style: TextStyle(
+                                  fontFamily: 'Sora',
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: const Text(
-                                  ' Twitter.',
-                                  style: TextStyle(
-                                    fontFamily: 'Sora',
-                                    color: Colors.black,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                            ),
+                            InkWell(
+                              onTap: () {},
+                              child: const Text(
+                                ' Twitter.',
+                                style: TextStyle(
+                                  fontFamily: 'Sora',
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: const Text(
-                                  ' Github.',
-                                  style: TextStyle(
-                                    fontFamily: 'Sora',
-                                    color: Colors.black,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                            ),
+                            InkWell(
+                              onTap: () {},
+                              child: const Text(
+                                ' Github.',
+                                style: TextStyle(
+                                  fontFamily: 'Sora',
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ),
