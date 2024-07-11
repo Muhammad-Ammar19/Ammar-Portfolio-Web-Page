@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
+import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
+import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -12,9 +14,9 @@ class MobileScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        elevation: 2,
+        elevation: 4,
       ),
-      endDrawer: const Drawer(),
+      endDrawer: const Drawer(backgroundColor: Colors.white),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -29,10 +31,10 @@ class MobileScaffold extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Flexible(
-                  flex: 1,
+              child: Flexible(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -102,13 +104,63 @@ class MobileScaffold extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const Text(
-                        "Feel Free to send me a message \nif you want to improve your projects.",
-                        style: TextStyle(
-                            fontFamily: 'Sora',
-                            color: Colors.black,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Feel Free to send me a message \nif you want to improve your projects.",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                color: Colors.black,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          Row(
+                            children: [
+                              InkWell(
+                                onTap: () {
+                                  const link =
+                                      "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                                  launchUrl(Uri.parse(link),
+                                      mode: LaunchMode.externalApplication);
+                                },
+                                child: const Text(
+                                  "Linkedin.",
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {},
+                                child: const Text(
+                                  ' Twitter.',
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {},
+                                child: const Text(
+                                  ' Github.',
+                                  style: TextStyle(
+                                    fontFamily: 'Sora',
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
                       ),
                     ],
                   ),
@@ -226,7 +278,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             const SizedBox(
               width: double.infinity,
-              height: 120,
+              height: 130,
               child: Center(
                 child: Text(
                   "I craft wonderful digital \nexperiences for brands.",
@@ -418,12 +470,427 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-         
-         const PortfolioRunning(),
+            const PortfolioRunning(),
+            Container(
+              width: double.infinity,
+              color: Colors.black,
+              child: Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            height: 60,
+                            width: 60,
+                            "assets/images/deeptune.png",
+                            alignment: Alignment.topLeft,
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15.0),
+                          child: Text(
+                            'Deeptune - Music Player',
+                            style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontSize: 26,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 30),
+                    const Text(
+                      "Deeptune is an elegant and intuitive player application developed with Flutter. Designed to deliver a smooth audio experience, Deeptune has a modern interface, strong performance and extensive customization options. Whether you're curating playlists, exploring new downloaded music, or enjoying your favorite tracks, Deeptune delivers high-quality, immersive listening.",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          height: 2),
+                    ),
+                    const Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Image(
+                            image: AssetImage(
+                                "assets/images/5s_7_8_Preview_1-removebg-preview.png"),
+                          ),
+                        ),
+                        Expanded(
+                          child: Image(
+                            image: AssetImage(
+                                "assets/images/5s_7_8_Preview_2-removebg-preview.png"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Image(
+                            image: AssetImage(
+                                "assets/images/5s_7_8_Preview_3-removebg-preview.png"),
+                          ),
+                        ),
+                        Expanded(
+                          child: Image(
+                            image: AssetImage(
+                                "assets/images/5s_7_8_Preview_4-removebg-preview.png"),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const ServiceRunning(),
+            Container(
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg"),
+                      fit: BoxFit.cover)),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Text(
+                      "I specialize in designing and developing custom web, mobile applications and desktop applications using Flutter for cross-platform compatibility. I provide robust backend solutions with easy API integration through Node.js, Python and Firebase. My services include performance optimization, security and scalability to provide you with high-quality software solutions that meet your needs.",
+                      style: TextStyle(
+                          height: 1.6,
+                          fontFamily: 'Sora',
+                          fontSize: 22,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "Front Development",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "Backend Development",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "Mobile Applications",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "RESTful APIs",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "Third-Party API Integration",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                    Text(
+                      "UI/UX Design",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                    Divider(
+                      color: Color.fromARGB(132, 158, 158, 158),
+                      height: 80,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const LetsTalkRunning(),
+            Container(
+              width: double.infinity,
+              height: 600,
+              color: Colors.black,
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Do you have a question, an idea, or a project you need help with.',
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 34,
+                          fontWeight: FontWeight.w800),
+                    ),
+                    const Text(
+                      "Contact me!",
+                      style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontSize: 34,
+                          fontWeight: FontWeight.w800),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 12.0),
+                      child: ShadButton.outline(
+                        height: 60,
+                        width: 400,
+                        decoration: ShadDecoration(
+                            border:
+                                ShadBorder(radius: BorderRadius.circular(12))),
+                        text: const Text(
+                          'Contact Form',
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800),
+                        ),
+                        onPressed: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                backgroundColor: Colors.black,
+                                title: const Column(
+                                  children: [
+                                    Text(
+                                      textAlign: TextAlign.center,
+                                      'Contact Me',
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 28),
+                                    ),
+                                    Text(
+                                      "By all means, send me an email and get in touch.",
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 28),
+                                    )
+                                  ],
+                                ),
+                                content: SizedBox(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(50.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        ConstrainedBox(
+                                          constraints: const BoxConstraints(
+                                              maxWidth: 500),
+                                          child: const ShadInput(
+                                            placeholder: Text('Name'),
+                                            keyboardType: TextInputType.name,
+                                          ),
+                                        ),
+                                        const SizedBox(height: 12),
+                                        ConstrainedBox(
+                                          constraints: const BoxConstraints(
+                                              maxWidth: 500),
+                                          child: const ShadInput(
+                                            placeholder: Text('Email'),
+                                            keyboardType:
+                                                TextInputType.emailAddress,
+                                          ),
+                                        ),
+                                        const SizedBox(height: 12),
+                                        ConstrainedBox(
+                                          constraints: const BoxConstraints(
+                                              maxWidth: 500),
+                                          child: const ShadInput(
+                                            autofocus: true,
+                                            placeholder: Text('Message'),
+                                            keyboardType:
+                                                TextInputType.multiline,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                actions: [
+                                  ShadButton.outline(
+                                    text: const Text('Cancel'),
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                  ),
+                                  ShadButton(
+                                    text: const Text('Send'),
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.deepOrange[500],
+              width: double.infinity,
+              height: 75,
+              child: const Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      "syedammarzaki4@gmail.com",
+                      style: TextStyle(
+                          fontFamily: 'Sora', fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      "/",
+                      style: TextStyle(
+                          fontFamily: 'Sora', fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      "Quetta, Pakistan",
+                      style: TextStyle(
+                          fontFamily: 'Sora', fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: 400,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      "https://petrix-react.vercel.app/images/golden_bg.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Center(
+                      child: InkWell(
+                          onTap: () {
+                            const link =
+                                "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Linkedin")),
+                    ),
+                  ),
+                  _buildDivider(),
+                  Expanded(
+                    child: Center(
+                      child: InkWell(
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Twitter")),
+                    ),
+                  ),
+                  _buildDivider(),
+                  Expanded(
+                    child: Center(
+                      child: InkWell(
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Github")),
+                    ),
+                  ),
+                  _buildDivider(),
+                  Expanded(
+                    child: Center(
+                      child: InkWell(
+                          mouseCursor: SystemMouseCursors.click,
+                          child: _buildSocialButton("My Instagram")),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        
+         Container(
+        color: Colors.black,
        
-         
-         
-         
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            const Text(
+              "Copyright © 2024 Ammar. All rights reserved.",
+              style: TextStyle(
+                  fontFamily: 'Sora',
+                  fontWeight: FontWeight.w600,
+                  color: Colors.grey,
+                  fontSize: 12),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.arrow_upward_rounded),
+              hoverColor: Colors.black,
+              color: const Color(0xFFEA552B),
+              tooltip: "Scroll to top",
+              iconSize: 20,
+            )
+          ],
+        ),
+      ),
+        
+        
+        
+        
+        
+        
           ],
         ),
       ),
@@ -475,5 +942,25 @@ Widget _buildEducationRow(
         ),
       ],
     ),
+  );
+}
+
+Widget _buildSocialButton(String text) {
+  return Text(
+    text,
+    style: const TextStyle(
+      fontFamily: 'Sora',
+      fontSize: 30,
+      fontWeight: FontWeight.w700,
+      color: Colors.black,
+    ),
+    textAlign: TextAlign.center,
+  );
+}
+
+Widget _buildDivider() {
+  return const Divider(
+    color: Colors.grey,
+    thickness: 0.3,
   );
 }
