@@ -7,7 +7,22 @@ import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MobileScaffold extends StatelessWidget {
-  const MobileScaffold({super.key});
+  MobileScaffold({super.key});
+  final GlobalKey section1Key = GlobalKey();
+  final GlobalKey section2Key = GlobalKey();
+  final GlobalKey section3Key = GlobalKey();
+  final GlobalKey section4Key = GlobalKey();
+  final GlobalKey section5Key = GlobalKey();
+
+  final ScrollController scrollController = ScrollController();
+
+  void scrollToSection(GlobalKey key) {
+    final context = key.currentContext;
+    if (context != null) {
+      Scrollable.ensureVisible(context,
+          duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +34,83 @@ class MobileScaffold extends StatelessWidget {
         ),
         elevation: 4,
       ),
-      endDrawer: const Drawer(
+      endDrawer: Drawer(
         backgroundColor: Colors.white,
+        child: ListView(
+          padding: const EdgeInsets.all(60),
+          children: [
+            ListTile(
+              onTap: () {
+                scrollToSection(section1Key);
+              },
+              title: const Text(
+                "Home",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Sora',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                scrollToSection(section5Key);
+              },
+              title: const Text(
+                "Services",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Sora',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+            ListTile(
+              onTap: () {  scrollToSection(section3Key);},
+              title: const Text(
+                "Porfolio",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Sora',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+            ListTile(
+              onTap: () {  scrollToSection(section4Key);},
+              title: const Text(
+                "Contact",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Sora',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                scrollToSection(section2Key);
+              },
+              title: const Text(
+                "AboutMe",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Sora',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+          ],
+        ),
       ),
+    
+    
+    
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
+              key: section1Key,
               height: 800,
               decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -173,6 +258,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             const AboutMe(),
             Container(
+              key: section2Key,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -476,6 +562,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             const PortfolioRunning(),
             Container(
+              key: section3Key,
               width: double.infinity,
               color: Colors.black,
               child: Padding(
@@ -555,6 +642,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             const ServiceRunning(),
             Container(
+              key: section5Key,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -656,6 +744,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             const LetsTalkRunning(),
             Container(
+              key: section4Key,
               width: double.infinity,
               height: 350,
               color: Colors.black,
@@ -809,9 +898,6 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-          
-          
-          
             Container(
               height: 250,
               decoration: const BoxDecoration(
@@ -955,12 +1041,5 @@ Widget _buildSocialButton(String text) {
       color: Colors.black,
     ),
     textAlign: TextAlign.center,
-  );
-}
-
-Widget _buildDivider() {
-  return const Divider(
-    color: Colors.black,
-    thickness: 0.3,
   );
 }

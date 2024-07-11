@@ -33,11 +33,11 @@ class HomeScreen extends StatelessWidget {
     return GetBuilder<GetController>(
       init: GetController(),
       builder: (controller) {
-        return const ShadApp.material(debugShowCheckedModeBanner: false,
+        return  ShadApp.material(debugShowCheckedModeBanner: false,
           home: ResponsiveLayout(
             mobileScaffold: MobileScaffold(),
-            tabletScaffold: TabletScaffold(),
-            desktopScaffold: DesktopScaffold(),
+            tabletScaffold: const TabletScaffold(),
+            desktopScaffold: const DesktopScaffold(),
           ),
         );
       },
