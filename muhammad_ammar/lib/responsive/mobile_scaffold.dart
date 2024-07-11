@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
-import 'package:muhammad_ammar/widgets/portfolio_section.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
