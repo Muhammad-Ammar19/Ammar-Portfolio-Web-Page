@@ -9,7 +9,7 @@ class PortfolioSection extends StatelessWidget {
     return Container(
       color: Colors.black,
       width: double.infinity,
-      height: Get.height *0.9,
+      height: Get.height * 0.9,
       child: Padding(
         padding: const EdgeInsets.all(60.0),
         child: Column(
@@ -20,9 +20,9 @@ class PortfolioSection extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: Image.asset(
+                    "assets/images/deeptune.png",
                     height: 100,
                     width: 100,
-                    "assets/images/deeptune.png",
                     alignment: Alignment.topLeft,
                   ),
                 ),
@@ -39,7 +39,7 @@ class PortfolioSection extends StatelessWidget {
                 ),
               ],
             ),
-           const SizedBox(height: 30),
+            const SizedBox(height: 30),
             const Text(
               "Deeptune is an elegant and intuitive player application developed with Flutter. Designed to deliver a smooth audio experience, Deeptune has a modern interface, strong performance and extensive customization options. Whether you're curating playlists, exploring new downloaded music, or enjoying your favorite tracks, Deeptune delivers high-quality, immersive listening.",
               style: TextStyle(
@@ -48,27 +48,16 @@ class PortfolioSection extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   height: 2),
             ),
-            const Flexible(
+            const SizedBox(height: 30),
+            Flexible(
               flex: 1,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image(
-                    image: AssetImage(
-                        "assets/images/5s_7_8_Preview_1-removebg-preview.png"),
-                  ),
-                  Image(
-                    image: AssetImage(
-                        "assets/images/5s_7_8_Preview_2-removebg-preview.png"),
-                  ),
-                  Image(
-                    image: AssetImage(
-                        "assets/images/5s_7_8_Preview_3-removebg-preview.png"),
-                  ),
-                  Image(
-                    image: AssetImage(
-                        "assets/images/5s_7_8_Preview_4-removebg-preview.png"),
-                  ),
+                  _buildImageItem(context, "assets/images/5s_7_8_Preview_1-removebg-preview.png"),
+                  _buildImageItem(context, "assets/images/5s_7_8_Preview_2-removebg-preview.png"),
+                  _buildImageItem(context, "assets/images/5s_7_8_Preview_3-removebg-preview.png"),
+                  _buildImageItem(context, "assets/images/5s_7_8_Preview_4-removebg-preview.png"),
                 ],
               ),
             ),
@@ -77,4 +66,32 @@ class PortfolioSection extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildImageItem(BuildContext context, String assetPath) {
+    return InkWell(
+      onTap: () {
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return Dialog(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(assetPath),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: const Text('Close'),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+      child: Image.asset(assetPath),
+    );
+  }
 }
+
