@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
 import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
@@ -112,7 +113,7 @@ class MobileScaffold extends StatelessWidget {
           children: [
             Container(
               key: section1Key,
-              height: 800,
+              height: Get.height *0.8,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -219,7 +220,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 "Linkedin.",
                                 style: TextStyle(
-                                  decoration: TextDecoration.underline,
+                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -232,7 +233,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
-                                  decoration: TextDecoration.underline,
+                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -245,7 +246,7 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Github.',
                                 style: TextStyle(
-                                  decoration: TextDecoration.underline,
+                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -371,10 +372,10 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
+             SizedBox(
               width: double.infinity,
-              height: 130,
-              child: Center(
+              height: Get.height *0.13,
+              child: const Center(
                 child: Text(
                   "I craft wonderful digital \nexperiences for brands.",
                   style: TextStyle(
@@ -385,7 +386,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: 1250,
+              height: Get.height *1.2,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -655,7 +656,7 @@ class MobileScaffold extends StatelessWidget {
                           "https://petrix-react.vercel.app/_next/static/media/body_bg.255c616a.jpg"),
                       fit: BoxFit.cover)),
               child: const Padding(
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(25.0),
                 child: Column(
                   children: [
                     Text(
@@ -751,7 +752,7 @@ class MobileScaffold extends StatelessWidget {
             Container(
               key: section4Key,
               width: double.infinity,
-              height: 350,
+              height: Get.height *0.35,
               color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -776,8 +777,8 @@ class MobileScaffold extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: ShadButton.outline(
-                        height: 70,
-                        width: 400,
+                        height: Get.height *0.070,
+                        width: Get.width *0.5,
                         decoration: ShadDecoration(
                             border:
                                 ShadBorder(radius: BorderRadius.circular(12))),
@@ -785,7 +786,7 @@ class MobileScaffold extends StatelessWidget {
                           'Contact Form',
                           style: TextStyle(
                               fontFamily: 'Sora',
-                              fontSize: 22,
+                              fontSize: 20,
                               fontWeight: FontWeight.w800),
                         ),
                         onPressed: () {
@@ -879,7 +880,7 @@ class MobileScaffold extends StatelessWidget {
             Container(
               color: Colors.deepOrange[500],
               width: double.infinity,
-              height: 75,
+              height: Get.height *0.075,
               child: const Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -904,7 +905,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: 250,
+              height: Get.height *0.25,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
