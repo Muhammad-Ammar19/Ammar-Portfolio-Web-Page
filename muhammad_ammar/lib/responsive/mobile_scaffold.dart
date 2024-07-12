@@ -113,7 +113,7 @@ class MobileScaffold extends StatelessWidget {
           children: [
             Container(
               key: section1Key,
-              height: Get.height *0.9,
+              height: Get.height * 0.9,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -173,7 +173,7 @@ class MobileScaffold extends StatelessWidget {
                           fontSize: 56,
                           color: Colors.black),
                     ),
-                   Row(
+                    Row(
                       children: [
                         const Padding(
                           padding: EdgeInsets.all(15.0),
@@ -183,9 +183,10 @@ class MobileScaffold extends StatelessWidget {
                             size: 20,
                           ),
                         ),
-                        InkWell( onTap: () {
-                          scrollToSection(section2Key);
-                        },
+                        InkWell(
+                          onTap: () {
+                            scrollToSection(section2Key);
+                          },
                           child: const Text(
                             "Scroll \nDown",
                             style: TextStyle(
@@ -220,7 +221,6 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 "Linkedin.",
                                 style: TextStyle(
-                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -233,7 +233,6 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
-                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -246,7 +245,6 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 ' Github.',
                                 style: TextStyle(
-                                 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -372,9 +370,9 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-             SizedBox(
+            SizedBox(
               width: double.infinity,
-              height: Get.height *0.15,
+              height: Get.height * 0.15,
               child: const Center(
                 child: Text(
                   "I craft wonderful digital \nexperiences for brands.",
@@ -386,7 +384,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height *1.7,
+              height: Get.height * 1.7,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -752,7 +750,7 @@ class MobileScaffold extends StatelessWidget {
             Container(
               key: section4Key,
               width: double.infinity,
-              height: Get.height *0.40,
+              height: Get.height * 0.40,
               color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -777,8 +775,8 @@ class MobileScaffold extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: ShadButton.outline(
-                        height: Get.height *0.070,
-                        width: Get.width *0.5,
+                        height: Get.height * 0.070,
+                        width: Get.width * 0.5,
                         decoration: ShadDecoration(
                             border:
                                 ShadBorder(radius: BorderRadius.circular(12))),
@@ -880,7 +878,7 @@ class MobileScaffold extends StatelessWidget {
             Container(
               color: Colors.deepOrange[500],
               width: double.infinity,
-              height: Get.height *0.075,
+              height: Get.height * 0.075,
               child: const Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -905,7 +903,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height *0.25,
+              height: Get.height * 0.25,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -921,12 +919,23 @@ class MobileScaffold extends StatelessWidget {
                     children: [
                       Expanded(
                         child: InkWell(
+                          onTap: () {
+                            const link = "https://github.com/Muhammad-Ammar19";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
                           mouseCursor: SystemMouseCursors.click,
                           child: _buildSocialButton("My Github"),
                         ),
                       ),
                       Expanded(
                         child: InkWell(
+                          onTap: () {
+                            const link =
+                                "https://www.instagram.com/syed_ammarxd?utm_source=qr&igsh=bXh3bmFiYzFkeTU1";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
                           mouseCursor: SystemMouseCursors.click,
                           child: _buildSocialButton("My Instagram"),
                         ),
@@ -949,6 +958,12 @@ class MobileScaffold extends StatelessWidget {
                       ),
                       Expanded(
                         child: InkWell(
+                          onTap: () {
+                            const link =
+                                "https://x.com/i/flow/login?redirect_after_login=%2Fsyedammarzaki4";
+                            launchUrl(Uri.parse(link),
+                                mode: LaunchMode.externalApplication);
+                          },
                           mouseCursor: SystemMouseCursors.click,
                           child: _buildSocialButton("My Twitter"),
                         ),

@@ -18,21 +18,21 @@ class Info extends StatelessWidget {
               "syedammarzaki4@gmail.com",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 25,
+                  fontSize: 22,
                   fontWeight: FontWeight.w600),
             ),
             Text(
               "/",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 25,
+                  fontSize: 22,
                   fontWeight: FontWeight.w600),
             ),
             Text(
               "Quetta, Pakistan",
               style: TextStyle(
                   fontFamily: 'Sora',
-                  fontSize: 25,
+                  fontSize: 22,
                   fontWeight: FontWeight.w600),
             ),
           ],

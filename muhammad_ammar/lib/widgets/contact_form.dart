@@ -65,7 +65,7 @@ class ContactForm extends StatelessWidget {
                         ],
                       ),
                       content: SizedBox(
-                        width: 800,
+                        width: Get.width *0.6,
                         child: Padding(
                           padding: const EdgeInsets.all(50.0),
                           child: Column(
