@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Education extends StatelessWidget {
   const Education({super.key});
@@ -8,7 +9,7 @@ class Education extends StatelessWidget {
     return Container(
       color: const Color.fromARGB(183, 0, 0, 0),
       width: double.infinity,
-      height: 250,
+      height: Get.height  *0.25,
       child: const Center(
         child: Text(
           "I craft wonderful digital \nexperiences for brands.",

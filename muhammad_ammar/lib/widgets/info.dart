@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Info extends StatelessWidget {
   const Info({super.key});
@@ -8,7 +9,7 @@ class Info extends StatelessWidget {
     return Container(
       color: Colors.deepOrange[500],
       width: double.infinity,
-      height: 75,
+      height: Get.height *0.075,
       child: const Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

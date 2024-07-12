@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -115,7 +116,7 @@ class AboutMeSection extends StatelessWidget {
                       cursor: SystemMouseCursors.click,
                       pressedBackgroundColor: const Color(0xFFEA552B),
                       backgroundColor: Colors.black,
-                      height: 65,
+                      height: Get.height *0.06,
                       width: 200,
                       text: const Center(
                         child: Text(

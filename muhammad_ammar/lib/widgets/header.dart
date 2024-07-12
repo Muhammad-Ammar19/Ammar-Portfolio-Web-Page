@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class Header extends StatelessWidget {
@@ -22,8 +23,8 @@ class Header extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               color: Colors.white,
             ),
-            height: 80,
-            width: 1650,
+            height: Get.height *0.08,
+            width: Get.width *0.85,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -46,7 +47,8 @@ class Header extends StatelessWidget {
                     cursor: SystemMouseCursors.click,
                     pressedBackgroundColor:  const Color(0xFFEA552B),
                     backgroundColor: Colors.black,
-                    width: 160,height: 55,
+                    width: 160,
+                    height: Get.height *0.055,
                     text: const Text(
                       "Let's Talk",
                       style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ServiceRunning extends StatefulWidget {
   const ServiceRunning({super.key});
@@ -39,7 +40,7 @@ class ServiceRunningState extends State<ServiceRunning> with SingleTickerProvide
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: 180,
+       height: Get.height *0.18,
       child: Center(
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Socials extends StatelessWidget {
@@ -9,7 +10,7 @@ class Socials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+     height: Get.height *0.25,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: NetworkImage(

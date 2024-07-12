@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AboutMe extends StatefulWidget {
   const AboutMe({super.key});
@@ -39,7 +40,7 @@ class AboutMeState extends State<AboutMe> with SingleTickerProviderStateMixin {
     return Container(
       color: Colors.black,
       width: double.infinity,
-      height: 180,
+      height: Get.height *0.18,
       child: Center(
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,

@@ -66,7 +66,9 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             ListTile(
-              onTap: () {  scrollToSection(section3Key);},
+              onTap: () {
+                scrollToSection(section3Key);
+              },
               title: const Text(
                 "Porfolio",
                 style: TextStyle(
@@ -77,7 +79,9 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             ListTile(
-              onTap: () {  scrollToSection(section4Key);},
+              onTap: () {
+                scrollToSection(section4Key);
+              },
               title: const Text(
                 "Contact",
                 style: TextStyle(
@@ -103,9 +107,6 @@ class MobileScaffold extends StatelessWidget {
           ],
         ),
       ),
-    
-    
-    
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -150,19 +151,15 @@ class MobileScaffold extends StatelessWidget {
                             ),
                           ),
                         ),
-                      Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: InkWell(onTap: () {
-                            scrollToSection(section2Key);
-                          },
-                            child: const Text(
-                              "Work \nProcess",
-                              style: TextStyle(
-                                  fontFamily: 'Sora',
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 18),
-                            ),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            "Work \nProcess",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 18),
                           ),
                         ),
                       ],
@@ -175,9 +172,9 @@ class MobileScaffold extends StatelessWidget {
                           fontSize: 56,
                           color: Colors.black),
                     ),
-                    const Row(
+                   Row(
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(15.0),
                           child: Icon(
                             Icons.arrow_downward_rounded,
@@ -185,13 +182,17 @@ class MobileScaffold extends StatelessWidget {
                             size: 20,
                           ),
                         ),
-                        Text(
-                          "Scroll \nDown",
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                        InkWell( onTap: () {
+                          scrollToSection(section2Key);
+                        },
+                          child: const Text(
+                            "Scroll \nDown",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
                       ],
                     ),
@@ -971,7 +972,9 @@ class MobileScaffold extends StatelessWidget {
                         fontSize: 11),
                   ),
                   IconButton(
-                    onPressed: () {scrollToSection(section1Key);},
+                    onPressed: () {
+                      scrollToSection(section1Key);
+                    },
                     icon: const Icon(Icons.arrow_upward_rounded),
                     hoverColor: Colors.black,
                     color: const Color(0xFFEA552B),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PortfolioSection extends StatelessWidget {
   const PortfolioSection({super.key});
@@ -8,7 +9,7 @@ class PortfolioSection extends StatelessWidget {
     return Container(
       color: Colors.black,
       width: double.infinity,
-      height: 900,
+      height: Get.height *0.9,
       child: Padding(
         padding: const EdgeInsets.all(60.0),
         child: Column(

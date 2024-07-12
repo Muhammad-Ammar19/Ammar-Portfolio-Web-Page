@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class EducationSection extends StatelessWidget {
   const EducationSection({super.key});
@@ -10,7 +11,7 @@ class EducationSection extends StatelessWidget {
        
         Container(
           width: double.infinity,
-          height:600,
+          height: Get.height *0.75,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(

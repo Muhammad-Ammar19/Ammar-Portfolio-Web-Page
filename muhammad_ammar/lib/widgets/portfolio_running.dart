@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PortfolioRunning extends StatefulWidget {
   const PortfolioRunning({super.key});
@@ -39,7 +40,7 @@ class PortfolioRunningState extends State<PortfolioRunning> with SingleTickerPro
     return Container(
       color: const Color(0xFFEA552B),
       width: double.infinity,
-      height: 180,
+      height: Get.height *0.18,
       child: Center(
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,

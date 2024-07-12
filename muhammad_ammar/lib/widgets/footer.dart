@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -8,7 +9,7 @@ class Footer extends StatelessWidget {
     return Center(
       child: Container(
         color: Colors.black,
-        height: 80,
+        height:Get.height *0.08,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
