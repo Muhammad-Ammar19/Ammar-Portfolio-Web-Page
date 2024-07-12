@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: Get.height *1,
+      height: Get.height * 1,
       width: double.infinity,
       child: Stack(children: [
         Row(
@@ -130,6 +130,9 @@ class Home extends StatelessWidget {
                               child: const Text(
                                 "Linkedin.",
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor:
+                                      Colors.black, 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,
@@ -137,11 +140,23 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            const SizedBox(width: 4),
                             InkWell(
-                              onTap: () {},
+                              onTap: () {
+
+const link =
+                                    "https://x.com/i/flow/login?redirect_after_login=%2Fsyedammarzaki4";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+
+
+                              },
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor:
+                                      Colors.black, 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,
@@ -149,11 +164,20 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            const SizedBox(width: 4),
                             InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                const link =
+                                    "https://github.com/Muhammad-Ammar19";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                              },
                               child: const Text(
                                 ' Github.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor:
+                                      Colors.black, 
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,

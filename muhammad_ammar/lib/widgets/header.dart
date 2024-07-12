@@ -58,7 +58,7 @@ class Header extends StatelessWidget {
                         fontSize: 16,
                       ),
                     ),
-                    onPressed: () {},
+                   onPressed: () => onPageSelected('CONTACT'),
                   ),
                 ],
               ),

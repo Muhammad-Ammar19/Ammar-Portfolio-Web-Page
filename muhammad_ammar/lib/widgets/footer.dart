@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:muhammad_ammar/controller/get_controller.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -23,7 +24,10 @@ class Footer extends StatelessWidget {
                   fontSize: 16),
             ),
             IconButton(
-              onPressed: () {},
+               onPressed: () {
+                final controller = Get.find<GetController>();
+                controller.onPageSelected('HOME'); // Scroll to HOME section
+              },
               icon: const Icon(Icons.arrow_upward_rounded),
               hoverColor: Colors.black,
               color: const Color(0xFFEA552B),
