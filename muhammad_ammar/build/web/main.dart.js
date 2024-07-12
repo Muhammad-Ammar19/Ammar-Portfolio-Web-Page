@@ -80529,7 +80529,7 @@ r=$.b8()
 q=r.d
 if(q==null){q=self.window.devicePixelRatio
 if(q===0)q=1}q=s.bc(0,q)
-q=A.bK(g,new A.b4(B.KO,A.cL(A.a([B.a8d,A.ca(A.a([A.bK(g,B.Bc,g,new A.ce(g,g,A.e7(B.j,1),g,g,g,B.fX),g,g,g,g,g),B.Bd],d),B.t,B.w,B.p),B.a8j,A.ca(A.a([B.a_0,A.ea(!1,!0,B.a8J,g,!0,g,g,g,g,g,g,g,g,g,new A.a9m(h),g,g,g,g)],d),B.t,B.w,B.p),A.cL(A.a([B.a7S,A.ca(A.a([A.ea(!1,!0,B.a81,g,!0,g,g,g,g,g,g,g,g,g,new A.a9n(),g,g,g,g),A.ea(!1,!0,B.a7M,g,!0,g,g,g,g,g,g,g,g,g,new A.a9o(),g,g,g,g),A.ea(!1,!0,B.a7F,g,!0,g,g,g,g,g,g,g,g,g,new A.a9p(),g,g,g,g)],d),B.t,B.w,B.p)],d),B.am,B.w,B.p)],d),B.am,B.bS,B.p),g),g,B.ew,q.b*0.8,h.c,g,g,g)
+q=A.bK(g,new A.b4(B.KO,A.cL(A.a([B.a8d,A.ca(A.a([A.bK(g,B.Bc,g,new A.ce(g,g,A.e7(B.j,1),g,g,g,B.fX),g,g,g,g,g),B.Bd],d),B.t,B.w,B.p),B.a8j,A.ca(A.a([B.a_0,A.ea(!1,!0,B.a8J,g,!0,g,g,g,g,g,g,g,g,g,new A.a9m(h),g,g,g,g)],d),B.t,B.w,B.p),A.cL(A.a([B.a7S,A.ca(A.a([A.ea(!1,!0,B.a81,g,!0,g,g,g,g,g,g,g,g,g,new A.a9n(),g,g,g,g),A.ea(!1,!0,B.a7M,g,!0,g,g,g,g,g,g,g,g,g,new A.a9o(),g,g,g,g),A.ea(!1,!0,B.a7F,g,!0,g,g,g,g,g,g,g,g,g,new A.a9p(),g,g,g,g)],d),B.t,B.w,B.p)],d),B.am,B.w,B.p)],d),B.am,B.bS,B.p),g),g,B.ew,q.b*0.9,h.c,g,g,g)
 s=A.bK(g,new A.b4(B.by,A.cL(A.a([B.M_,A.aqO(u.b,g,g),B.aM,B.a8H,B.a2q,B.a0j,B.fA,A.Pa(B.j,B.au,B.Fv,50,B.b_,new A.a9q(),B.b_,B.nI,160)],d),B.am,B.cL,B.p),g),g,B.fW,g,h.d,g,g,1/0)
 p=$.bj().xr
 p=$.P.F$.z.j(0,p)
@@ -80541,7 +80541,7 @@ o.toString
 A.bd(o).toString
 o=r.d
 if(o==null){o=self.window.devicePixelRatio
-if(o===0)o=1}o=A.h2(B.IP,p.bc(0,o).b*0.13,1/0)
+if(o===0)o=1}o=A.h2(B.IP,p.bc(0,o).b*0.15,1/0)
 p=$.bj().xr
 p=$.P.F$.z.j(0,p)
 p.toString
@@ -80561,7 +80561,7 @@ l=A.fC(10)
 l=A.bK(g,new A.b4(B.by,A.cL(A.a([A.afP(B.oZ,B.Gs,new A.a9g()),B.fA,A.jH(a,"2024","IT Support Professional Certificate",f),A.jH(a,e,"Crash Course on Python",f),B.aM,A.jH(a,e,"Software Engineering Essentials","IBM"),B.aM,A.jH(a,e,"Foundations of User Experience Design",f),B.aM,A.jH(a,e,"Decentralized Applications","University at buffalo | Coursera")],d),B.am,B.w,B.p),g),g,new A.ce(B.B,g,p,l,g,g,B.ac),g,g,g,g,1/0)
 p=A.e7(B.d1,1)
 k=A.fC(10)
-n=A.bK(g,new A.b4(B.KY,A.cL(A.a([m,l,A.bK(g,new A.b4(B.by,A.cL(A.a([A.jH(a,e,"AI Essentials","Intel"),B.aM,A.jH(a,e,u.C,"NAVTTC"),B.aM,A.jH(a,e,"Smart Contracts","University at Buffalo | Coursera")],d),B.am,B.w,B.p),g),g,new A.ce(B.B,g,p,k,g,g,B.ac),g,g,g,g,1/0)],d),B.t,B.cL,B.p),g),g,B.ew,n.b*1.2,g,g,g,1/0)
+n=A.bK(g,new A.b4(B.KY,A.cL(A.a([m,l,A.bK(g,new A.b4(B.by,A.cL(A.a([A.jH(a,e,"AI Essentials","Intel"),B.aM,A.jH(a,e,u.C,"NAVTTC"),B.aM,A.jH(a,e,"Smart Contracts","University at Buffalo | Coursera")],d),B.am,B.w,B.p),g),g,new A.ce(B.B,g,p,k,g,g,B.ac),g,g,g,g,1/0)],d),B.t,B.cL,B.p),g),g,B.ew,n.b*1.4,g,g,g,1/0)
 k=A.bK(g,new A.b4(B.op,A.cL(A.a([A.ca(A.a([A.au1(A.fC(20),A.avj("assets/images/deeptune.png",B.bK,60,60)),B.ZZ],d),B.t,B.w,B.p),B.G0,B.a83,B.a0g,B.a0f],d),B.t,B.w,B.p),g),B.j,g,g,h.e,g,g,1/0)
 p=A.bK(g,B.ZW,g,B.ew,g,h.r,g,g,1/0)
 l=$.bj().xr
@@ -80597,7 +80597,7 @@ A.bd(i).toString
 i=r.d
 if(i==null){i=self.window.devicePixelRatio
 if(i===0)i=1}i=l.bc(0,i)
-m=A.bK(g,new A.b4(B.by,A.cL(A.a([B.a7H,B.a85,new A.b4(B.kL,A.aeA(new A.es(g,g,new A.e0(g,g,A.fC(12),g),g,g,g,g,g,g,g),j.b*0.07,new A.a9h(a),B.a89,i.a*0.5),g)],d),B.t,B.cK,B.p),g),B.j,g,m.b*0.35,h.f,g,g,1/0)
+m=A.bK(g,new A.b4(B.by,A.cL(A.a([B.a7H,B.a85,new A.b4(B.kL,A.aeA(new A.es(g,g,new A.e0(g,g,A.fC(12),g),g,g,g,g,g,g,g),j.b*0.07,new A.a9h(a),B.a89,i.a*0.5),g)],d),B.t,B.cK,B.p),g),B.j,g,m.b*0.4,h.f,g,g,1/0)
 i=$.bj().xr
 i=$.P.F$.z.j(0,i)
 i.toString
