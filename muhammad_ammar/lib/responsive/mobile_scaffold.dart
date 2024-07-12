@@ -113,7 +113,7 @@ class MobileScaffold extends StatelessWidget {
           children: [
             Container(
               key: section1Key,
-              height: Get.height *0.8,
+              height: Get.height *0.9,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -374,7 +374,7 @@ class MobileScaffold extends StatelessWidget {
             ),
              SizedBox(
               width: double.infinity,
-              height: Get.height *0.13,
+              height: Get.height *0.15,
               child: const Center(
                 child: Text(
                   "I craft wonderful digital \nexperiences for brands.",
@@ -386,7 +386,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height *1.2,
+              height: Get.height *1.4,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -752,7 +752,7 @@ class MobileScaffold extends StatelessWidget {
             Container(
               key: section4Key,
               width: double.infinity,
-              height: Get.height *0.35,
+              height: Get.height *0.40,
               color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
