@@ -74,7 +74,7 @@ class PortfolioRunningState extends State<PortfolioRunning> with SingleTickerPro
                             foreground: Paint()
                               ..style = PaintingStyle.stroke
                               ..strokeWidth = 0.8
-                              ..color = Colors.white, // Stroke color
+                              ..color = Colors.white, 
                           ),
                         ),
                         const Text(
@@ -83,7 +83,7 @@ class PortfolioRunningState extends State<PortfolioRunning> with SingleTickerPro
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w700,
                             fontSize: 80,
-                            color: Colors.transparent, // Transparent fill color
+                            color: Colors.transparent, 
                           ),
                         ),
                       ],
