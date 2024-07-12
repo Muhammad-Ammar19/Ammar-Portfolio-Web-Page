@@ -131,8 +131,7 @@ class Home extends StatelessWidget {
                                 "Linkedin.",
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
-                                  decorationColor:
-                                      Colors.black, 
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,
@@ -143,20 +142,16 @@ class Home extends StatelessWidget {
                             const SizedBox(width: 4),
                             InkWell(
                               onTap: () {
-
-const link =
+                                const link =
                                     "https://x.com/i/flow/login?redirect_after_login=%2Fsyedammarzaki4";
                                 launchUrl(Uri.parse(link),
                                     mode: LaunchMode.externalApplication);
-
-
                               },
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
-                                  decorationColor:
-                                      Colors.black, 
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,
@@ -176,8 +171,7 @@ const link =
                                 ' Github.',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
-                                  decorationColor:
-                                      Colors.black, 
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 18,

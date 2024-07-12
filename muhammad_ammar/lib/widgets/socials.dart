@@ -10,7 +10,7 @@ class Socials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     height: Get.height *0.25,
+      height: Get.height * 0.25,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: NetworkImage(
@@ -25,28 +25,48 @@ class Socials extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-              child: InkWell(onTap: (){ const link ="https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
-launchUrl(Uri.parse(link),mode: LaunchMode.externalApplication);
-
-              },
+              child: InkWell(
+                  onTap: () {
+                    const link =
+                        "https://pk.linkedin.com/in/muhammad-ammar-1b3980232";
+                    launchUrl(Uri.parse(link),
+                        mode: LaunchMode.externalApplication);
+                  },
                   mouseCursor: SystemMouseCursors.click,
                   child: _buildSocialButton("My Linkedin")),
             ),
             _buildDivider(),
             Expanded(
               child: InkWell(
+                  onTap: () {
+                    const link =
+                        "https://x.com/i/flow/login?redirect_after_login=%2Fsyedammarzaki4";
+                    launchUrl(Uri.parse(link),
+                        mode: LaunchMode.externalApplication);
+                  },
                   mouseCursor: SystemMouseCursors.click,
                   child: _buildSocialButton("My Twitter")),
             ),
             _buildDivider(),
             Expanded(
               child: InkWell(
+                  onTap: () {
+                    const link = "https://github.com/Muhammad-Ammar19";
+                    launchUrl(Uri.parse(link),
+                        mode: LaunchMode.externalApplication);
+                  },
                   mouseCursor: SystemMouseCursors.click,
                   child: _buildSocialButton("My Github")),
             ),
             _buildDivider(),
             Expanded(
               child: InkWell(
+                  onTap: () {
+                    const link =
+                        "https://www.instagram.com/syed_ammarxd?utm_source=qr&igsh=bXh3bmFiYzFkeTU1";
+                    launchUrl(Uri.parse(link),
+                        mode: LaunchMode.externalApplication);
+                  },
                   mouseCursor: SystemMouseCursors.click,
                   child: _buildSocialButton("My Instagram")),
             ),
