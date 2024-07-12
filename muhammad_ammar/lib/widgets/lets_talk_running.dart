@@ -52,7 +52,7 @@ class LetsTalkRunningState extends State<LetsTalkRunning> with SingleTickerProvi
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
                   children: [
-                    // Normal Text
+                  
                     const Text(
                       "LET'S TALK",
                       style: TextStyle(
@@ -62,8 +62,8 @@ class LetsTalkRunningState extends State<LetsTalkRunning> with SingleTickerProvi
                         color: Colors.white,
                       ),
                     ),
-                    const SizedBox(width: 40), // Spacing between texts
-                    // Text with Stroke
+                    const SizedBox(width: 40), 
+                   
                     Stack(
                       children: [
                         Text(
@@ -75,7 +75,7 @@ class LetsTalkRunningState extends State<LetsTalkRunning> with SingleTickerProvi
                             foreground: Paint()
                               ..style = PaintingStyle.stroke
                               ..strokeWidth = 0.8
-                              ..color = Colors.white, // Stroke color
+                              ..color = Colors.white, 
                           ),
                         ),
                         const Text(
@@ -84,7 +84,7 @@ class LetsTalkRunningState extends State<LetsTalkRunning> with SingleTickerProvi
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w700,
                             fontSize: 80,
-                            color: Colors.transparent, // Transparent fill color
+                            color: Colors.transparent, 
                           ),
                         ),
                       ],
