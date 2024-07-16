@@ -392,7 +392,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height * 1.5,
+              height: Get.height * 1.9,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
