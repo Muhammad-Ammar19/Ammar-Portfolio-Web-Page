@@ -113,7 +113,7 @@ class MobileScaffold extends StatelessWidget {
           children: [
             Container(
               key: section1Key,
-              height: Get.height * 0.9,
+              height: Get.height * 0.85,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -221,6 +221,8 @@ class MobileScaffold extends StatelessWidget {
                               child: const Text(
                                 "Linkedin.",
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -228,11 +230,14 @@ class MobileScaffold extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            const SizedBox(width: 4),
                             InkWell(
                               onTap: () {},
                               child: const Text(
                                 ' Twitter.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -240,11 +245,14 @@ class MobileScaffold extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            const SizedBox(width: 4),
                             InkWell(
                               onTap: () {},
                               child: const Text(
                                 ' Github.',
                                 style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.black,
                                   fontFamily: 'Sora',
                                   color: Colors.black,
                                   fontSize: 16,
@@ -261,7 +269,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             const AboutMe(),
-            Container(
+            Container(height: Get.height *1.3,
               key: section2Key,
               width: double.infinity,
               decoration: const BoxDecoration(
@@ -293,11 +301,11 @@ class MobileScaffold extends StatelessWidget {
                         color: Colors.black,
                         fontFamily: 'Sora',
                         fontWeight: FontWeight.w600,
-                        height: 1.6,
+                        height: 1.8,
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    const SizedBox(height: 15),
+                    
                     const Row(
                       children: [
                         Text(
@@ -337,7 +345,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 8),
                     ShadButton(
                       decoration: const ShadDecoration(
                           border: ShadBorder(
@@ -361,7 +369,7 @@ class MobileScaffold extends StatelessWidget {
                       ),
                       onPressed: () {
                         const link =
-                            "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view";
+                            "https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
                         launchUrl(Uri.parse(link),
                             mode: LaunchMode.externalApplication);
                       },
@@ -384,7 +392,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height * 1.7,
+              height: Get.height * 1.5,
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -485,38 +493,74 @@ class MobileScaffold extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 20),
-                            _buildEducationRow(
-                              context,
-                              '2024',
-                              "IT Support Professional Certificate",
-                              'Google',
+                            InkWell(
+                              onTap: () {
+                                const link =
+                                    "https://drive.google.com/file/d/1yyaumBhDn1xkEuSxh68IKHUiFphxs5-i/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                              },
+                              child: _buildEducationRow(
+                                context,
+                                '2024',
+                                "Google IT Support Professional Certificate",
+                                'Google',
+                              ),
                             ),
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "Crash Course on Python",
-                              'Google',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/1aTXdhX9kyNCMmZpemWsFbRgjSkyN33Dz/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Crash Course on Python",
+                                'Google',
+                              ),
                             ),
                             const SizedBox(height: 10),
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "Software Engineering Essentials",
-                              'IBM',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/127zoeusEM4FUypl14tlArhH6tmNPO1ff/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Software Engineering",
+                                'IBM',
+                              ),
                             ),
                             const SizedBox(height: 10),
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "Foundations of User Experience Design",
-                              'Google',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/1BkcngsSYlc6NBSwcMPhuTDZpBbXRjc78/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Foundations of User Experience Design",
+                                'Google',
+                              ),
                             ),
                             const SizedBox(height: 10),
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "Decentralized Applications",
-                              'University at buffalo | Coursera',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/17FKaIB2Go8CtoUNYQ2F_xZHWNK-mSVLH/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Blockchain",
+                                'University at buffalo | Coursera',
+                              ),
                             ),
                           ],
                         ),
@@ -536,27 +580,76 @@ class MobileScaffold extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "AI Essentials",
-                              'Intel',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/1cq2FZbyBtpbxuQv7tep21Ac6NsOA3E6t/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "AI Essentials",
+                                'Intel',
+                              ),
                             ),
                             const SizedBox(height: 10),
-                            _buildEducationRow(
-                              context,
-                              '2023',
-                              "Advanced Python Programming & Applications",
-                              'NAVTTC',
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/1hzZqISeYax7caULr6ySPrEHH54tPKs5s/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Advanced Python Programming & Applications",
+                                'NAVTTC',
+                              ),
                             ),
                             const SizedBox(height: 10),
-                            _buildEducationRow(
+                            InkWell(onTap: () {
+                              const link =
+                                    "https://drive.google.com/file/d/1TW48uEpiqAIzp_u-BaXitpyxusCAun-1/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                            },
+                              child: _buildEducationRow(
+                                context,
+                                '2023',
+                                "Smart Contracts",
+                                'University at Buffalo | Coursera',
+                              ),
+                            ),
+                        const SizedBox(height: 10),
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1i9b2XTwiV-jidjO0_8wbpJKE7UWNeJJf/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
                               context,
                               '2023',
-                              "Smart Contracts",
-                              'University at Buffalo | Coursera',
+                              "Introduction to SQL",
+                              'University of Michigan',
                             ),
-                          ],
+                          ), const SizedBox(height: 10),
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1zs_AHk__6Z56xEYENQ0_Gj4kwPs8jN8K/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Introduction to MongoDB",
+                              'Coursera',
+                            ),
+                          ),  ],
                         ),
                       ),
                     ),

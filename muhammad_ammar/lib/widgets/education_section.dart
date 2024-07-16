@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class EducationSection extends StatelessWidget {
   const EducationSection({super.key});
@@ -8,10 +9,9 @@ class EducationSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-       
         Container(
           width: double.infinity,
-          height: Get.height *0.75,
+          height: Get.height * 0.75,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(
@@ -21,15 +21,16 @@ class EducationSection extends StatelessWidget {
             ),
           ),
         ),
-
         Center(
           child: Padding(
-            padding: const EdgeInsets.only(top: 100.0,left: 30,right: 30),
+            padding: const EdgeInsets.only(top: 100.0, left: 30, right: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Flexible(flex: 1,
-                  child: Container(height: 420, 
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    height: 420,
                     width: 500,
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -86,8 +87,8 @@ class EducationSection extends StatelessWidget {
                     ),
                   ),
                 ),
-                
-                Flexible(flex: 1,
+                Flexible(
+                  flex: 1,
                   child: Container(
                     width: 500,
                     decoration: BoxDecoration(
@@ -120,47 +121,88 @@ class EducationSection extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 20),
-                          _buildEducationRow(
-                            context,
-                            '2024',
-                            "IT Support Professional Certificate",
-                            'Google',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1yyaumBhDn1xkEuSxh68IKHUiFphxs5-i/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2024',
+                              "Google IT Support Professional Certificate",
+                              'Google',
+                            ),
                           ),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Crash Course on Python",
-                            'Google',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1aTXdhX9kyNCMmZpemWsFbRgjSkyN33Dz/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Crash Course on Python",
+                              'Google',
+                            ),
                           ),
                           const SizedBox(height: 10),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Software Engineering Essentials",
-                            'IBM',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/127zoeusEM4FUypl14tlArhH6tmNPO1ff/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Software Engineering",
+                              'IBM',
+                            ),
                           ),
                           const SizedBox(height: 10),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Foundations of User Experience Design",
-                            'Google',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1BkcngsSYlc6NBSwcMPhuTDZpBbXRjc78/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Foundations of User Experience Design",
+                              'Google',
+                            ),
                           ),
                           const SizedBox(height: 10),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Decentralized Applications",
-                            'University at buffalo | Coursera',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/17FKaIB2Go8CtoUNYQ2F_xZHWNK-mSVLH/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Blockchain",
+                              'University at buffalo | Coursera',
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ),
                 ),
-                
-                Flexible(flex: 1,
-                  child: Container(height: 420,
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    height: 420,
                     width: 500,
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -174,25 +216,78 @@ class EducationSection extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "AI Essentials",
-                            'Intel',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1cq2FZbyBtpbxuQv7tep21Ac6NsOA3E6t/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "AI Essentials",
+                              'Intel',
+                            ),
                           ),
                           const SizedBox(height: 10),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Advanced Python Programming & Applications",
-                            'NAVTTC',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1hzZqISeYax7caULr6ySPrEHH54tPKs5s/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Advanced Python Programming & Applications",
+                              'NAVTTC',
+                            ),
                           ),
                           const SizedBox(height: 10),
-                          _buildEducationRow(
-                            context,
-                            '2023',
-                            "Smart Contracts",
-                            'University at Buffalo | Coursera',
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1TW48uEpiqAIzp_u-BaXitpyxusCAun-1/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Smart Contracts",
+                              'University at Buffalo | Coursera',
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1i9b2XTwiV-jidjO0_8wbpJKE7UWNeJJf/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Introduction to SQL",
+                              'University of Michigan',
+                            ),
+                          ), const SizedBox(height: 10),
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/1zs_AHk__6Z56xEYENQ0_Gj4kwPs8jN8K/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Introduction to MongoDB",
+                              'Coursera',
+                            ),
                           ),
                         ],
                       ),
@@ -207,7 +302,8 @@ class EducationSection extends StatelessWidget {
     );
   }
 
-  Widget _buildEducationRow(BuildContext context, String date, String title, String institution) {
+  Widget _buildEducationRow(
+      BuildContext context, String date, String title, String institution) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Row(

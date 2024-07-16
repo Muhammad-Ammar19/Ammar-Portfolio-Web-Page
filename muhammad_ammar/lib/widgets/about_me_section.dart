@@ -129,7 +129,7 @@ class AboutMeSection extends StatelessWidget {
                           ),
                         ),
                       ),
-                      onPressed: () {const link ="https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view";
+                      onPressed: () {const link ="https://drive.google.com/file/d/1K_X5jKgZrBrrjZoopGW7HNTek7ETqtqf/view?usp=sharing";
 launchUrl(Uri.parse(link),mode: LaunchMode.externalApplication);},
                     ),
                   ],
