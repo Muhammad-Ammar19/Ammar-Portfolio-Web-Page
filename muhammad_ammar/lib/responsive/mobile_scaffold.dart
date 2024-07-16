@@ -269,7 +269,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             const AboutMe(),
-            Container(height: Get.height *1.3,
+            Container(
               key: section2Key,
               width: double.infinity,
               decoration: const BoxDecoration(
@@ -305,7 +305,7 @@ class MobileScaffold extends StatelessWidget {
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    
+                    const SizedBox(height: 15),
                     const Row(
                       children: [
                         Text(
@@ -345,7 +345,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 20),
                     ShadButton(
                       decoration: const ShadDecoration(
                           border: ShadBorder(
@@ -380,7 +380,7 @@ class MobileScaffold extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: Get.height * 0.15,
+              height: Get.height * 0.17,
               child: const Center(
                 child: Text(
                   "I craft wonderful digital \nexperiences for brands.",
