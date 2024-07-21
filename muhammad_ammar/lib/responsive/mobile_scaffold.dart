@@ -679,7 +679,7 @@ class MobileScaffold extends StatelessWidget {
                           ),
                         ),
                         const Padding(
-                          padding: EdgeInsets.only(left: 15.0),
+                          padding: EdgeInsets.only(left: 20.0),
                           child: Text(
                             'Deeptune - Music Player',
                             style: TextStyle(
@@ -691,7 +691,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 30),
                     const Text(
                       "Deeptune is an elegant and intuitive player application developed with Flutter. Designed to deliver a smooth audio experience, Deeptune has a modern interface, strong performance and extensive customization options. Whether you're curating playlists, exploring new downloaded music, or enjoying your favorite tracks, Deeptune delivers high-quality, immersive listening.",
                       style: TextStyle(
@@ -700,6 +700,7 @@ class MobileScaffold extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           height: 2),
                     ),
+                    const SizedBox(height: 30),
                     const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
