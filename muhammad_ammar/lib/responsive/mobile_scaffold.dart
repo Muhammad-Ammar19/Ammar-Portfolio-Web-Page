@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:insta_image_viewer/insta_image_viewer.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
 import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
@@ -690,7 +691,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 30),
+                    const SizedBox(height: 40),
                     const Text(
                       "Deeptune is an elegant and intuitive player application developed with Flutter. Designed to deliver a smooth audio experience, Deeptune has a modern interface, strong performance and extensive customization options. Whether you're curating playlists, exploring new downloaded music, or enjoying your favorite tracks, Deeptune delivers high-quality, immersive listening.",
                       style: TextStyle(
@@ -699,40 +700,66 @@ class MobileScaffold extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           height: 2),
                     ),
-                    const Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: Image(
-                            image: AssetImage(
-                                "assets/images/5s_7_8_Preview_1-removebg-preview.png"),
-                          ),
+                    const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/Untitled.png'),
+                          height: 500,
                         ),
-                        Expanded(
-                          child: Image(
-                            image: AssetImage(
-                                "assets/images/5s_7_8_Preview_2-removebg-preview.png"),
-                          ),
+                      ),
+                      SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/Deeptune_gif1.gif'),
+                          height: 500,
                         ),
-                      ],
-                    ),
-                    const Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: Image(
-                            image: AssetImage(
-                                "assets/images/5s_7_8_Preview_3-removebg-preview.png"),
-                          ),
+                      ),
+                      SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/Deeptune_gif2.gif'),
+                          height: 500,
                         ),
-                        Expanded(
-                          child: Image(
-                            image: AssetImage(
-                                "assets/images/5s_7_8_Preview_4-removebg-preview.png"),
-                          ),
+                      ),
+                      SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/Deeptune_gif3.gif'),
+                          height: 500,
                         ),
-                      ],
-                    ),
+                      ), SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/Deeptune_gif4.gif'),
+                          height: 500,
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/deeptune_dark2.jpg'),
+                          height: 500,
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/deeptune_dark3.jpg'),
+                          height: 500,
+                        ),
+                      ),  SizedBox(width: 20),
+                      InstaImageViewer(
+                        child: Image(
+                          image: AssetImage('assets/images/music_library.jpg'),
+                          height: 500,
+                        ),
+                      ),
+                    ]),
+              ),
                   ],
                 ),
               ),

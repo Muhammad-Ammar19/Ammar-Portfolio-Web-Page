@@ -41,6 +41,7 @@ dependencies:
   shadcn_ui: ^0.2.3
   visibility_detector: ^0.2.0
   http: ^0.13.3
+  insta_image_viewer: ^1.0.4
   
   
  
