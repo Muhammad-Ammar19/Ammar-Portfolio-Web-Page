@@ -122,6 +122,20 @@ class EducationSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 20),
                           InkWell(
+                              onTap: () {
+                                const link =
+                                    "https://drive.google.com/file/d/18d86qhkX8csGa7KcCPlAnWifVECGqtvf/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                              },
+                              child: _buildEducationRow(
+                                context,
+                                '2024',
+                                "Foundations: Data, Data, Everywhere",
+                                'Google',
+                              ),
+                            ),
+                          InkWell(
                             onTap: () {
                               const link =
                                   "https://drive.google.com/file/d/1yyaumBhDn1xkEuSxh68IKHUiFphxs5-i/view?usp=drive_link";
@@ -134,7 +148,7 @@ class EducationSection extends StatelessWidget {
                               "Google IT Support Professional Certificate",
                               'Google',
                             ),
-                          ),
+                          ), const SizedBox(height: 10),
                           InkWell(
                             onTap: () {
                               const link =
@@ -179,21 +193,7 @@ class EducationSection extends StatelessWidget {
                               'Google',
                             ),
                           ),
-                          const SizedBox(height: 10),
-                          InkWell(
-                            onTap: () {
-                              const link =
-                                  "https://drive.google.com/file/d/17FKaIB2Go8CtoUNYQ2F_xZHWNK-mSVLH/view?usp=drive_link";
-                              launchUrl(Uri.parse(link),
-                                  mode: LaunchMode.externalApplication);
-                            },
-                            child: _buildEducationRow(
-                              context,
-                              '2023',
-                              "Blockchain",
-                              'University at buffalo | Coursera',
-                            ),
-                          ),
+                         
                         ],
                       ),
                     ),
@@ -202,7 +202,7 @@ class EducationSection extends StatelessWidget {
                 Flexible(
                   flex: 1,
                   child: Container(
-                    height: 420,
+                   
                     width: 500,
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -287,6 +287,20 @@ class EducationSection extends StatelessWidget {
                               '2023',
                               "Introduction to MongoDB",
                               'Coursera',
+                            ),
+                          ), const SizedBox(height: 10),
+                          InkWell(
+                            onTap: () {
+                              const link =
+                                  "https://drive.google.com/file/d/17FKaIB2Go8CtoUNYQ2F_xZHWNK-mSVLH/view?usp=drive_link";
+                              launchUrl(Uri.parse(link),
+                                  mode: LaunchMode.externalApplication);
+                            },
+                            child: _buildEducationRow(
+                              context,
+                              '2023',
+                              "Blockchain",
+                              'University at buffalo | Coursera',
                             ),
                           ),
                         ],

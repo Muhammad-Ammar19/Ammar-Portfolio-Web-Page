@@ -493,7 +493,20 @@ class MobileScaffold extends StatelessWidget {
                                 color: Colors.black,
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 20), InkWell(
+                              onTap: () {
+                                const link =
+                                    "https://drive.google.com/file/d/18d86qhkX8csGa7KcCPlAnWifVECGqtvf/view?usp=drive_link";
+                                launchUrl(Uri.parse(link),
+                                    mode: LaunchMode.externalApplication);
+                              },
+                              child: _buildEducationRow(
+                                context,
+                                '2024',
+                                "Foundations: Data, Data, Everywhere",
+                                'Google',
+                              ),
+                            ),
                             InkWell(
                               onTap: () {
                                 const link =
