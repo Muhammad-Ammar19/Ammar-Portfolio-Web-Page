@@ -1,15 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactForm extends StatelessWidget {
   const ContactForm({super.key});
+
+  Future<void> _launchEmail() async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: 'syedammarzaki4@gmail.com', // Replace with your email address
+      query: 'subject=Contact&body=Hello, I would like to get in touch with you.',
+    );
+
+    if (await canLaunchUrl(emailLaunchUri)) {
+      await launchUrl(emailLaunchUri);
+    } else {
+      throw 'Could not launch $emailLaunchUri';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: Get.height *0.7,
+      height: Get.height * 0.7,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -39,87 +54,7 @@ class ContactForm extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.w800),
               ),
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return AlertDialog(
-                      backgroundColor: Colors.black,
-                      title: const Column(
-                        children: [
-                          Text(
-                            textAlign: TextAlign.center,
-                            'Contact Me',
-                            style: TextStyle(
-                                fontFamily: 'Sora',
-                                fontWeight: FontWeight.w700,
-                                fontSize: 45),
-                          ),
-                          Text(
-                            "By all means, send me an email and get in touch.",
-                            style: TextStyle(
-                                fontFamily: 'Sora',
-                                fontWeight: FontWeight.w700,
-                                fontSize: 43),
-                          )
-                        ],
-                      ),
-                      content: SizedBox(
-                        width: Get.width *0.6,
-                        child: Padding(
-                          padding: const EdgeInsets.all(50.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              ConstrainedBox(
-                                constraints:
-                                    const BoxConstraints(maxWidth: 500),
-                                child: const ShadInput(
-                                  placeholder: Text('Name'),
-                                  keyboardType: TextInputType.name,
-                                ),
-                              ),
-                              const SizedBox(height: 12),
-                              ConstrainedBox(
-                                constraints:
-                                    const BoxConstraints(maxWidth: 500),
-                                child: const ShadInput(
-                                  placeholder: Text('Email'),
-                                  keyboardType: TextInputType.emailAddress,
-                                ),
-                              ),
-                              const SizedBox(height: 12),
-                              ConstrainedBox(
-                                constraints:
-                                    const BoxConstraints(maxWidth: 500),
-                                child: const ShadInput(
-                                  autofocus: true,
-                                  placeholder: Text('Message'),
-                                  keyboardType: TextInputType.multiline,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      actions: [
-                        ShadButton.outline(
-                          text: const Text('Cancel'),
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                        ShadButton(
-                          text: const Text('Send'),
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ],
-                    );
-                  },
-                );
-              },
+              onPressed: _launchEmail,
             ),
           ),
         ],
@@ -127,3 +62,4 @@ class ContactForm extends StatelessWidget {
     );
   }
 }
+

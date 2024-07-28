@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:insta_image_viewer/insta_image_viewer.dart';
 import 'package:muhammad_ammar/widgets/about_me_running.dart';
+import 'package:muhammad_ammar/widgets/contactsectionm.dart';
 import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
 import 'package:muhammad_ammar/widgets/service_running.dart';
@@ -393,7 +394,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height * 1.9,
+             
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -403,7 +404,7 @@ class MobileScaffold extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                 
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
@@ -462,6 +463,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const SizedBox(height: 50),
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -580,6 +582,7 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ),
                     ),
+                     const SizedBox(height: 50),
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -777,7 +780,7 @@ class MobileScaffold extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            ),const SizedBox(height: 30),
             const ServiceRunning(),
             Container(
               key: section5Key,
@@ -881,134 +884,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             const LetsTalkRunning(),
-            Container(
-              key: section4Key,
-              width: double.infinity,
-              height: Get.height * 0.40,
-              color: Colors.black,
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Text(
-                      'Do you have a question, an idea, or a project you need help with.',
-                      style: TextStyle(
-                          fontFamily: 'Sora',
-                          fontSize: 22,
-                          fontWeight: FontWeight.w800),
-                    ),
-                    const Text(
-                      "Contact me!",
-                      style: TextStyle(
-                          fontFamily: 'Sora',
-                          fontSize: 22,
-                          fontWeight: FontWeight.w800),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 12.0),
-                      child: ShadButton.outline(
-                        height: Get.height * 0.070,
-                        width: Get.width * 0.5,
-                        decoration: ShadDecoration(
-                            border:
-                                ShadBorder(radius: BorderRadius.circular(12))),
-                        text: const Text(
-                          'Contact Form',
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontSize: 20,
-                              fontWeight: FontWeight.w800),
-                        ),
-                        onPressed: () {
-                          showDialog(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return AlertDialog(
-                                backgroundColor: Colors.black,
-                                title: const Column(
-                                  children: [
-                                    Text(
-                                      textAlign: TextAlign.center,
-                                      'Contact Me',
-                                      style: TextStyle(
-                                          fontFamily: 'Sora',
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 28),
-                                    ),
-                                    Text(
-                                      "By all means, send me an email and get in touch.",
-                                      style: TextStyle(
-                                          fontFamily: 'Sora',
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 28),
-                                    )
-                                  ],
-                                ),
-                                content: SizedBox(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(50.0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        ConstrainedBox(
-                                          constraints: const BoxConstraints(
-                                              maxWidth: 500),
-                                          child: const ShadInput(
-                                            placeholder: Text('Name'),
-                                            keyboardType: TextInputType.name,
-                                          ),
-                                        ),
-                                        const SizedBox(height: 12),
-                                        ConstrainedBox(
-                                          constraints: const BoxConstraints(
-                                              maxWidth: 500),
-                                          child: const ShadInput(
-                                            placeholder: Text('Email'),
-                                            keyboardType:
-                                                TextInputType.emailAddress,
-                                          ),
-                                        ),
-                                        const SizedBox(height: 12),
-                                        ConstrainedBox(
-                                          constraints: const BoxConstraints(
-                                              maxWidth: 500),
-                                          child: const ShadInput(
-                                            autofocus: true,
-                                            placeholder: Text('Message'),
-                                            keyboardType:
-                                                TextInputType.multiline,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                actions: [
-                                  ShadButton.outline(
-                                    text: const Text('Cancel'),
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                  ShadButton(
-                                    text: const Text('Send'),
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                ],
-                              );
-                            },
-                          );
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            ContactSection(section4Key: section4Key),
             Container(
               color: Colors.deepOrange[500],
               width: double.infinity,
