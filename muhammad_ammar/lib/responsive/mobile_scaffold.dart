@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:insta_image_viewer/insta_image_viewer.dart';
 import 'package:muhammad_ammar/widgets/contactsectionm.dart';
-import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
 import 'package:muhammad_ammar/widgets/mobile%20widgets/aboutmem.dart';
 import 'package:muhammad_ammar/widgets/mobile%20widgets/letstalkm.dart';
 import 'package:muhammad_ammar/widgets/mobile%20widgets/portfoliom.dart';
 import 'package:muhammad_ammar/widgets/mobile%20widgets/servicesm.dart';
-import 'package:muhammad_ammar/widgets/portfolio_running.dart';
-import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
