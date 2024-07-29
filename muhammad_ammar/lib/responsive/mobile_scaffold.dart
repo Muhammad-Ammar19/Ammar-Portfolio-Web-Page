@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:insta_image_viewer/insta_image_viewer.dart';
-import 'package:muhammad_ammar/widgets/about_me_running.dart';
 import 'package:muhammad_ammar/widgets/contactsectionm.dart';
 import 'package:muhammad_ammar/widgets/lets_talk_running.dart';
+import 'package:muhammad_ammar/widgets/mobile%20widgets/aboutmem.dart';
+import 'package:muhammad_ammar/widgets/mobile%20widgets/letstalkm.dart';
+import 'package:muhammad_ammar/widgets/mobile%20widgets/portfoliom.dart';
+import 'package:muhammad_ammar/widgets/mobile%20widgets/servicesm.dart';
 import 'package:muhammad_ammar/widgets/portfolio_running.dart';
 import 'package:muhammad_ammar/widgets/service_running.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
@@ -270,7 +273,7 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-            const AboutMe(),
+            const AboutMeM(),
             Container(
               key: section2Key,
               width: double.infinity,
@@ -674,7 +677,7 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-            const PortfolioRunning(),
+            const PortfolioM(),
             Container(
               key: section3Key,
               width: double.infinity,
@@ -781,7 +784,7 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),const SizedBox(height: 30),
-            const ServiceRunning(),
+            const ServicesM(),
             Container(
               key: section5Key,
               width: double.infinity,
@@ -883,7 +886,7 @@ class MobileScaffold extends StatelessWidget {
                 ),
               ),
             ),
-            const LetsTalkRunning(),
+            const LetsTalkM(),
             ContactSection(section4Key: section4Key),
             Container(
               color: Colors.deepOrange[500],
@@ -938,6 +941,7 @@ class MobileScaffold extends StatelessWidget {
                           child: _buildSocialButton("My Github"),
                         ),
                       ),
+                     
                       Expanded(
                         child: InkWell(
                           onTap: () {
@@ -951,7 +955,8 @@ class MobileScaffold extends StatelessWidget {
                         ),
                       ),
                     ],
-                  ),
+                 
+                  ), 
                   Row(
                     children: [
                       Expanded(
@@ -966,6 +971,7 @@ class MobileScaffold extends StatelessWidget {
                           child: _buildSocialButton("My Linkedin"),
                         ),
                       ),
+                    
                       Expanded(
                         child: InkWell(
                           onTap: () {
