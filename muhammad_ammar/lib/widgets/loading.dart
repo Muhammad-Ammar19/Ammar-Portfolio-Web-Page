@@ -39,7 +39,7 @@ class LoadingScreenState extends State<LoadingScreen> with SingleTickerProviderS
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Animated Ball
+           
             AnimatedBuilder(
               animation: _animation,
               builder: (context, child) {
@@ -48,8 +48,8 @@ class LoadingScreenState extends State<LoadingScreen> with SingleTickerProviderS
                   top: 0,
                   bottom: 0,
                   child: Container(
-                    width: 50,
-                    height: 50,
+                    width: 40,
+                    height: 40,
                     decoration: const BoxDecoration(
                      color:  Color(0xFFEA552B),
                       shape: BoxShape.circle,
