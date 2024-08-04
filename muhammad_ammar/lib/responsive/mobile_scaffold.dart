@@ -429,12 +429,12 @@ class MobileScaffold extends StatelessWidget {
                                   color: Colors.black,
                                   fontFamily: 'Sora',
                                   fontWeight: FontWeight.w600,
-                                  fontSize: 25,
+                                  fontSize: 19,
                                 ),
                               ),
                               icon: const Icon(
                                 Icons.school,
-                                size: 35,
+                                size: 30,
                                 color: Colors.black,
                               ),
                             ),
@@ -486,12 +486,12 @@ class MobileScaffold extends StatelessWidget {
                                   color: Colors.black,
                                   fontFamily: 'Sora',
                                   fontWeight: FontWeight.w600,
-                                  fontSize: 25,
+                                  fontSize: 19,
                                 ),
                               ),
                               icon: const Icon(
                                 Icons.book,
-                                size: 35,
+                                size: 30,
                                 color: Colors.black,
                               ),
                             ),
@@ -688,8 +688,8 @@ class MobileScaffold extends StatelessWidget {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(20),
                           child: Image.asset(
-                            height: 60,
-                            width: 60,
+                            height: 55,
+                            width: 55,
                             "assets/images/deeptune.png",
                             alignment: Alignment.topLeft,
                           ),
@@ -700,7 +700,7 @@ class MobileScaffold extends StatelessWidget {
                             'Deeptune - Music Player',
                             style: TextStyle(
                               fontFamily: 'Sora',
-                              fontSize: 23,
+                              fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -712,7 +712,7 @@ class MobileScaffold extends StatelessWidget {
                       "Deeptune is an elegant and intuitive player application developed with Flutter. Designed to deliver a smooth audio experience, Deeptune has a modern interface, strong performance and extensive customization options. Whether you're curating playlists, exploring new downloaded music, or enjoying your favorite tracks, Deeptune delivers high-quality, immersive listening.",
                       style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                           height: 2),
                     ),
@@ -1031,7 +1031,7 @@ Widget _buildEducationRow(
           date,
           style: const TextStyle(
             fontFamily: 'Sora',
-            fontSize: 15,
+            fontSize: 12,
             color: Color(0xFFEA552B),
             fontWeight: FontWeight.w600,
           ),
@@ -1046,7 +1046,7 @@ Widget _buildEducationRow(
                 style: const TextStyle(
                   fontFamily: 'Sora',
                   color: Colors.black,
-                  fontSize: 16,
+                  fontSize: 14,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -1055,7 +1055,7 @@ Widget _buildEducationRow(
                 style: const TextStyle(
                   fontFamily: 'Sora',
                   color: Colors.black,
-                  fontSize: 15,
+                  fontSize: 13,
                   fontWeight: FontWeight.w500,
                 ),
               ),
